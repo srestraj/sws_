@@ -11,20 +11,15 @@ const App = () => {
   return (
     <>
       <div className="container mx-auto dark:bg-[#435A65]">
-        {/* <NavBar />
-        
+        <NavBar />
         <hr className="w-full" />
-        <NavBarTabs /> 
-       
-        <HomePage />    
-
-
-        <Discover />  */}
+        <NavBarTabs />
+        <HomePage />
+        <Discover />
       </div>
-      {/* <News /> */}
-
-      {/* <Dental /> */}
-      <Footer /> 
+      <News />
+      <Dental />
+      <Footer />
     </>
   );
 };

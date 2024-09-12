@@ -55,15 +55,15 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex flex-col font-normal">
-              <h1 className="me-10 order-2 tracking-wider font-inter text-lg">
+              <h1 className="me-10 order-2 tracking-wider font-inter">
                 © Orthotropics 1999 – 2024
               </h1>
               <div className="order-1">
-                <div className="flex p-2">
-                  <img className="m-1" src={facebook} alt="" />
-                  <img className="m-1" src={xtweeter} alt="" />
-                  <img className="m-1" src={youtube} alt="" />
-                  <img className="m-1" src={linkedin} alt="" />
+                <div className="flex">
+                  <img className="m-1 h-10" src={facebook} alt="" />
+                  <img className="m-1 h-10" src={xtweeter} alt="" />
+                  <img className="m-1 h-10" src={youtube} alt="" />
+                  <img className="m-1 h-10" src={linkedin} alt="" />
                 </div>
               </div>
             </div>

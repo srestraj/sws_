@@ -35,12 +35,12 @@ const newsData = [
 const News = () => {
   return (
     <>
-      {/* <FindPractitioner
+      <FindPractitioner
         bg={"#1F323D"}
         descriptions={
           "Join the International Association of Facial Growth Guidance"
         }
-      /> */}
+      />
 
       <div className="relative">
         <h1 className="font-sans font-bold text-[#304E5E] text-4xl ">

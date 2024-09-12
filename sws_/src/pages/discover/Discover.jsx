@@ -53,7 +53,7 @@ const discovery = () => {
   // console.log(data)
 
   return (
-    <div className="mx-auto container">
+    <div className="mx-auto container my-10">
       <div className="grid grid-cols-2 text-[#237688] my-3">
         {data.map((datass) => (
           <div className="text-start" key={datass.id}>
