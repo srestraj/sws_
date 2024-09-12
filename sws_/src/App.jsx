@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <div className="container mx-auto dark:bg-[#435A65]">
-        <NavBar />
+        {/* <NavBar />
         
         <hr className="w-full" />
         <NavBarTabs /> 
@@ -19,12 +19,12 @@ const App = () => {
         <HomePage />    
 
 
-        <Discover /> 
+        <Discover />  */}
       </div>
-      <News />
- <Footer /> 
+      {/* <News /> */}
 
       {/* <Dental /> */}
+      <Footer /> 
     </>
   );
 };

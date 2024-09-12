@@ -42,32 +42,38 @@ const News = () => {
         }
       /> */}
 
-      <h1 className="font-bold text-xl text-[#304E5E]">
-        latest news and blogs
-      </h1>
-      <div className="flex ">
-        {newsData?.map((latestNews) => (
-          <div key={latestNews.id} className="bg-[#F6F9F9]">
-            <h1>{latestNews.title}</h1>
-            <p>{latestNews.descriptions}</p>
-            <ArrowRightCircleIcon className="size-7" />
+      <div className="relative">
+        <h1 className="font-sans font-bold text-[#304E5E] text-4xl ">
+          Latest news and blogs
+        </h1>
+        <div className="flex rounded-2xl ">
+          {newsData?.map((latestNews) => (
+            <div
+              key={latestNews.id}
+              className="bg-[#F6F9F9] ps-10 pe-10 pt-8 pb-8 relative"
+            >
+              <h1 className="font-semibold font-sans">{latestNews.title}</h1>
+              <p className="font-inter">{latestNews.descriptions}</p>
+              <div className="absolute bottom-0">
+                <ArrowRightCircleIcon className="size-7" />
+              </div>
+            </div>
+          ))}
+          <div className="my-3 flex absolute top-[90%] right-[47px]">
+            <div className="flex justify-between">
+              <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
+                <ArrowLeftIcon className="size-6" />
+              </button>
+              <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
+                <ArrowRightIcon className="size-6" />
+              </button>
+            </div>
           </div>
-        ))}
-      </div>
-
-      <div className="flex justify-end">
-        <div className="flex justify-between">
-          <button className="border-dotted text-[#304E5E] font-medium">
-            <ArrowLeftIcon className="size-6" />
-          </button>
-          <button className="border-dotted">
-            <ArrowRightIcon className="size-6" />
-          </button>
         </div>
-      </div>
 
-      <div className="container">
-        <FindPractitioner bg={"#E3E9ED"} />
+        {/* <div className="mx-auto container">
+          <FindPractitioner bg={"#E3E9ED"} />
+        </div> */}
       </div>
     </>
   );
@@ -75,16 +81,14 @@ const News = () => {
 
 export default News;
 
-const FindPractitioner = ({ bg }) => {
+const FindPractitioner = ({ descriptions, bg }) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="mx-auto flex justify-between  items-center bg-[#E3E9ED] h-[240px] w-[1248px] rounded-2xl">
+      <h1 className="ms-10 text-[#435A65] font-sans font-bold text-2xl text-start ">
+        Find an Orthotropics practitioner <br /> near you
+      </h1>
       <div>
-        <h1 className="text-[#435A65] font-sans font-bold text-2xl  ">
-          Find an Orthotropics practitioner <br /> near you
-        </h1>
-      </div>
-      <div>
-        <button className="rounded-full px-2 py-1 text-center flex  bg-[#D3F375] text-sm">
+        <button className="me-10 rounded-full px-2 py-1 text-center flex bg-[#D3F375]">
           Find a practitioner <ChevronRightIcon className="size-5" />
         </button>
       </div>
