@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Science from "./Science";
 
 const SciencePage = () => {
-  return (
-    <div>SciencePage</div>
-  )
-}
+  return <Science />;
+};
 
-export default SciencePage
+export default SciencePage;

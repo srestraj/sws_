@@ -21,10 +21,11 @@ const data = [
     topic: "Education",
     slug: "Educational information about Orthotropics.",
     inn: [
-      { id: 1, listsInfo: "Educational centres for Orthotropics " },
-      { id: 2, listsInfo: "History of Orthotropics education" },
-      { id: 3, listsInfo: "Books and literature on Orthotropics" },
-      { id: 4, listsInfo: "Useful links on orthotropics" },
+      { id: 1, listsInfo: "Training courses in Orthotropics " },
+      { id: 2, listsInfo: "Educational centres for Orthotropics " },
+      { id: 3, listsInfo: "History of Orthotropics education" },
+      { id: 4, listsInfo: "Books and literature on Orthotropics" },
+      { id: 5, listsInfo: "Useful links on orthotropics" },
     ],
   },
   {
@@ -53,17 +54,23 @@ const data = [
 ];
 const HomeBody = () => {
   return (
-    <div className="grid grid-cols-2 text-[#237688] gap-10 w-full">
+    <div className="grid grid-cols-2 text-[#237688] gap-10 w-ful ">
       {data.map((datass) => (
         <div
-          className="relative flex flex-col text-start p-10 rounded-3xl"
+          className="relative flex flex-col text-start p-7 rounded-3xl"
           key={datass.id}
         >
-          <h1 className="text-4xl font-medium text-black ">{datass.topic}</h1>
-          <span className="text-black">{datass.slug}</span>
-          <div className="py-3">
+          <h1 className="text-4xl font-medium text-black py-2">
+            {datass.topic}
+          </h1>
+          <span className="text-black py-1">{datass.slug}</span>
+
+          <div className="py-6 ps-2 leading-10">
             {datass.inn.map((innerData) => (
-              <div className="flex font-bold leading-10 " key={innerData.id}>
+              <div
+                className="flex font-bold leading-10 p-1 "
+                key={innerData.id}
+              >
                 <div className=" bg-[#237688] flex justify-center items-center rounded-full size-8 p-1 text-white">
                   <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
                 </div>

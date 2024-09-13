@@ -9,7 +9,7 @@ const NavBar = () => {
         <div className="flex justify-between">
           <div className="flex justify-between h-[112px] w-[1440px] items-center ">
             <div className="flex">
-              <img src={logoIAFGG} className="h-8" />
+              <img src={logoIAFGG} className="h-8 mx-2" />
               <span className="text-[#1F323D] text-2xl font-bold ">IAFGG</span>
             </div>
 

@@ -13,6 +13,7 @@ export default {
         light: {
           primary: "white",
           secondary: "black",
+          green100:"#435A65"
         },
         dark: {
           primary: "black",

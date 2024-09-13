@@ -5,54 +5,49 @@ import FindersCard from "../../components/finders/FindersCard";
 const discoverData = [
   {
     id: 1,
-    title: "What is Orthotropics?",
+    title: "arrow_forward Treatment Through Research, Evidence and Reasoning",
     descriptions:
-      "Orthotropists believe that malocclusion is a biological problem which should be treated naturally not by mechanics and surgery.",
+      "Traditionally orthodontists have been taught that the size and shape of the jaws is inherited and most orthodontic treatment is based on this belief.",
   },
 
   {
     id: 2,
-    title: "Orthotropics for dental practitioners",
-    descriptions:
-      "Orthotropists believe that malocclusion is a biological problem which should be treated naturally not by mechanics and surgery.",
+    title: "Orthotropics evidence",
+    descriptions: "Learn about different evidences on Orthotropics.",
   },
 
   {
     id: 3,
-    title: "Orthotropics for parents",
+    title: "arrow_forward Orthodontic evidence",
     descriptions:
-      "For most dentists their orthodontic education was a complex and difficult art shrouded in mystery.",
+      "Orthodontic clinicians in the past have been severely criticised by scientists for ignoring the scientific evidence.",
   },
 
   {
     id: 4,
-    title: "Orthotropics for patients",
-    descriptions:
-      "For most dentists their orthodontic education was a complex and difficult art shrouded in mystery.",
+    title: "Orthotropic vs Orthodontic evidence",
+    descriptions: "Comparison between Orthotropic and Orthodontic Evidences.",
   },
 
   {
     id: 5,
-    title: "Orthotropics for the public",
+    title: "Research projects",
     descriptions:
-      "Orthotropists believe that malocclusion is a biological problem which should be treated naturally not by mechanics and surgery.",
+      "The research projects and papers can present your ideas in response to information found in the clinic, laboratory and library sources.",
   },
 
   {
     id: 6,
-    title: "Find an Orthotropist",
-    descriptions:
-      "For most dentists their orthodontic education was a complex and difficult art shrouded in mystery.",
+    title: "Case studies",
+    descriptions: "View our latest case studies from real people.",
   },
 ];
 
-const Discover = () => {
+const Science = () => {
   return (
     <>
       <div className="p-3 py-1">
-        <h1 className="leading-2 font-semibold text-2xl font-sans ">
-          Discover
-        </h1>
+        <h1 className="leading-2 font-semibold text-2xl font-sans ">Science</h1>
         <span className="text-sm ">Practical guidance about Orthotropics.</span>
       </div>
       <div className="p-2 grid-cols-2 grid font-sans">
@@ -70,9 +65,11 @@ const Discover = () => {
           </NavLink>
         ))}
       </div>
-      <FindersCard background={"#1F323D"} />
+      {/* <FindersCard background={"#1F323D"} /> */}
+      <FindersCard background={"#E3E9ED"} />
+
     </>
   );
 };
 
-export default Discover;
+export default Science;
