@@ -3,7 +3,7 @@ import logo from "../../assets/iafgg.svg";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 const HomePage = () => {
   return (
-    <div className="overflow-hidden relative h-[841px] w-[1440px] flex-col items-center justify-start font-sans z-20">
+    <div className="relative h-[841px] w-[1440px] flex-col items-center justify-start font-sans z-20">
       <h1 className="absolute top-[76px] left-[24px] mt-6 text-5xl font-extrabold  text-[#1F323D]  tracking-wider">
         The International Association <br />
         of Facial Growth Guidence <br /> (Orthotropics<sup>&reg;</sup>)

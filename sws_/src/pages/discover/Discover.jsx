@@ -53,23 +53,33 @@ const discovery = () => {
   // console.log(data)
 
   return (
-    <div className="mx-auto container my-10">
-      <div className="grid grid-cols-2 text-[#237688] my-3">
+    /* flex justify-center items-start w-[1440px] */
+    <div className="ms-10 me-0  p-10">
+      <div className="grid grid-cols-2 text-[#237688]">
         {data.map((datass) => (
-          <div className="text-start" key={datass.id}>
-            <h1 className="text-4xl font-medium text-[#000]">{datass.topic}</h1>
-            <span className="text-[#000]">{datass.slug}</span>
+          <div
+            className="relative flex flex-col text-start p-8 rounded-3xl"
+            key={datass.id}
+          >
+            <div className="p-2">
+              <h1 className="text-4xl font-medium text-black">
+                {datass.topic}
+              </h1>
+              <span className="text-black">{datass.slug}</span>
+            </div>
             {datass.inn.map((innerData) => (
-              <div className="flex m-2 font-bold" key={innerData.id}>
-                <div className="">
-                  <ArrowRightCircleIcon className="size-7" />
+              <div className="flex font-bold leading-10" key={innerData.id}>
+                <div className="p-1">
+                  <ArrowRightCircleIcon className="size-8" />
                 </div>
-                <li className="list-none">{innerData.listsInfo}</li>
+                <li className="list-none mx-2">{innerData.listsInfo}</li>
               </div>
             ))}
-            <a href="" className="text-sm underline text-[#000] my-3">
-              More scince on Orthotropics
-            </a>
+            <div className="absolute bottom-0 my-2 ms-2">
+              <a href="" className="text-sm underline text-[#000] ">
+                More scince on Orthotropics
+              </a>
+            </div>
           </div>
         ))}
       </div>

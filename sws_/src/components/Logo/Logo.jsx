@@ -1,8 +1,13 @@
 import React from "react";
 import logoIAFGG from "../../assets/iafgg.svg";
 
-const Logo = ({ size }) => {
-  return <img src={logoIAFGG} className={`h-2/4 w-full -z-20`}/>;
+const Logo = ({ size, tops, lefts }) => {
+  return (
+    <img
+      src={logoIAFGG}
+      className={`z-10 h-[1340px] opacity-10 absolute top-[${tops}px] left-[${lefts}px]`}
+    />
+  );
 };
 
 export default Logo;
