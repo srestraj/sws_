@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import MainBanner from "../../components/banner/MainBanner";
 
 const EventsPage = () => {
   return (
-    <div>EventsPage</div>
-  )
-}
+    <div>
+      {/* <MainBanner /> */}
 
-export default EventsPage
+      Events
+    </div>
+  );
+};
+
+export default EventsPage;

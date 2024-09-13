@@ -34,11 +34,11 @@ const newsData = [
 const News = () => {
   return (
     <>
-      <div className="mb-3 p-10">
+      <div className="mb-3 p-10 my-10">
         <h1 className="font-sans font-bold text-[#304E5E] text-4xl p-10 pb-0 pt-3">
           Latest news and blogs
         </h1>
-        <div className="flex rounded-2xl relative">
+        <div className="flex rounded-2xl relative my-2">
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
@@ -46,15 +46,15 @@ const News = () => {
             >
               <h1 className="font-semibold font-sans">{latestNews.title}</h1>
               <p className="font-inter">{latestNews.descriptions}</p>
-              <div className="absolute bottom-0">
-                <ArrowRightCircleIcon className="size-7" />
+              <div className="absolute bottom-0  bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
+                <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
               </div>
             </div>
           ))}
           <div className="absolute my-3 flex  top-[90%] right-[47px]">
             <div className="flex justify-between">
               <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
-                <ArrowLeftIcon className="size-9 p-1" />
+                <ArrowLeftIcon className="size-9 p-1 " />
               </button>
               <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
                 <ArrowRightIcon className="size-9 p-1" />

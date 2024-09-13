@@ -11,14 +11,15 @@ const FindersCard = ({ background }) => {
     return (
       /* w-[1248px] */
       <div
-        className={`relative overflow-hidden h-[140px]  z-10 rounded-2xl mx-auto flex justify-around  items-center bg-['${background}']`}
+        className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-around  items-center bg-['${background}']`}
       >
         <h1 className="text-white font-sans font-bold text-2xl text-start ">
           Join the International Association of <br /> Facial Growth Guidance
         </h1>
         <div>
           <button className="rounded-full px-2 py-1 text-center flex justify-center bg-[#D3F375]">
-            Become a member <ChevronRightIcon className="size-5" />
+            Become a member
+            <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1  duration-200 transition-transform" />
           </button>
         </div>
         <img
@@ -34,14 +35,15 @@ const FindersCard = ({ background }) => {
     return (
       <>
         <div
-          className={`relative overflow-hidden h-[140px] w-[1248px] z-10 rounded-2xl mx-auto flex justify-around  items-center bg-[${background}]`}
+          className={`relative overflow-hidden my-10 h-[140px] z-10 rounded-2xl mx-auto flex justify-around  items-center bg-[${background}]`}
         >
           <h1 className="ms-10 text-[#435A65] font-sans font-bold text-2xl text-start ">
             Find an Orthotropics practitioner <br /> near you
           </h1>
           <div>
             <button className="rounded-full px-2 py-1 text-center flex justify-center bg-[#D3F375]">
-              Find a practitioner <ChevronRightIcon className="size-5" />
+              Find a practitioner
+              <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1  duration-200 transition-transform" />
             </button>
           </div>
           <img

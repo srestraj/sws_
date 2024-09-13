@@ -7,6 +7,8 @@ import SciencePage from "./pages/science/SciencePage";
 import EducationPage from "./pages/education/EducationPage";
 import EventsPage from "./pages/events/EventsPage";
 import ShopPage from "./pages/shop/ShopPage";
+import SinglePage from "./components/singlepagelayout/SinglePage";
+import About from "./pages/about/About";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,7 @@ const router = createBrowserRouter([
     element: <DefaultLayout />,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <HomePage />,
       },
       {
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
 
       {
         path: "about-us",
-        element: <DiscoverPage />,
+        element: <About />,
       },
 
       {
@@ -45,6 +47,11 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <ShopPage />,
+      },
+
+      {
+        path: "single",
+        element: <SinglePage />,
       },
     ],
   },

@@ -16,7 +16,8 @@ const Home = () => {
             correct ‘oral posture’.
           </p>
           <button className="flex justify-center items-center text-[#F0F7FA] text-center bg-[#237688] text-xl rounded-full px-2 py-1 my-5">
-            Find out more <ChevronRightIcon className="size-5 mx-2" />
+            Find out more{" "}
+            <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1 text-white duration-200 transition-transform" />
           </button>
         </div>
       </div>

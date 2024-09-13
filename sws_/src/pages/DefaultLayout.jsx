@@ -12,10 +12,11 @@ const DefaultLayout = () => {
         <div className="container mx-auto dark:bg-[#435A65] bg-white">
           <NavBar />
           <NavBarTabs />
+          {/* 
+           */}
           <main className="px-10">
             <Outlet />
           </main>
-          <FindersCard background={"#E3E9ED"} />
           <Footer />
         </div>
       </div>

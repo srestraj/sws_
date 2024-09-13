@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const navLink = [
-  { id: 1, linkTitile: "Home" },
-  { id: 2, linkTitile: "Discover" },
-  { id: 3, linkTitile: "Education" },
-  { id: 4, linkTitile: "Science" },
-  { id: 5, linkTitile: "About the IAFGG" },
-  { id: 6, linkTitile: "Events" },
-  { id: 7, linkTitile: "Shop" },
+  { id: 1, linkTitile: "Home", navPath: "/" },
+  { id: 2, linkTitile: "Discover", navPath: "discover" },
+  { id: 3, linkTitile: "Education", navPath: "education" },
+  { id: 4, linkTitile: "Science", navPath: "science" },
+  { id: 5, linkTitile: "About the IAFGG", navPath: "about-us" },
+  { id: 6, linkTitile: "Events", navPath: "events" },
+  { id: 7, linkTitile: "Shop", navPath: "shop" },
 ];
 const NavBarTabs = () => {
   return (
@@ -20,9 +20,7 @@ const NavBarTabs = () => {
               className={` mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
               key={linksName.id}
             >
-              <NavLink to={linksName.linkTitile}>
-                {linksName.linkTitile}
-              </NavLink>
+              <NavLink to={linksName.navPath}>{linksName.linkTitile}</NavLink>
             </li>
           ))}
         </ul>
