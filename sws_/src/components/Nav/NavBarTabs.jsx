@@ -1,36 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 
+const navLink = [
+  { id: 1, linkTitile: "Home" },
+  { id: 2, linkTitile: "Discover" },
+  { id: 3, linkTitile: "Education" },
+  { id: 4, linkTitile: "Science" },
+  { id: 5, linkTitile: "About the IAFGG" },
+  { id: 6, linkTitile: "Shop" },
+  { id: 7, linkTitile: "Home" },
+];
 const NavBarTabs = () => {
+  const [mouseHover, setMouseHover] = useState(false);
+
+  const handleHover = (e) => {
+    e.preventDefault();
+    setMouseHover(true);
+  };
+
+  const handleLeaveHover = (e) => {
+    e.preventDefault();
+    setMouseHover(false);
+  };
+
   return (
     <>
-      <div className="w-full border-2"></div>
-
-      <div className="flex font-inter py-0 p-9">
-        <div className="flex p-2 text-sm">
-          <ul className="flex ">
-            <li className="m-2 border-t-4   border-[#2E9BB2]">
-              <a href="">Home</a>
+      <div className="flex text-sm font-inter">
+        <ul className="flex ms-10">
+          {navLink?.map((linksName) => (
+            <li
+              className={
+                mouseHover
+                  ? `mx-1 border-t-4 border-[#2E9BB2] p-2`
+                  : `mx-1 border-none p-2`
+              }
+              key={linksName.id}
+            >
+              <a
+                href=""
+                onMouseLeave={handleLeaveHover}
+                onMouseEnter={handleHover}
+              >
+                {linksName.linkTitile}
+              </a>
             </li>
-            <li className="m-2">
-              <a href="">Discover</a>
-            </li>
-            <li className="m-2">
-              <a href="">Education</a>
-            </li>
-            <li className="m-2">
-              <a href="">Science</a>
-            </li>
-            <li className="m-2">
-              <a href="">About the IAFGG</a>
-            </li>
-            <li className="m-2">
-              <a href="">Shop</a>
-            </li>
-            <li className="m-2">
-              <a href="">Home</a>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
     </>
   );

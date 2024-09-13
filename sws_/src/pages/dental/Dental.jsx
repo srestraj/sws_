@@ -21,7 +21,7 @@ const Dental = () => {
         {doctors?.map((doctor) => (
           <div className="mx-4 my-4" key={doctor.id}>
             <img src={doctor.image} alt="" className="rounded-3xl " />
-            <h3 className="text-center font-semibold text-[white] size-[6] leading-6">
+            <h3 className="text-center font-semibold text-[white] size-[6] leading-6 max-w-sm mx-auto">
               {doctor.name}
             </h3>
           </div>
