@@ -7,12 +7,16 @@ import News from "./pages/news/News";
 import Footer from "./components/footer/Footer";
 import Dental from "./pages/dental/Dental";
 import FindersCard from "./components/finders/FindersCard";
-import Logo from "./components/Logo/Logo";
+import logo from "./assets/iafgg.svg";
 
 const App = () => {
-  return (
-    <>
-      <div className="bg-black">
+  return <></>;
+};
+
+export default App;
+
+/* 
+ <div className="bg-black">
         <div className="container mx-auto dark:bg-[#435A65] bg-white">
           <NavBar />
           <NavBarTabs />
@@ -25,8 +29,5 @@ const App = () => {
           <Footer />
         </div>
       </div>
-    </>
-  );
-};
 
-export default App;
+*/

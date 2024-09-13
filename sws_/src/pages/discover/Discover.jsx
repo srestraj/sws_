@@ -72,7 +72,7 @@ const discovery = () => {
                 <div className="p-1">
                   <ArrowRightCircleIcon className="size-8" />
                 </div>
-                <li className="list-none mx-2">{innerData.listsInfo}</li>
+                <li className="list-none mx-2 underline">{innerData.listsInfo}</li>
               </div>
             ))}
             <div className="absolute bottom-0 my-2 ms-2">
