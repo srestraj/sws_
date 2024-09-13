@@ -5,7 +5,7 @@ import logoIAFGG from "../../assets/iafgg.svg";
 const NavBar = () => {
   return (
     <>
-      <div className="py-0 p-10 border-b-2">
+      <div className="my-0 py-0 p-10 border-b-2">
         <div className="flex justify-between">
           <div className="flex justify-between h-[112px] w-[1440px] items-center ">
             <div className="flex">

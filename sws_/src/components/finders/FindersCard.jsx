@@ -9,8 +9,9 @@ import transLogo from "../../assets/transparentLogo.svg";
 const FindersCard = ({ background }) => {
   if (background == "#1F323D") {
     return (
+      /* w-[1248px] */
       <div
-        className={`relative overflow-hidden h-[140px] w-[1248px] z-10 rounded-2xl mx-auto flex justify-around  items-center bg-['${background}']`}
+        className={`relative overflow-hidden h-[140px]  z-10 rounded-2xl mx-auto flex justify-around  items-center bg-['${background}']`}
       >
         <h1 className="text-white font-sans font-bold text-2xl text-start ">
           Join the International Association of <br /> Facial Growth Guidance

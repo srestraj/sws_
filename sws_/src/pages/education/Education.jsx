@@ -44,11 +44,11 @@ const discoverData = [
   },
 ];
 
-const Discover = () => {
+const Education = () => {
   return (
     <>
       <h1 className="size-[] leading-2 font-semibold text-2xl font-sans">
-        Discover
+        Education
       </h1>
       <span className="text-sm">Practical guidance about Orthotropics.</span>
 
@@ -69,4 +69,4 @@ const Discover = () => {
   );
 };
 
-export default Discover;
+export default Education;
