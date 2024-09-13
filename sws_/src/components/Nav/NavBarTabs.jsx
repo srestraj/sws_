@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const navLink = [
   { id: 1, linkTitile: "Home" },
@@ -19,7 +20,9 @@ const NavBarTabs = () => {
               className={`mx-1 hover:border-t-4 hover:border-[#2E9BB2] p-2 transition-all`}
               key={linksName.id}
             >
-              <a href="">{linksName.linkTitile}</a>
+              <NavLink to={linksName.linkTitile}>
+                {linksName.linkTitile}
+              </NavLink>
             </li>
           ))}
         </ul>

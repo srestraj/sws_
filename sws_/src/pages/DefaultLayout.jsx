@@ -29,7 +29,6 @@ export default DefaultLayout;
 /*  <div className="bg-black">
         <div className="container mx-auto dark:bg-[#435A65] bg-white">
           <NavBar />
-          <NavBarTabs />
           <HomePage />
           <Discover />
           <FindersCard background={"#1F323D"} />
