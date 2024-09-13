@@ -14,10 +14,10 @@ const NavBarTabs = () => {
   return (
     <>
       <div className="flex text-sm font-inter">
-        <ul className="flex ms-10 ">
+        <ul className="fixed flex ms-10 ">
           {navLink?.map((linksName) => (
             <li
-              className={`mx-1 hover:border-t-4 hover:border-[#2E9BB2] p-2 transition-all`}
+              className={` mx-1 hover:border-t-4 hover:border-[#2E9BB2] p-2 transition-all`}
               key={linksName.id}
             >
               <NavLink to={linksName.linkTitile}>

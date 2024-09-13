@@ -2,10 +2,7 @@ import React from "react";
 import { Navigate, Outlet, Link } from "react-router-dom";
 import NavBar from "../components/Nav/NavBar";
 import NavBarTabs from "../components/Nav/NavBarTabs";
-import HomePage from "./home/HomePage";
 import FindersCard from "../components/finders/FindersCard";
-import News from "./news/News";
-import Dental from "./dental/Dental";
 import Footer from "../components/footer/Footer";
 
 const DefaultLayout = () => {
@@ -15,9 +12,10 @@ const DefaultLayout = () => {
         <div className="container mx-auto dark:bg-[#435A65] bg-white">
           <NavBar />
           <NavBarTabs />
-          <main>
+          <main className="my-10 container px-10">
             <Outlet />
           </main>
+          <FindersCard background={"#E3E9ED"} />
           <Footer />
         </div>
       </div>
