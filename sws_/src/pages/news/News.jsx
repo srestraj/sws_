@@ -40,6 +40,7 @@ const News = () => {
         descriptions={
           "Join the International Association of Facial Growth Guidance"
         }
+       
       />
 
       <div className="relative">
