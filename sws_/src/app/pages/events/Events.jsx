@@ -1,4 +1,4 @@
-import logo from "../../assets/iafgg.svg";
+import logo from "../../../assets/iafgg.svg";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const Events = ({ heading = "Events", slug = "" }) => {

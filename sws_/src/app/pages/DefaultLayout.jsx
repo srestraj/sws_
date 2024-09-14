@@ -4,8 +4,8 @@ import NavBar from "../components/Nav/NavBar";
 import NavBarTabs from "../components/Nav/NavBarTabs";
 import FindersCard from "../components/finders/FindersCard";
 import Footer from "../components/footer/Footer";
-import Header from "../components/Nav/Header";
-import logo from "../assets/iafgg.svg";
+// import Header from "../components/Nav/Header";
+import logo from "../../assets/iafgg.svg";
 
 const DefaultLayout = () => {
   return (

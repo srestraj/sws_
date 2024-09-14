@@ -1,4 +1,4 @@
-import logo from "../assets/iafgg.svg";
+import logo from "../../assets/iafgg.svg";
 
 const NotFound = () => {
   return (

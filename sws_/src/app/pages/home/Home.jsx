@@ -3,6 +3,10 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { useSelector, useDispatch } from "react-redux";
 
 const Home = () => {
+  const data = useSelector((state) => state.banner);
+
+  console.log(data);
+
   return (
     <div className="relative h-[841px] w-[1440px] flex-col items-center justify-start font-sans z-20">
       <h1 className="absolute top-[76px] left-[24px] mt-6 text-5xl font-extrabold  text-light-black30  tracking-wider">

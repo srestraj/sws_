@@ -3,8 +3,8 @@ import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
-import darkLogo from "../../assets/innerCardlogo.svg";
-import transparentLogo from "../../assets/transparentLogo.svg";
+import darkLogo from "../../../assets/innerCardlogo.svg";
+import transparentLogo from "../../../assets/transparentLogo.svg";
 
 const FindersCard = ({ background }) => {
   if (background == "#1F323D") {

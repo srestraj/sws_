@@ -1,5 +1,5 @@
-import doctorOne from "../../assets/doctorOne.jpg";
-import doctorTwo from "../../assets/doctorTwo.jpg";
+import doctorOne from "../../../assets/doctorOne.jpg";
+import doctorTwo from "../../../assets/doctorTwo.jpg";
 
 const doctors = [
   { id: 1, name: "Dr. Victor Avis explains Orthotropics", image: doctorOne },

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/iafgg.svg";
+import logo from "../../../assets/iafgg.svg";
 
 const navLink = [
   { id: 1, linkTitile: "Home", navPath: "/", slug: "" },

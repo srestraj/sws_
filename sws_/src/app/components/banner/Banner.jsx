@@ -1,4 +1,4 @@
-import logo from "../../assets/iafgg.svg";
+import logo from "../../../assets/iafgg.svg";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const Banner = ({ heading = "Discover", slug = "lorem ,,,ncjkadnknckn" }) => {

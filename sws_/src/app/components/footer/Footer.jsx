@@ -1,8 +1,8 @@
-import logo from "../../assets/footerlogo.png";
-import facebook from "../../assets/facebook.svg";
-import linkedin from "../../assets/linkedin.svg";
-import youtube from "../../assets/youtube.svg";
-import xtweeter from "../../assets/xtweeter.svg";
+import logo from "../../../assets/footerlogo.png";
+import facebook from "../../../assets/facebook.svg";
+import linkedin from "../../../assets/linkedin.svg";
+import youtube from "../../../assets/youtube.svg";
+import xtweeter from "../../../assets/xtweeter.svg";
 
 const Footer = () => {
   return (

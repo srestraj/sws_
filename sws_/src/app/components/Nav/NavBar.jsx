@@ -1,6 +1,6 @@
 import React from "react";
 import Search from "../search/Search";
-import logoIAFGG from "../../assets/iafgg.svg";
+import logoIAFGG from "../../../assets/iafgg.svg";
 
 const NavBar = () => {
   return (

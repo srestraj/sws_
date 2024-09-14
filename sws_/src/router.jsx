@@ -1,14 +1,14 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import DefaultLayout from "./pages/DefaultLayout";
-import NotFound from "./pages/NotFound";
-import HomePage from "./pages/home/HomePage";
-import DiscoverPage from "./pages/discover/DiscoverPage";
-import SciencePage from "./pages/science/SciencePage";
-import EducationPage from "./pages/education/EducationPage";
-import EventsPage from "./pages/events/EventsPage";
-import ShopPage from "./pages/shop/ShopPage";
-import SinglePage from "./components/singlepagelayout/SinglePage";
-import AboutPage from "./pages/about/AboutPage";
+import DefaultLayout from "./app/pages/DefaultLayout";
+import NotFound from "./app/pages/NotFound";
+import HomePage from "./app/pages/home/HomePage";
+import DiscoverPage from "./app/pages/discover/DiscoverPage";
+import SciencePage from "./app/pages/science/SciencePage";
+import EducationPage from "./app/pages/education/EducationPage";
+import EventsPage from "./app/pages/events/EventsPage";
+import ShopPage from "./app/pages/shop/ShopPage";
+import SinglePage from "./app/components/singlepagelayout/SinglePage";
+import AboutPage from "./app/pages/about/AboutPage";
 
 const router = createBrowserRouter([
   {
