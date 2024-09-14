@@ -12,9 +12,7 @@ const DefaultLayout = () => {
         <div className="container mx-auto  dark:bg-[#435A65] bg-slate-300 ">
           <NavBar />
           <NavBarTabs />
-          {/*
-           */}
-          <main className="px-10">
+          <main className="px-10 ">
             <Outlet />
           </main>
           <Footer />

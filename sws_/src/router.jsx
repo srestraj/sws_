@@ -8,7 +8,7 @@ import EducationPage from "./pages/education/EducationPage";
 import EventsPage from "./pages/events/EventsPage";
 import ShopPage from "./pages/shop/ShopPage";
 import SinglePage from "./components/singlepagelayout/SinglePage";
-import About from "./pages/about/About";
+import AboutPage from "./pages/about/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 
       {
         path: "about-us",
-        element: <About />,
+        element: <AboutPage />,
       },
 
       {

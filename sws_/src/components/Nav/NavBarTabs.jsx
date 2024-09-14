@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/iafgg.svg";
 
 const navLink = [
   { id: 1, linkTitile: "Home", navPath: "/" },
@@ -13,7 +14,7 @@ const navLink = [
 const NavBarTabs = () => {
   return (
     <>
-      <div className="flex text-sm font-inter">
+      <div className="flex text-sm font-inter relative">
         <ul className="sticky flex ms-10 ">
           {navLink?.map((linksName) => (
             <li
@@ -24,6 +25,10 @@ const NavBarTabs = () => {
             </li>
           ))}
         </ul>
+
+        <div className="w-[849px] h-[881.56px] absolute top-[-120.58px] left-[967px] opacity-25">
+          <img src={logo} alt="" className=" w-3/4 -z-10" />
+        </div>
       </div>
     </>
   );

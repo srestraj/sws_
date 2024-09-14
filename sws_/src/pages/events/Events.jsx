@@ -35,9 +35,7 @@ const Events = ({ heading = "Events", slug = "" }) => {
           </h1>
           <p className="text-sm">{slug}</p>
         </div>
-        <div className="w-[849px] h-[881.56px] absolute top-[-120.58px] left-[967px] opacity-25">
-          <img src={logo} alt="" className=" w-3/4" />
-        </div>
+       
       </div>
 
       <div className="p-2 flex ">

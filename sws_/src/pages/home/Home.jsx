@@ -20,11 +20,11 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <img
+     {/*  <img
         src={logo}
         className="bg-[ #F0F3F5] opacity-10 h-[881.56px] w-[849px] absolute top-[-33.58px] left-[867px] -z-20 "
         alt=""
-      />
+      /> */}
     </div>
   );
 };

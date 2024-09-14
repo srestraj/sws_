@@ -30,7 +30,7 @@ const newsData = [
     descriptions: "All problems are a mix of genes and the environment.",
   },
   {
-    id:5,
+    id: 5,
     title: "Why are teeth crooked?",
     descriptions: "All problems are a mix of genes and the environment.",
   },
@@ -53,12 +53,14 @@ const News = () => {
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className="bg-light-white20 rounded-md mx-2 relative ps-3 pe-3 h-[308px] w-[308px] pt-8 pb-4 flex flex-col leading-6 "
+              className=" bg-light-white20 rounded-md mx-2 relative ps-3 pe-3 h-[308px] w-[308px] pt-8 pb-4 flex flex-col leading-6  "
             >
-              <h1 className="font-semibold font-sans pb-6">
+              <h1 className="font-semibold font-sans pb-6 ">
                 {latestNews.title}
               </h1>
-              <p className="font-inter ">{latestNews.descriptions}</p>
+              <p className="font-inter p-1  text-wrap ">
+                {latestNews.descriptions}
+              </p>
               <div className="absolute bottom-0 mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
                 <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
               </div>
