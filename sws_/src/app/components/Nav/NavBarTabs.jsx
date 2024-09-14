@@ -34,7 +34,7 @@ const navLink = [
 const NavBarTabs = () => {
   return (
     <>
-      <div className="flex flex-col text-sm font-inter relative">
+      <div className="flex flex-col text-sm font-inter relative ">
         <ul className="sticky flex ms-10 ">
           {navLink?.map((linksName) => (
             <div className="flex flex-col">
@@ -48,9 +48,9 @@ const NavBarTabs = () => {
           ))}
         </ul>
 
-        <div className="w-[849px] h-[881.56px] absolute top-[-120.58px] left-[967px] opacity-25">
+        {/* <div className="w-[849px] h-[881.56px] absolute top-[-120.58px] left-[1267px] opacity-25">
           <img src={logo} alt="" className=" w-3/4 -z-10" />
-        </div>
+        </div> */}
       </div>
     </>
   );
