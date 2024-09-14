@@ -1,5 +1,3 @@
-import React from "react";
-import NavBarTabs from "../Nav/NavBarTabs";
 import logo from "../../assets/footerlogo.png";
 import facebook from "../../assets/facebook.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -8,7 +6,7 @@ import xtweeter from "../../assets/xtweeter.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-[#223844] text-[white] h-[525px] flex-col relative">
+    <div className="bg-light-green40 text-light-white20 h-[525px] flex-col relative">
       <div className="flex-row justify-between">
         <div className="flex font-inter justify-between">
           <div className="flex p-3">
@@ -18,7 +16,7 @@ const Footer = () => {
               (Orthotropics®)
             </span>
           </div>
-          <div className="flex p-2 font-semibold text-sm text-[white]">
+          <div className="flex p-2 font-semibold text-sm text-light-white20">
             <ul className="flex ">
               <li className="m-2">
                 <a href="">Discover</a>
@@ -38,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full font-normal text-sm text-[white]  absolute bottom-10">
+        <div className="w-full font-normal text-sm text-light-white20  absolute bottom-10">
           <div className="justify-between flex items-end ">
             <ul className="flex justify-between">
               <li className="m-2">

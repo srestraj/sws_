@@ -34,15 +34,15 @@ const newsData = [
 const News = () => {
   return (
     <>
-      <div className="mb-3 p-10 my-10">
-        <h1 className="font-sans font-bold text-[#304E5E] text-4xl p-10 pb-0 pt-3">
+      <div className="relative mb-3 p-10 my-10">
+        <h1 className="font-sans font-bold text-light-green20 text-4xl p-10 pb-0 pt-3">
           Latest news and blogs
         </h1>
         <div className="flex rounded-2xl relative my-2">
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className="bg-[#F6F9F9] ps-10 pe-10 pt-8 pb-8 relative"
+              className="bg-light-white20 ps-10 pe-10 pt-8 pb-8 relative"
             >
               <h1 className="font-semibold font-sans">{latestNews.title}</h1>
               <p className="font-inter">{latestNews.descriptions}</p>
@@ -51,15 +51,15 @@ const News = () => {
               </div>
             </div>
           ))}
-          <div className="absolute my-3 flex  top-[90%] right-[47px]">
-            <div className="flex justify-between">
-              <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
-                <ArrowLeftIcon className="size-9 p-1 " />
-              </button>
-              <button className="border-dotted text-[#304E5E] font-medium bg-[#F6F9F9] p-2">
-                <ArrowRightIcon className="size-9 p-1" />
-              </button>
-            </div>
+        </div>
+        <div className="absolute my-3 flex top-[280px] right-[47px]">
+          <div className="flex justify-between ">
+            <button className="border-dotted text-light-green20 font-medium bg-light-white20 p-2">
+              <ArrowLeftIcon className="size-9 p-1" />
+            </button>
+            <button className="border-dotted text-light-green20 font-medium bg-light-white20 p-2">
+              <ArrowRightIcon className="size-9 p-1" />
+            </button>
           </div>
         </div>
       </div>

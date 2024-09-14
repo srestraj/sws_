@@ -15,6 +15,7 @@ const data = [
       { id: 4, listsInfo: "Orthotropics for the public" },
       { id: 5, listsInfo: "Find an Orthotropics expert" },
     ],
+    visitLink: "More guidance on Orthotropics",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const data = [
       { id: 4, listsInfo: "Books and literature on Orthotropics" },
       { id: 5, listsInfo: "Useful links on orthotropics" },
     ],
+    visitLink: "More resources on Orthotropics",
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const data = [
       { id: 4, listsInfo: "Research projects" },
       { id: 5, listsInfo: "Case studies" },
     ],
+    visitLink: "More scince on Orthotropics",
   },
   {
     id: 4,
@@ -50,20 +53,21 @@ const data = [
       { id: 3, listsInfo: "Latest news and blogs" },
       { id: 4, listsInfo: "Contact the IAFGG" },
     ],
+    visitLink: "More about the IAFGG",
   },
 ];
 const HomeBody = () => {
   return (
-    <div className="grid grid-cols-2 text-[#237688] gap-10 w-ful ">
+    <div className="grid grid-cols-2 text-light-green30 gap-10 w-ful ">
       {data.map((datass) => (
         <div
           className="relative flex flex-col text-start p-7 rounded-3xl"
           key={datass.id}
         >
-          <h1 className="text-4xl font-medium text-black py-2">
+          <h1 className="text-4xl font-medium text-light-black30 py-2">
             {datass.topic}
           </h1>
-          <span className="text-black py-1">{datass.slug}</span>
+          <span className="text-light-black30 py-1">{datass.slug}</span>
 
           <div className="py-6 ps-2 leading-10">
             {datass.inn.map((innerData) => (
@@ -71,8 +75,8 @@ const HomeBody = () => {
                 className="flex font-bold leading-10 p-1 "
                 key={innerData.id}
               >
-                <div className=" bg-[#237688] flex justify-center items-center rounded-full size-8 p-1 text-white">
-                  <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
+                <div className=" bg-light-green30 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">
+                  <ArrowRightIcon className=" hover:translate-x-1 text-light-white10 duration-200 transition-transform" />
                 </div>
                 <li className="list-none mx-2 underline">
                   {innerData.listsInfo}
@@ -81,10 +85,10 @@ const HomeBody = () => {
             ))}
           </div>
           <div className="absolute bottom-0  ms-2">
-            <a href="" className="text-sm underline text-[#000] flex">
-              More scince on Orthotropics
+            <a href="" className="text-sm underline text-light-black30 flex">
+              {datass.visitLink}
               <div className="flex justify-center items-center rounded-full size-6 p-1 ms-1">
-                <ArrowRightIcon className="hover:translate-x-1 text-black duration-200 transition-transform" />
+                <ArrowRightIcon className="hover:translate-x-1 text-light-black30 duration-200 transition-transform" />
               </div>
             </a>
           </div>

@@ -60,8 +60,8 @@ const Discover = () => {
           <NavLink to={"/"}>
             <div className="p-3" key={discover.id}>
               <div className="p-2 flex justify-start">
-                <div className="bg-[#D9D9D9] flex justify-center items-center rounded-full size-8 p-1 text-white">
-                  <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
+                <div className="bg-light-green10 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">
+                  <ArrowRightIcon className=" hover:translate-x-1 text-light-white10 duration-200 transition-transform" />
                 </div>
                 <h1 className="ms-1 text-xl font-semibold">{discover.title}</h1>
               </div>
