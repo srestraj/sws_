@@ -58,13 +58,15 @@ const Education = () => {
       <div className="p-2 grid-cols-2 grid font-sans">
         {discoverData?.map((discover) => (
           <div className="p-3" key={discover.id}>
-            <div className="p-2 flex justify-start">
+            <div className="p-2 flex justify-start  items-center">
               <div className="bg-[#D9D9D9] flex justify-center items-center rounded-full size-8 p-1 text-white">
                 <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
               </div>
-              <h1 className="ms-1 text-xl font-semibold">{discover.title}</h1>
+              <h1 className="ms-3 text-xl font-semibold leading-10">
+                {discover.title}
+              </h1>
             </div>
-            <h1 className="p-1">{discover.descriptions}</h1>
+            <h1 className="p-1 max-w-4xl mx-4">{discover.descriptions}</h1>
           </div>
         ))}
       </div>

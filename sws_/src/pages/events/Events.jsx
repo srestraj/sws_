@@ -41,7 +41,7 @@ const Events = ({ heading = "Events", slug = "" }) => {
       </div>
 
       <div className="p-2 flex ">
-        <button className="text-sm rounded-md border border-black text-center px-2 py-1 mx-2 hover:text-white font-bold hover:bg-[#237688]">
+        <button className="text-sm rounded-md border border-black text-center px-2 py-1 mx-2 hover:text-white font-bold hover:bg-light-green40">
           Today
         </button>
         <h1 className="mx-2 font-semibold text-xl font-sans">Upcoming</h1>

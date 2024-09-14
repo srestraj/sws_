@@ -29,35 +29,48 @@ const newsData = [
     title: "Why are teeth crooked?",
     descriptions: "All problems are a mix of genes and the environment.",
   },
+  {
+    id:5,
+    title: "Why are teeth crooked?",
+    descriptions: "All problems are a mix of genes and the environment.",
+  },
+  {
+    id: 6,
+    title: "Why are teeth crooked?",
+    descriptions: "All problems are a mix of genes and the environment.",
+  },
 ];
 
 const News = () => {
   return (
     <>
-      <div className="relative mb-3 p-10 my-10">
-        <h1 className="font-sans font-bold text-light-green20 text-4xl p-10 pb-0 pt-3">
+      <div className="relative h-[696px] flex flex-col justify-center items-center overflow-hidden">
+        <h1 className="font-sans font-bold text-light-green20 text-4xl absolute top-[96px] left-[96px] leading-4">
           Latest news and blogs
         </h1>
-        <div className="flex rounded-2xl relative my-2">
+        {/* <div className="text-light-grey20">view all</div> */}
+        <div className="flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden whitespace-nowrap w-[90%]">
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className="bg-light-white20 ps-10 pe-10 pt-8 pb-8 relative"
+              className="bg-light-white20 rounded-md mx-2 relative ps-3 pe-3 h-[308px] w-[308px] pt-8 pb-4 flex flex-col leading-6 "
             >
-              <h1 className="font-semibold font-sans">{latestNews.title}</h1>
-              <p className="font-inter">{latestNews.descriptions}</p>
-              <div className="absolute bottom-0  bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
+              <h1 className="font-semibold font-sans pb-6">
+                {latestNews.title}
+              </h1>
+              <p className="font-inter ">{latestNews.descriptions}</p>
+              <div className="absolute bottom-0 mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
                 <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
               </div>
             </div>
           ))}
         </div>
-        <div className="absolute my-3 flex top-[280px] right-[47px]">
+        <div className="flex justify-end absolute top-[560px] left-[1304px]">
           <div className="flex justify-between ">
-            <button className="border-dotted text-light-green20 font-medium bg-light-white20 p-2">
+            <button className="border-dotted text-light-green20 font-medium rounded-full bg-light-white20 bg-opacity-70 mx-1 p-2">
               <ArrowLeftIcon className="size-9 p-1" />
             </button>
-            <button className="border-dotted text-light-green20 font-medium bg-light-white20 p-2">
+            <button className="border-dotted text-light-green20 font-medium rounded-full bg-light-white20 bg-opacity-70 mx-1 p-2">
               <ArrowRightIcon className="size-9 p-1" />
             </button>
           </div>
