@@ -2,46 +2,10 @@ import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
-
-const newsData = [
-  {
-    id: 1,
-    title: "Thinking Beyond the Teeth",
-    descriptions:
-      "Orthotropics represents a new way of looking at crooked teeth.",
-  },
-
-  {
-    id: 2,
-    title: "Treatment Through Research , Evidence and Reasoning",
-    descriptions: "The current state of orthodontic evidence",
-  },
-
-  {
-    id: 3,
-    title: "Healthy face healthy life",
-    descriptions:
-      "Attractiveness has become a double-edged sword in the skin deep modern society.",
-  },
-
-  {
-    id: 4,
-    title: "Why are teeth crooked?",
-    descriptions: "All problems are a mix of genes and the environment.",
-  },
-  {
-    id: 5,
-    title: "Why are teeth crooked?",
-    descriptions: "All problems are a mix of genes and the environment.",
-  },
-  {
-    id: 6,
-    title: "Why are teeth crooked?",
-    descriptions: "All problems are a mix of genes and the environment.",
-  },
-];
+import { useSelector } from "react-redux";
 
 const News = () => {
+  const newsData = useSelector((state) => state.newsfeed);
   return (
     <>
       <div className="relative h-[696px] flex flex-col justify-center items-center overflow-hidden">
