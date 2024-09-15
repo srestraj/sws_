@@ -18,10 +18,10 @@ export default {
           green20: "#304E5E",
           green30: "#237688",
           green40: "#223844",
+          grey10: "#D9D9D9",
           grey20: "#435A65",
           black30: "#1F323D",
           yellow20: "#D3F375",
-          // yellow30:"#D3F375"
         },
         dark: {
           primary: "black",

@@ -16,7 +16,7 @@ const DefaultLayout = () => {
           alt=""
           className=" w-[849px] h-[481.56px] absolute top-[-10.58px] left-[1267px] opacity-45 z-10"
         /> */}
-        <div className="dark:bg-[#435A65] bg-slate-300  mx-auto px-[300px] m-0 py-2 relative">
+        <div className="dark:bg-light-grey20 bg-light-white20 text-light-green20   mx-auto px-[300px] m-0 py-2 relative">
           <NavBar />
           <hr />
           <NavBarTabs />
