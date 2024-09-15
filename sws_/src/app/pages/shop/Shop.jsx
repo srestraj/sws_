@@ -13,7 +13,7 @@ const Shop = () => {
   return (
     <>
       <HeadBanner headingsTitle={"Shop"} headingSlug={""} />
-      <div className="grid grid-cols-4 gap-2 rounded-md py-10">
+      <div className="grid grid-cols-4 gap-2 rounded-md ">
         {shopData?.map((shopping) => (
           <div
             className="flex flex-col rounded-md  bg-light-white10  relative"
@@ -26,21 +26,21 @@ const Shop = () => {
                 className="scale-90 hover:scale-110 w-full"
               />
             </div>
-            <h1 className="text-light-green40 font-bold px-1 leading-tight	">
+            <h1 className="text-light-green40 font-bold px-1 leading-tight">
               {shopping.title}
             </h1>
             <h4 className="text-black p-1">
               {shopping.price && `£ ` + shopping.price}
             </h4>
-            <div className="pt-1 ps-2">
+            <div className="pt-1 ps-1">
               <h4 className="text-sm font-bold text-light-green20">
                 shipping Info
               </h4>
-              <div className="ps-2 pt-2">
+              <div className="ps-1 pt-1">
                 <select
                   name=""
                   id=""
-                  className="border px-1 py-2 flex justify-center items-center ms-3 mt-2 rounded-sm bg-light-white10 ring-1"
+                  className="border px-1 py-1 flex justify-center items-center ms-3 rounded-sm bg-light-white10 ring-1"
                 >
                   <option value="">{"Within the EU"}</option>
                   <option value="">{"Outside the EU"}</option>
@@ -51,7 +51,7 @@ const Shop = () => {
               <select
                 name=""
                 id=""
-                className="border px-1 py-2 flex justify-center items-center ms-3 mt-2 rounded-sm bg-light-white10 ring-1"
+                className="border px-1 py-1 flex justify-center items-center ms-3  rounded-sm bg-light-white10 ring-1"
               >
                 <option value="">{"Mini"}</option>
                 <option value="">{"Small with Handel"}</option>
@@ -59,7 +59,7 @@ const Shop = () => {
             </div>
             <button
               onClick={() => dispatch(shopNow(shopping.id))}
-              className="my-3 bg-light-green20 text-sm text-light-white10 rounded-sm flex items-center text-center justify-center py-2 hover:bg-light-green40 scale-90 hover:scale-100"
+              className="sticky bottom-0 my-3 bg-light-green20 text-sm text-light-white10 rounded-sm flex items-center text-center justify-center py-2 hover:bg-light-green40 scale-95 hover:scale-100"
             >
               <NavLink to={`shop/${shopping.id}`}>Buy Now</NavLink>
             </button>

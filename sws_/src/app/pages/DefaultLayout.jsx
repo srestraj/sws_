@@ -8,7 +8,7 @@ const DefaultLayout = () => {
   return (
     <>
       <div className="bg-black p-0 m-0 overflow-hidden relative">
-        <section className="dark:bg-light-grey20 bg-light-white20 text-light-green20   mx-auto px-[300px] m-0 py-2 relative">
+        <section className="dark:bg-light-grey20 bg-light-white20 text-light-green20 mx-auto px-[200px] m-0 py-2 relative">
           <NavBar />
           <hr />
           <NavBarTabs />
