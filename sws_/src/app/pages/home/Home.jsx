@@ -6,7 +6,6 @@ import PillButton from "../../components/button/PillButton";
 const Home = () => {
   const data = useSelector((state) => state.banner);
 
-  // console.log(data);
 
   return (
     <div className="relative h-[841px] w-[1440px] flex-col items-center justify-start font-sans z-20 ">

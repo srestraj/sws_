@@ -2,10 +2,22 @@ import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 
 const News = () => {
   const newsData = useSelector((state) => state.newsfeed);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const containerRef = useRef();
+
+  const handleScroll = (scrollAmount) => {
+    const newScrollPosition = scrollPosition + scrollAmount;
+    setScrollPosition(newScrollPosition);
+    containerRef.current.scrollLeft = newScrollPosition;
+  };
+
   return (
     <>
       <div className="relative h-[696px] flex flex-col justify-center items-center overflow-hidden">
@@ -13,7 +25,15 @@ const News = () => {
           Latest news and blogs
         </h1>
         {/* <div className="text-light-grey20">view all</div> */}
-        <div className="flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden whitespace-nowrap w-[90%]">
+        <div
+          style={{
+            width: "900px",
+            overflowX: "scroll",
+            scrollBehavior: "smooth",
+          }}
+          ref={containerRef}
+          className={`  flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden whitespace-nowrap w-[90%]`}
+        >
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
@@ -22,7 +42,7 @@ const News = () => {
               <h1 className="font-semibold font-sans pb-6 ">
                 {latestNews.title}
               </h1>
-              <p className="font-inter p-1  text-wrap ">
+              <p className="font-inter p-1 text-wrap ">
                 {latestNews.descriptions}
               </p>
               <div className="absolute bottom-0 mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
@@ -31,13 +51,19 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-end absolute top-[560px] left-[1304px]">
+        <div className="flex justify-end absolute top-[580px] left-[1004px]">
           <div className="flex justify-between ">
-            <button className="border-dotted text-light-green20 font-medium rounded-full bg-light-white20 bg-opacity-70 mx-1 p-2">
-              <ArrowLeftIcon className="size-9 p-1" />
+            <button
+              onClick={() => handleScroll(-200)}
+              className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
+            >
+              <ArrowLeftIcon className="size-8 p-1" />
             </button>
-            <button className="border-dotted text-light-green20 font-medium rounded-full bg-light-white20 bg-opacity-70 mx-1 p-2">
-              <ArrowRightIcon className="size-9 p-1" />
+            <button
+              onClick={() => handleScroll(200)}
+              className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
+            >
+              <ArrowRightIcon className="size-8  p-1" />
             </button>
           </div>
         </div>

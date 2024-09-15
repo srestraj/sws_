@@ -11,7 +11,6 @@ const Science = () => {
   const dispatch = useDispatch();
 
   const handleRedirect = (sendTo) => {
-    // <Navigate to={"/"} />;
 
     dispatch(scienceSinglePage(sendTo));
   };

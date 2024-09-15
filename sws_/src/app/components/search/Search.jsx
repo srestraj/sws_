@@ -26,7 +26,7 @@ const Search = () => {
 
   handleFinder();
 
-  console.log(result.map(dd=>dd));
+  // console.log(result.map(dd=>dd));
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex w-[378px] h-[48px] mt-4 p-2">
