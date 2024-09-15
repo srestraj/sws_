@@ -4,6 +4,7 @@ import imgesNotFound from "../../../assets/react.svg";
 
 import { useSelector, useDispatch } from "react-redux";
 import { shopNow } from "../../features/shop/shopSlice.js";
+import { NavLink } from "react-router-dom";
 const Shop = () => {
   const shopData = useSelector((state) => state.shop);
 
@@ -40,12 +41,11 @@ const Shop = () => {
             <div className="px-1 py-3">
               <h4 className="text-sm font-bold text-light-green20">Sizes</h4>
             </div>
-
             <button
               onClick={() => dispatch(shopNow(shopping.id))}
               className=" bg-light-green20 text-sm text-light-white10 rounded-sm flex items-center text-center justify-center py-2 hover:bg-light-green40 scale-90 hover:scale-100"
             >
-              Buy Now
+              <NavLink to={`shop/${shopping.id}`}>Buy Now</NavLink>
             </button>
           </div>
         ))}

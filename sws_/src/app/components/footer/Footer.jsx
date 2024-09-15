@@ -24,19 +24,19 @@ const Footer = () => {
             <div className="flex p-2 font-semibold text-sm text-light-white20">
               <ul className="flex ">
                 <li className="m-2">
-                  <a href="">Discover</a>
+                  <NavLink to={"discover"}>Discover</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Education</a>
+                  <NavLink to={"education"}>Education</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Science</a>
+                  <NavLink to={"science"}>Science</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">About the IAFGG</a>
+                  <NavLink to={"about-us"}>About the IAFGG</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Shop</a>
+                  <NavLink to={"shop"}>Shop</NavLink>
                 </li>
               </ul>
             </div>
@@ -45,16 +45,16 @@ const Footer = () => {
             <div className="justify-between flex items-end ">
               <ul className="flex justify-between">
                 <li className="m-2">
-                  <a href="">Contact us</a>
+                  <NavLink to={"discover"}>Contact us</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Privacy notice</a>
+                  <NavLink to={"discover"}>Privacy notice</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Cookies</a>
+                  <NavLink to={"discover"}>Cookies</NavLink>
                 </li>
                 <li className="m-2">
-                  <a href="">Disclaimer</a>
+                  <NavLink to={"discover"}>Disclaimer</NavLink>
                 </li>
               </ul>
               <div className="flex flex-col font-normal">
@@ -63,10 +63,10 @@ const Footer = () => {
                 </h1>
                 <div className="order-1">
                   <div className="flex">
-                    <img className="m-1 h-10" src={facebook} alt="" />
-                    <img className="m-1 h-10" src={xtweeter} alt="" />
-                    <img className="m-1 h-10" src={youtube} alt="" />
-                    <img className="m-1 h-10" src={linkedin} alt="" />
+                    <img className="m-1 h-10" src={facebook} alt="facebook_" />
+                    <img className="m-1 h-10" src={xtweeter} alt="xtweeter_" />
+                    <img className="m-1 h-10" src={youtube} alt="youtube_" />
+                    <img className="m-1 h-10" src={linkedin} alt="linkedin_" />
                   </div>
                 </div>
               </div>

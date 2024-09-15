@@ -45,12 +45,12 @@ export const scienceSlice = createSlice({
   name: "science",
   initialState,
   reducers: {
-    scienceSlinglePage: (state, actions) => {
+    scienceSinglePage: (state, actions) => {
       console.log(" Go to this page", actions.payload);
     },
   },
 });
 
-export const { scienceSlinglePage } = scienceSlice.actions;
+export const { scienceSinglePage } = scienceSlice.actions;
 
 export default scienceSlice.reducer;

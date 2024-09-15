@@ -1,13 +1,55 @@
-import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
 
 const Search = () => {
+  const [result, setResult] = useState([]);
+  const [textSearch, setTextSearch] = useState({ searching: "" });
+
+  const handelChnage = (e) => {
+    const { name, value } = e.target;
+
+    setTextSearch({
+      ...textSearch,
+      [name]: value,
+    });
+
+    // logics...
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setResult([...result, textSearch]);
+    setTextSearch({ searching: "" });
+  };
+
+  const handleFinder = () => {};
+
+  handleFinder();
+
+  console.log(result.map(dd=>dd));
   return (
-    <div className="flex w-[378px] h-[48px] mt-4 p-2" >
-      <input type="text" className="px-2 m-0 focus:outline-none " />
-      <button className="">
-        <MagnifyingGlassIcon className="size-8 bg-[#237688] text-[white]" />
-      </button>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <div className="flex w-[378px] h-[48px] mt-4 p-2">
+        <div className="relative ">
+          <input
+            name="searching"
+            value={textSearch.searching}
+            onChange={handelChnage}
+            type="text"
+            className="px-2 m-0 focus:outline-none z-20 bg-lime-200 p-1"
+          />
+          <div
+            className={`absolute top-1 right-0 flex justify-center items-center `}
+          >
+            <XMarkIcon className="size-6" />
+          </div>
+        </div>
+
+        <button className=" z-20 flex items-center justify-center">
+          <MagnifyingGlassIcon className="size-8 bg-[#237688] text-[white]" />
+        </button>
+      </div>
+    </form>
   );
 };
 

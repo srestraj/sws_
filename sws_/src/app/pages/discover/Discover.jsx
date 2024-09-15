@@ -15,7 +15,7 @@ const Discover = () => {
       />
       <div className="p-2 grid-cols-2 grid font-sans">
         {discoverData?.map((discover) => (
-          <NavLink to={""}>
+          <NavLink to={`/discover/${discover.id}`}>
             <div className="p-3" key={discover.id}>
               <div className="p-2 flex justify-start  items-center">
                 <div className="bg-light-grey10 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">

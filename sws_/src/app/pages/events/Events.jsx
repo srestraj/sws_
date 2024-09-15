@@ -78,7 +78,7 @@ const Events = () => {
 
       <div className="py-3 bg-white pb-10">
         {datas?.map((data) => (
-          <div className="relative">
+          <div className="relative" key={data.id}>
             <div className="flex items-center">
               <h1 className=" text-sm me-3 p-3 text-nowrap">{data.months}</h1>
               <div className="border border-light-black30 w-[88%]"></div>
