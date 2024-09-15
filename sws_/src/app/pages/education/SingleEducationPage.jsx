@@ -1,8 +1,14 @@
-import React from 'react'
+import HeadBanner from '../../components/heading/HeadBanner'
 
 const SingleEducationPage = () => {
   return (
-    <div>SingleEducationPage</div>
+    <>
+    <HeadBanner
+      headingsTitle={"Education Single Page"}
+      headingSlug={"Practical guidance about Orthotropics."}
+    />
+    <div></div>
+  </>
   )
 }
 

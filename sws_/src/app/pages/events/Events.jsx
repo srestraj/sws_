@@ -60,7 +60,7 @@ const Events = () => {
 
       <HeadBanner headingsTitle={"Events"} headingSlug={""} />
 
-      <div className="flex bg-light-white10 p-10">
+      <div className="flex bg-light-white10 py-10">
         <button className="text-sm rounded-md border border-black text-center px-2 py-1 mx-2 hover:text-white font-bold hover:bg-light-green40">
           Today
         </button>

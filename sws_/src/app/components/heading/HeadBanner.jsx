@@ -8,7 +8,6 @@ const HeadBanner = ({ headingsTitle, headingSlug }) => {
         {headingsTitle}
       </h1>
       <span className="text-sm">{headingSlug}</span>
-
       <img
         src={logo}
         alt="logo_"

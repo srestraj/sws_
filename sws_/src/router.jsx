@@ -14,6 +14,7 @@ import SingeAboutPage from "./app/pages/about/SingleAboutPage";
 import SingleScienePage from "./app/pages/science/SingleScienePage";
 import SingleEducationPage from "./app/pages/education/SingleEducationPage";
 import SingleDiscoverPage from "./app/pages/discover/SingleDiscoverPage";
+import SearchErrorPage from "./app/components/search/SearchErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -73,8 +74,8 @@ const router = createBrowserRouter([
         element: <SingleShopPage />,
       },
       {
-        path: "single",
-        element: <SinglePage />,
+        path: "search-error",
+        element: <SearchErrorPage />,
       },
     ],
   },

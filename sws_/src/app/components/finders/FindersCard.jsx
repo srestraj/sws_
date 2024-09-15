@@ -1,8 +1,3 @@
-import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
-
 import darkLogo from "../../../assets/innerCardlogo.svg";
 import transparentLogo from "../../../assets/transparentLogo.svg";
 import PillButton from "../button/PillButton";

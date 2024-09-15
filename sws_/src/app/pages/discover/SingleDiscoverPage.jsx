@@ -1,9 +1,15 @@
-import React from 'react'
+import HeadBanner from "../../components/heading/HeadBanner";
 
 const SingleDiscoverPage = () => {
   return (
-    <div>SingleDiscoverPage</div>
-  )
-}
+    <>
+      <HeadBanner
+        headingsTitle={"Discover Single Page"}
+        headingSlug={"Practical guidance about Orthotropics."}
+      />
+      <div></div>
+    </>
+  );
+};
 
-export default SingleDiscoverPage
+export default SingleDiscoverPage;

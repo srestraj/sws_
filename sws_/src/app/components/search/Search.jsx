@@ -1,9 +1,11 @@
 import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Search = () => {
   const [result, setResult] = useState([]);
   const [textSearch, setTextSearch] = useState({ searching: "" });
+  const navigate = useNavigate();
 
   const handelChnage = (e) => {
     const { name, value } = e.target;
@@ -20,11 +22,12 @@ const Search = () => {
     e.preventDefault();
     setResult([...result, textSearch]);
     setTextSearch({ searching: "" });
+    navigate("/search-error");
   };
 
-  const handleFinder = () => {};
-
-  handleFinder();
+  const handleFinder = () => {
+    // Navigate("/search-error");
+  };
 
   // console.log(result.map(dd=>dd));
   return (

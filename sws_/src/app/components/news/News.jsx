@@ -11,6 +11,7 @@ const News = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const containerRef = useRef();
+  /* we are use useRef, useRef to manipulate virtual DOM elements in React */
 
   const handleScroll = (scrollAmount) => {
     const newScrollPosition = scrollPosition + scrollAmount;

@@ -1,9 +1,15 @@
-import React from 'react'
+import HeadBanner from "../../components/heading/HeadBanner";
 
 const SingleScienePage = () => {
   return (
-    <div>SingleScienePage</div>
-  )
-}
+    <>
+      <HeadBanner
+        headingsTitle={"Event Single Page"}
+        headingSlug={"Practical guidance about Orthotropics."}
+      />
+      <div></div>
+    </>
+  );
+};
 
-export default SingleScienePage
+export default SingleScienePage;

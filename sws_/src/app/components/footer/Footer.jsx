@@ -20,7 +20,6 @@ const Footer = () => {
                 </span>
               </div>
             </NavLink>
-
             <div className="flex p-2 font-semibold text-sm text-light-white20">
               <ul className="flex ">
                 <li className="m-2">

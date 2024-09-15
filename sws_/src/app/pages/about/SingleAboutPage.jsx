@@ -1,9 +1,15 @@
-import React from 'react'
+import HeadBanner from "../../components/heading/HeadBanner";
 
 const SingleAboutPage = () => {
   return (
-    <div>SingleAboutPage</div>
-  )
-}
+    <>
+      <HeadBanner
+        headingsTitle={"About the IAFGG"}
+        headingSlug={"Practical guidance about Orthotropics."}
+      />
+      <div></div>
+    </>
+  );
+};
 
-export default SingleAboutPage
+export default SingleAboutPage;
