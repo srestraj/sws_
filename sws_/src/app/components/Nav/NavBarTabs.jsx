@@ -37,7 +37,7 @@ const NavBarTabs = () => {
       <div className="flex flex-col text-sm font-inter relative ">
         <ul className="sticky flex ms-10 ">
           {navLink?.map((linksName) => (
-            <div className="flex flex-col">
+            <div className="flex flex-col" key={linksName.id}>
               <li
                 className={` mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
                 key={linksName.id}

@@ -12,12 +12,12 @@ const doctors = [
 
 const Dental = () => {
   return (
-    <div className="bg-[#304E5E] h-[711px] ">
+    <div className="bg-[#304E5E]  ">
       <p className="text-[white] text-center text-2xl font-semibold my-2 leading-6">
         Dental practitioners on Orthotropics
       </p>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center h-[208px]">
         {doctors?.map((doctor) => (
           <div className="mx-4 my-4" key={doctor.id}>
             <img src={doctor.image} alt="" className="rounded-3xl " />

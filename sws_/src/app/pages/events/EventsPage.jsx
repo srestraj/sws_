@@ -4,11 +4,9 @@ import Events from "./Events";
 
 const EventsPage = () => {
   return (
-    <div>
-      {/* <MainBanner /> */}
-
+    <>
       <Events />
-    </div>
+    </>
   );
 };
 

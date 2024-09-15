@@ -11,14 +11,16 @@ const DefaultLayout = () => {
   return (
     <>
       <div className="bg-black p-0 m-0 overflow-hidden relative">
-        <section className="w-[849px] h-[881.56px] absolute top-[-10.58px] left-[1067px] opacity-45">
-          <img src={logo} alt="" className=" w-3/4 -z-10" />
-        </section>
-        <div className="dark:bg-[#435A65] bg-slate-300  mx-auto px-[200px] m-0 py-2">
+        {/* <img
+          src={logo}
+          alt=""
+          className=" w-[849px] h-[481.56px] absolute top-[-10.58px] left-[1267px] opacity-45 z-10"
+        /> */}
+        <div className="dark:bg-[#435A65] bg-slate-300  mx-auto px-[300px] m-0 py-2 relative">
           <NavBar />
           <hr />
           <NavBarTabs />
-          <main className="px-10">
+          <main className="px-10 ">
             {/* <Header /> */}
             <Outlet />
           </main>

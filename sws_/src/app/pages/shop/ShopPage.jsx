@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HeadBanner from "../../components/heading/HeadBanner";
 
 const ShopPage = () => {
   return (
-    <div>ShopPage</div>
-  )
-}
+    <>
+      <HeadBanner headingsTitle={"Shop"} headingSlug={""} />
+    </>
+  );
+};
 
-export default ShopPage
+export default ShopPage;

@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import FindersCard from "../../components/finders/FindersCard";
+import HeadBanner from "../../components/heading/HeadBanner";
 
 const discoverData = [
   {
@@ -48,12 +49,10 @@ const discoverData = [
 const Education = () => {
   return (
     <>
-      <div className="p-3 py-1">
-        <h1 className="leading-2 font-semibold text-2xl font-sans">
-          Education
-        </h1>
-        <span className="text-sm">Practical guidance about Orthotropics.</span>
-      </div>
+      <HeadBanner
+        headingsTitle={"Education"}
+        headingSlug={"Practical guidance about Orthotropics."}
+      />
 
       <div className="p-2 grid-cols-2 grid font-sans">
         {discoverData?.map((discover) => (
