@@ -14,7 +14,7 @@ const Home = () => {
         The International Association <br />
         of Facial Growth Guidence <br /> (Orthotropics<sup>&reg;</sup>)
       </h1>
-      <div className="relative flex flex-col w-[515px] h-[176px] top-[378px] left-[261px] font-inter">
+      <div className="relative flex flex-col w-[515px] h-[176px] top-[578px] left-[561px] font-inter">
         <div className="relative">
           <p className="leading-8">
             The IAFGG represents all those clinicians and technicians who

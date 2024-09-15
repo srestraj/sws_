@@ -60,7 +60,7 @@ const Events = () => {
 
       <HeadBanner headingsTitle={"Events"} headingSlug={""} />
 
-      <div className="flex bg-light-white10">
+      <div className="flex bg-light-white10 p-10">
         <button className="text-sm rounded-md border border-black text-center px-2 py-1 mx-2 hover:text-white font-bold hover:bg-light-green40">
           Today
         </button>
@@ -76,19 +76,22 @@ const Events = () => {
         */}
       </div>
 
-      <div className="py-3 bg-white ">
+      <div className="py-3 bg-white pb-10">
         {datas?.map((data) => (
           <div className="relative">
             <div className="flex items-center">
               <h1 className=" text-sm me-3 p-3 text-nowrap">{data.months}</h1>
-              <div className="border border-light-black30 w-full"></div>
+              <div className="border border-light-black30 w-[88%]"></div>
             </div>
 
             <div className=" flex">
-              <h1 className="mx-3">{formattedDay}</h1>
+              <div className="text-center p-2">
+                <h5 className="mx-3 text-sm">{formattedDay} </h5>
+                <h2 className="font-bold text-xl">{12}</h2>
+              </div>
 
               <div className="flex flex-col">
-                <h2>
+                <h2 className="text-sm">
                   {formattedDateTime} - {formattedDateTime}
                 </h2>
                 <div className="flex">

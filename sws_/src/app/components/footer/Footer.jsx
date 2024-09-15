@@ -3,6 +3,7 @@ import facebook from "../../../assets/facebook.svg";
 import linkedin from "../../../assets/linkedin.svg";
 import youtube from "../../../assets/youtube.svg";
 import xtweeter from "../../../assets/xtweeter.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,13 +11,16 @@ const Footer = () => {
       <div className=" h-[525px] flex-col relative">
         <div className="flex-row justify-between ">
           <div className="flex font-inter justify-between">
-            <div className="flex p-3">
-              <img src={logo} className="h-10 " alt="footerlogo" />
-              <span className="font-bold tracking-tighter text-sm mx-3">
-                The International Association of Facial <br /> Growth Guidance
-                (Orthotropics®)
-              </span>
-            </div>
+            <NavLink to={"/"}>
+              <div className="flex p-3">
+                <img src={logo} className="h-10 " alt="footerlogo" />
+                <span className="font-bold tracking-tighter text-sm mx-3">
+                  The International Association of Facial <br /> Growth Guidance
+                  (Orthotropics®)
+                </span>
+              </div>
+            </NavLink>
+
             <div className="flex p-2 font-semibold text-sm text-light-white20">
               <ul className="flex ">
                 <li className="m-2">

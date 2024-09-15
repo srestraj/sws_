@@ -1,10 +1,10 @@
 import React from "react";
-import HeadBanner from "../../components/heading/HeadBanner";
+import Shop from "./Shop";
 
 const ShopPage = () => {
   return (
     <>
-      <HeadBanner headingsTitle={"Shop"} headingSlug={""} />
+    <Shop/>
     </>
   );
 };
