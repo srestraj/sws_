@@ -5,6 +5,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 import darkLogo from "../../../assets/innerCardlogo.svg";
 import transparentLogo from "../../../assets/transparentLogo.svg";
+import PillButton from "../button/PillButton";
 
 const FindersCard = ({ background }) => {
   if (background == "#1F323D") {
@@ -16,10 +17,10 @@ const FindersCard = ({ background }) => {
           Join the International Association of <br /> Facial Growth Guidance
         </h1>
         <div>
-          <button className="rounded-full  ps-3 items-center py-1 text-center flex justify-center bg-light-yellow20 font-inter">
-            Become a member
-            <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1  duration-200 transition-transform" />
-          </button>
+          <PillButton
+            title={"Become a member"}
+            backgroundColor={"bg-light-yellow20"}
+          />
         </div>
         <img
           src={darkLogo}
@@ -39,12 +40,10 @@ const FindersCard = ({ background }) => {
           <h1 className="ms-10 text-light-grey20 font-sans font-bold text-2xl text-start ">
             Find an Orthotropics practitioner <br /> near you
           </h1>
-          <div>
-            <button className="rounded-full ps-3 items-center py-1 text-center flex justify-center bg-light-yellow20 font-inter">
-              Find a practitioner
-              <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1  duration-200 transition-transform" />
-            </button>
-          </div>
+          <PillButton
+            title={"Find a practitioner"}
+            backgroundColor={"bg-light-yellow20"}
+          />
           <img
             src={transparentLogo}
             alt=""
