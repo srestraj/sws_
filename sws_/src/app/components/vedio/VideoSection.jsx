@@ -16,7 +16,7 @@ const VideoSection = () => {
       <h1 className="text-wide text-[white] text-center text-3xl p-3 font-semibold">
         Dental practitioners on Orthotropics
       </h1>
-      <div className="flex justify-center">
+      <div className="flex  lg:flex-row justify-center flex-col">
         {doctors?.map((doctor) => (
           <div className="mx-4 " key={doctor.id}>
             <img src={doctor.image} alt="doctor_" className="rounded-3xl " />

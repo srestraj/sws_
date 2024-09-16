@@ -12,13 +12,12 @@ const Home = () => {
         The International <br /> Association of Facial Growth <br /> Guidence
         (Orthotropics<sup>&reg;</sup>)
       </h1>
-      <div className="relative flex flex-col w-[515px] h-[176px] top-[78px] md:left-[120px] lg:left-[861px] font-inter">
+      <div className="relative flex flex-col w-[515px] h-[176px] top-[78px] md:left-[120px] lg:left-[861px] font-inter justify-">
         <div className="relative">
-          <p className="leading-6 mb-3">
+          <p className="leading-6 mb-3 text-xl text-light-blue30">
             The IAFGG represents all those clinicians and technicians who
-            believe <br />
-            that ideal development of the face and jaws is dependent on correct
-            ‘oral posture’.
+            believe that ideal development of the face and jaws is dependent on
+            correct ‘oral posture’.
           </p>
           <PillButton
             title={"Find out more"}

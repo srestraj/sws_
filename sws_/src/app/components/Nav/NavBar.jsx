@@ -17,7 +17,7 @@ const NavBar = () => {
               </div>
             </NavLink>
             {/* h-[22px] w-[461px] */}
-            <h1 className="text-sm font-semibold tracking-tight text-start">
+            <h1 className="text-sm font-semibold tracking-tight text-start  hidden  lg:block">
               The International Association of Facial Growth Guidence (
               Orthotropics<sup>&reg;</sup> )
             </h1>

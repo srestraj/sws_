@@ -10,18 +10,22 @@ const Footer = () => {
     <div className="bg-light-green40 text-light-white20 mx-auto px-[200px] ">
       <div className=" h-[525px] flex-col relative">
         <div className="flex-row justify-between ">
-          <div className="flex font-inter justify-between">
+          <div className="  font-inter flex justify-between items-end flex-col lg:flex-row">
             <NavLink to={"/"}>
-              <div className="flex p-3">
+              <div className="flex p-3 justify-center md:justify-between items-center flex-col lg:flex-row ">
                 <img src={logo} className="h-10 " alt="footerlogo" />
-                <span className="font-bold tracking-tighter text-sm mx-3">
+                <p className="font-bold min-w-max  text-sm mx-3 tracking-wider  md:block hidden">
                   The International Association of Facial <br /> Growth Guidance
                   (Orthotropics®)
-                </span>
+                </p>
+                <p className="font-bold min-w-max  text-sm mx-3 tracking-wider block md:hidden p-1">
+                  The International Association of Facial Growth Guidance
+                  (Orthotropics®)
+                </p>
               </div>
             </NavLink>
-            <div className="flex p-2 font-semibold text-sm text-light-white20">
-              <ul className="flex ">
+            <div className="flex p-2 font-semibold text-sm text-light-white20 ">
+              <ul className="flex justify-center lg:justify-between items-center flex-col md:flex-row ">
                 <li className="m-2">
                   <NavLink to={"discover"}>Discover</NavLink>
                 </li>
@@ -41,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full font-normal text-sm text-light-white20  absolute bottom-10">
-            <div className="justify-between flex items-end ">
+            <div className="flex justify-between items-end flex-col md:flex-row">
               <ul className="flex justify-between">
                 <li className="m-2">
                   <NavLink to={"discover"}>Contact us</NavLink>

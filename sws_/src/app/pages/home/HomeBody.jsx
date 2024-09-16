@@ -10,7 +10,7 @@ const HomeBody = () => {
   return (
     <>
       <div className="max-w-screen-2xl mx-auto my-20 ">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-10 py-0  px-10 text-light-green20 w-full transition-all ease-in-out ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-0  px-10 text-light-green20 w-full transition-all ease-in-out ">
           {data.map((datass) => (
             <div
               className="relative flex flex-col text-start py-5 m-2 p-3 rounded-3xl  bg-light-white10 z-20"
