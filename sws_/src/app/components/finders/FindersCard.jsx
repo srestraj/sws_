@@ -3,11 +3,11 @@ import transparentLogo from "../../../assets/transparentLogo.svg";
 import PillButton from "../button/PillButton";
 
 const FindersCard = ({ background }) => {
-  if (background == "#1F323D") {
+  if (background == "#27606D") {
     return (
       <div className="max-w-screen-2xl px-10 mx-auto">
         <div
-          className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}']`}
+          className={`relative overflow-hidden h-[140px] mt-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}']`}
         >
           <h1 className="text-light-white10 font-sans font-bold text-2xl text-start w-2/3 ">
             Join the International Association of <br /> Facial Growth Guidance
@@ -27,13 +27,14 @@ const FindersCard = ({ background }) => {
       </div>
     );
   }
+  // background: ;
 
   if (background == "#E3E9ED") {
     return (
       <>
         <div className="max-w-screen-2xl px-10 mx-auto">
           <div
-            className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}`}
+            className={`relative overflow-hidden h-[140px] mb-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}`}
           >
             <h1 className="text-light-gray20 font-sans font-bold text-2xl text-start w-2/3">
               Find an Orthotropics practitioner <br /> near you

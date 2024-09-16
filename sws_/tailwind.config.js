@@ -22,6 +22,8 @@ export default {
           grey20: "#435A65",
           black30: "#1F323D",
           yellow20: "#D3F375",
+          mainBackground: "#E6EFEF",
+          blue30: "#1D4953",
         },
         dark: {
           primary: "black",

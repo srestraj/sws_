@@ -8,11 +8,11 @@ import FindersCard from "../components/finders/FindersCard";
 const DefaultLayout = () => {
   return (
     <>
-      <div className=" p-0 m-0 overflow-hidden relative">
+      <div className=" p-0 m-0 overflow-hidden relative bg-light-mainBackground">
         <NavBar />
-        <div className=" max-w-screen-2xl mx-auto border-light-green10 border px-10"></div>
+        <div className=" max-w-screen-2xl mx-auto border-light-bordercolor10 border px-10"></div>
         <NavBarTabs />
-        <main className="bg-light-">
+        <main>
           <Outlet />
         </main>
         <Footer />

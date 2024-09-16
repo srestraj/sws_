@@ -22,7 +22,7 @@ const News = () => {
 
   return (
     <>
-      <FindersCard background={"#1F323D"} />
+      <FindersCard background={"#27606D"} />
 
       <div className=" bg-light-green10 relative h-[696px] flex flex-col justify-center items-center overflow-hidden  mx-auto">
         <h1 className=" font-sans font-bold text-light-green20 text-4xl absolute top-40 left-40 leading-4">

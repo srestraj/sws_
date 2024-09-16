@@ -16,12 +16,12 @@ const HomeBody = () => {
               className="relative flex flex-col text-start py-5 m-2 p-3 rounded-3xl  bg-light-white10 z-20"
               key={datass.id}
             >
-              <h1 className="text-4xl font-bold text-light-green30 y-2">
-                {datass.topic}
-              </h1>
-              <span className="text-light-black30 py-1 text-xl px-2">
-                {datass.slug}
-              </span>
+              <div className="text-4xl font-bold text-light-blue30 pt-2 ms-5">
+                <h1 className="text-4xl font-bold text-light-blue30">
+                  {datass.topic}
+                </h1>
+                <span className="text-xl">{datass.slug}</span>
+              </div>
 
               <div className="py-6 ps-1 leading-10 ">
                 {datass.inn.map((innerData) => (
@@ -30,7 +30,7 @@ const HomeBody = () => {
                     key={innerData.id}
                   >
                     <div className="  bg-light-green30 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">
-                      <ArrowRightIcon className=" hover:translate-x-1 text-light-white10 duration-200 transition-transform" />
+                      <ArrowRightIcon className=" hover:translate-x-1  duration-200 transition-transform" />
                     </div>
                     <li className="list-none mx-2 underline text-xl ">
                       {innerData.listsInfo}
