@@ -13,7 +13,7 @@ const Home = () => {
         (Orthotropics<sup>&reg;</sup>)
       </h1>
       <div className="relative flex flex-col w-[515px] h-[176px] top-[78px] md:left-[120px] lg:left-[861px] font-inter justify-">
-        <div className="relative">
+        <div>
           <p className="leading-6 mb-3 text-xl text-light-blue30">
             The IAFGG represents all those clinicians and technicians who
             believe that ideal development of the face and jaws is dependent on

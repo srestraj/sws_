@@ -18,9 +18,13 @@ const VideoSection = () => {
       </h1>
       <div className="flex  lg:flex-row justify-center flex-col">
         {doctors?.map((doctor) => (
-          <div className="mx-4 " key={doctor.id}>
-            <img src={doctor.image} alt="doctor_" className="rounded-3xl " />
-            <h3 className="text-center font-semibold text-[white] size-[6] leading-6 max-w-sm mx-auto">
+          <div className="mx-4 my-4" key={doctor.id}>
+            <img
+              src={doctor.image}
+              alt="doctor_"
+              className="rounded-3xl my-3 mx-5 "
+            />
+            <h3 className="text-center font-semibold text-[white] size-[6] leading-6 max-w-xs mx-auto hover:text-yellow-100">
               {doctor.name}
             </h3>
           </div>

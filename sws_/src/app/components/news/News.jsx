@@ -13,7 +13,6 @@ const News = () => {
 
   const containerRef = useRef();
   /* we are use useRef, useRef to manipulate virtual DOM elements in React */
-
   const handleScroll = (scrollAmount) => {
     const newScrollPosition = scrollPosition + scrollAmount;
     setScrollPosition(newScrollPosition);
@@ -24,8 +23,8 @@ const News = () => {
     <>
       <FindersCard background={"#27606D"} />
 
-      <div className="bg-light-green10 relative h-[696px] flex flex-col justify-center items-center overflow-hidden  mx-auto">
-        <h1 className=" font-sans font-bold text-light-green20 text-4xl absolute top-40 left-40 leading-4">
+      <div className="bg-light-green10 relative py-10 flex flex-col justify-center items-center overflow-hidden  mx-auto">
+        <h1 className=" font-sans font-bold text-light-green20 text-4xl  leading-4">
           Latest news and blogs
         </h1>
         {/* <div className="text-light-grey20">view all</div> */}
@@ -36,26 +35,26 @@ const News = () => {
             scrollBehavior: "smooth",
           }}
           ref={containerRef}
-          className={`flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden max-w-screen `}
+          className={`flex rounded-2xl overflow-x-scroll no-scrollbar overflow-y-hidden`}
         >
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className=" bg-light-white10 mx-1 px-5 rounded-2xl relative h-[308px] pt-8 pb-4 flex flex-col leading-6 min-w-full md:min-w-96 "
+              className=" bg-light-white10 mx-1  px-1 pb-10 pt-3 rounded-2xl relative flex flex-col leading-6 md:w-full "
             >
               <h1 className="font-semibold font-sans pb-6 text-2xl">
                 {latestNews.title}
               </h1>
-              <p className="font-inter p-1 text-wrap text-xl">
+              <p className="font-inter  pb-10 mt-4 text-wrap text-xl">
                 {latestNews.descriptions}
               </p>
-              <div className="absolute bottom-0 mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
+              <div className=" mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
                 <ArrowRightIcon className=" hover:translate-x-1 text-white duration-200 transition-transform" />
               </div>
             </div>
           ))}
         </div>
-        <div className="flex justify-end absolute bottom-0 right-0 me-48 mb-10">
+        <div className="flex me-48 mb-10 absolute left-0  right-0">
           <div className="flex justify-between ">
             <button
               onClick={() => handleScroll(-200)}
