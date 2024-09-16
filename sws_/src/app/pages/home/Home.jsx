@@ -6,14 +6,13 @@ import PillButton from "../../components/button/PillButton";
 const Home = () => {
   const data = useSelector((state) => state.banner);
 
-
   return (
     <div className="relative h-[841px] w-[1440px] flex-col items-center justify-start font-sans z-20 ">
-      <h1 className="absolute top-[76px] left-[24px] mt-6 text-5xl font-extrabold  text-light-black30  tracking-wider">
+      <h1 className="relative top-[76px] left-[24px] mt-6 text-5xl font-extrabold  text-light-black30  tracking-wider sm:-tracking-normal ">
         The International Association <br />
         of Facial Growth Guidence <br /> (Orthotropics<sup>&reg;</sup>)
       </h1>
-      <div className="relative flex flex-col w-[515px] h-[176px] top-[578px] left-[861px] font-inter">
+      <div className="relative flex flex-col w-[515px] h-[176px] top-[578px] md:left-[120px] lg:left-[861px] font-inter">
         <div className="relative">
           <p className="leading-8">
             The IAFGG represents all those clinicians and technicians who

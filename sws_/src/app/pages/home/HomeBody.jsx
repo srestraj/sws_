@@ -11,7 +11,7 @@ const HomeBody = () => {
     <div className="grid grid-cols-2 text-light-green30 gap-10 w-ful ">
       {data.map((datass) => (
         <div
-          className="relative flex flex-col text-start p-7 rounded-3xl"
+          className="relative flex flex-col text-start py-3 ps-[150px] pe-[120px] rounded-3xl"
           key={datass.id}
         >
           <h1 className="text-4xl font-medium text-light-black30 py-2">
@@ -19,7 +19,7 @@ const HomeBody = () => {
           </h1>
           <span className="text-light-black30 py-1">{datass.slug}</span>
 
-          <div className="py-6 ps-2 leading-10">
+          <div className="py-6 ps-1 leading-10">
             {datass.inn.map((innerData) => (
               <div
                 className="flex font-bold leading-10 p-1 "
