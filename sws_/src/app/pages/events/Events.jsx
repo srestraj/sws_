@@ -1,32 +1,10 @@
 import logo from "../../../assets/iafgg.svg";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import HeadBanner from "../../components/heading/HeadBanner";
+import { useSelector } from "react-redux";
 
 const Events = () => {
-  const datas = [
-    {
-      id: 1,
-      title:
-        "How to Guide Facial Growth in Kids (Introduction To Orthotropics and Records)",
-      description:
-        "If not YOU, than WHO? Your eyes recognize that something is wrong when you see these gummy smiles. Guess what? It is not genetic. It is improper g",
-      day: [],
-      months: "October 2024",
-      images: "",
-    },
-
-    {
-      id: 2,
-      title:
-        "How to Guide Facial Growth in Kids (Early Interception 3-6 Yr Olds)",
-      description:
-        "If not YOU, than WHO? Your eyes recognize that something is wrong when you see these gummy smiles. Guess what? It is not genetic. It is improper growth, and you […]",
-      day: [],
-
-      months: "January 2025",
-      images: "",
-    },
-  ];
+  const datas = useSelector((state) => state.events);
 
   const currentDate = new Date();
   const options = { weekday: "long" };

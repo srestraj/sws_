@@ -12,7 +12,7 @@ const doctors = [
 
 const VideoSection = () => {
   return (
-    <div className="bg-[#304E5E] h-[711px] my-10">
+    <div className="bg-[#304E5E] h-[711px] w-full">
       <p className="text-[white] text-center text-2xl font-semibold my-2 leading-[6]">
         Dental practitioners on Orthotropics
       </p>

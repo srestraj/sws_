@@ -3,19 +3,18 @@ import { Outlet } from "react-router-dom";
 import NavBar from "../components/Nav/NavBar";
 import NavBarTabs from "../components/Nav/NavBarTabs";
 import Footer from "../components/footer/Footer";
+import FindersCard from "../components/finders/FindersCard";
 
 const DefaultLayout = () => {
   return (
     <>
-      <div className="bg-black p-0 m-0 overflow-hidden relative">
-        <section className="bg-light-white20 text-light-green20 mx-auto px-[200px] m-0 py-2 relative">
-          <NavBar />
-          <hr />
-          <NavBarTabs />
-          <main className="px-10">
-            <Outlet />
-          </main>
-        </section>
+      <div className=" p-0 m-0 overflow-hidden relative">
+        <NavBar />
+        <div className=" max-w-screen-2xl mx-auto border-light-green10 border px-10"></div>
+        <NavBarTabs />
+        <main className="bg-light-">
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </>

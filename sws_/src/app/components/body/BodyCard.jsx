@@ -4,7 +4,7 @@ import { NavLink, Navigate } from "react-router-dom";
 const BodyCard = ({ data }) => {
   return (
     <>
-      <div className="p-2 grid-cols-2 grid font-sans">
+      <div className="p-2 grid-cols-1 sm:grid-cols-2 grid font-sans">
         {data?.map((discover) => (
           <div
             className="p-3"

@@ -8,46 +8,52 @@ const HomeBody = () => {
   const data = useSelector((state) => state.home);
 
   return (
-    <div className="grid grid-cols-2 text-light-green30 gap-10 w-ful ">
-      {data.map((datass) => (
-        <div
-          className="relative flex flex-col text-start py-3 ps-[150px] pe-[120px] rounded-3xl"
-          key={datass.id}
-        >
-          <h1 className="text-4xl font-medium text-light-black30 py-2">
-            {datass.topic}
-          </h1>
-          <span className="text-light-black30 py-1">{datass.slug}</span>
-
-          <div className="py-6 ps-1 leading-10">
-            {datass.inn.map((innerData) => (
-              <div
-                className="flex font-bold leading-10 p-1 "
-                key={innerData.id}
-              >
-                <div className=" bg-light-green30 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">
-                  <ArrowRightIcon className=" hover:translate-x-1 text-light-white10 duration-200 transition-transform" />
-                </div>
-                <li className="list-none mx-2 underline">
-                  {innerData.listsInfo}
-                </li>
-              </div>
-            ))}
-          </div>
-          <div className="absolute bottom-0  ms-2">
-            <NavLink
-              to={datass.path}
-              className="text-sm underline text-light-black30 flex"
+    <>
+      <div className="max-w-screen-2xl mx-auto my-20 ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-10 py-0  px-10 text-light-green20 w-full transition-all ease-in-out ">
+          {data.map((datass) => (
+            <div
+              className="relative flex flex-col text-start py-5 m-2 p-3 rounded-3xl  bg-light-white10 z-20"
+              key={datass.id}
             >
-              {datass.visitlinkTitle}
-              <div className="flex justify-center items-center rounded-full size-6 p-1 ms-1">
-                <ArrowRightIcon className="hover:translate-x-1 text-light-black30 duration-200 transition-transform" />
+              <h1 className="text-4xl font-bold text-light-green30 y-2">
+                {datass.topic}
+              </h1>
+              <span className="text-light-black30 py-1 text-xl px-2">
+                {datass.slug}
+              </span>
+
+              <div className="py-6 ps-1 leading-10 ">
+                {datass.inn.map((innerData) => (
+                  <div
+                    className="  flex font-bold leading-10 p-2 m-1  rounded-md "
+                    key={innerData.id}
+                  >
+                    <div className="  bg-light-green30 flex justify-center items-center rounded-full size-8 p-1 text-light-white10">
+                      <ArrowRightIcon className=" hover:translate-x-1 text-light-white10 duration-200 transition-transform" />
+                    </div>
+                    <li className="list-none mx-2 underline text-xl ">
+                      {innerData.listsInfo}
+                    </li>
+                  </div>
+                ))}
+                <div className="sticky bottom-4 start-6 ms-2 mt-3 ">
+                  <NavLink
+                    to={datass.path}
+                    className="text-xl underline text-light-green20 flex"
+                  >
+                    {datass.visitlinkTitle}
+                    <div className="flex justify-center items-center rounded-full size-8 p-1 ms-1">
+                      <ArrowRightIcon className="hover:translate-x-1 ttext-light-green20 duration-200 transition-transform" />
+                    </div>
+                  </NavLink>
+                </div>
               </div>
-            </NavLink>
-          </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 

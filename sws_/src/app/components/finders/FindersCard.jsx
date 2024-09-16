@@ -5,11 +5,11 @@ import PillButton from "../button/PillButton";
 const FindersCard = ({ background }) => {
   if (background == "#1F323D") {
     return (
-      <div className="px-[100px]">
+      <div className="max-w-screen-2xl px-10 mx-auto">
         <div
-          className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-around  items-center bg-['${background}']`}
+          className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}']`}
         >
-          <h1 className="text-light-white10 font-sans font-bold text-2xl text-start ">
+          <h1 className="text-light-white10 font-sans font-bold text-2xl text-start w-2/3 ">
             Join the International Association of <br /> Facial Growth Guidance
           </h1>
           <div>
@@ -31,11 +31,11 @@ const FindersCard = ({ background }) => {
   if (background == "#E3E9ED") {
     return (
       <>
-        <div className="px-[100px]">
+        <div className="max-w-screen-2xl px-10 mx-auto">
           <div
-            className={`border-2 relative overflow-hidden my-10 h-[140px] z-10 rounded-2xl mx-auto flex justify-around  items-center bg-[${background}]`}
+            className={`relative overflow-hidden h-[140px] my-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}`}
           >
-            <h1 className="ms-10 text-light-grey20 font-sans font-bold text-2xl text-start text-nowrap">
+            <h1 className="text-light-gray20 font-sans font-bold text-2xl text-start w-2/3">
               Find an Orthotropics practitioner <br /> near you
             </h1>
             <PillButton
@@ -45,7 +45,7 @@ const FindersCard = ({ background }) => {
             <img
               src={transparentLogo}
               alt="logo_img"
-              className="w-full absolute -z-10 opacity-20 "
+              className="w-full  absolute -z-10 opacity-20 "
             />
           </div>
         </div>

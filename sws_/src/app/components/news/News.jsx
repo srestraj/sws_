@@ -4,6 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
+import FindersCard from "../finders/FindersCard";
 
 const News = () => {
   const newsData = useSelector((state) => state.newsfeed);
@@ -21,29 +22,31 @@ const News = () => {
 
   return (
     <>
-      <div className="relative h-[696px] flex flex-col justify-center items-center overflow-hidden">
-        <h1 className="font-sans font-bold text-light-green20 text-4xl absolute top-[96px] left-[96px] leading-4">
+      <FindersCard background={"#1F323D"} />
+
+      <div className=" bg-light-green10 relative h-[696px] flex flex-col justify-center items-center overflow-hidden  mx-auto">
+        <h1 className=" font-sans font-bold text-light-green20 text-4xl absolute top-40 left-40 leading-4">
           Latest news and blogs
         </h1>
         {/* <div className="text-light-grey20">view all</div> */}
         <div
           style={{
-            width: "900px",
+            width: "1780px",
             overflowX: "scroll",
             scrollBehavior: "smooth",
           }}
           ref={containerRef}
-          className={`  flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden whitespace-nowrap w-[90%]`}
+          className={`flex rounded-2xl absolute top-[204px] overflow-x-scroll no-scrollbar overflow-y-hidden max-w-screen `}
         >
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className=" bg-light-white20 rounded-md mx-2 relative ps-3 pe-3 h-[308px] w-[308px] pt-8 pb-4 flex flex-col leading-6  "
+              className=" bg-light-white10 mx-1 px-5 rounded-2xl relative h-[308px] pt-8 pb-4 flex flex-col leading-6 min-w-full md:min-w-96 "
             >
-              <h1 className="font-semibold font-sans pb-6 ">
+              <h1 className="font-semibold font-sans pb-6 text-2xl">
                 {latestNews.title}
               </h1>
-              <p className="font-inter p-1 text-wrap ">
+              <p className="font-inter p-1 text-wrap text-xl">
                 {latestNews.descriptions}
               </p>
               <div className="absolute bottom-0 mb-3 bg-black flex justify-center items-center rounded-full size-8 p-1 text-white">
@@ -52,7 +55,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-end absolute top-[580px] left-[1004px]">
+        <div className="flex justify-end absolute bottom-0 right-0 me-44">
           <div className="flex justify-between ">
             <button
               onClick={() => handleScroll(-200)}
@@ -69,6 +72,8 @@ const News = () => {
           </div>
         </div>
       </div>
+
+      <FindersCard background={"#E3E9ED"} />
     </>
   );
 };
