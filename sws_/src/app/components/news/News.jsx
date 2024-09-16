@@ -23,8 +23,8 @@ const News = () => {
     <>
       <FindersCard background={"#27606D"} />
 
-      <div className="bg-light-green10 relative py-10 flex flex-col justify-center items-center overflow-hidden  mx-auto">
-        <h1 className=" font-sans font-bold text-light-green20 text-4xl  leading-4">
+      <div className="bg-light-green10 relative py-10 flex flex-col overflow-hidden ">
+        <h1 className=" font-sans font-bold text-light-green20 text-4xl mb-10  ms-20">
           Latest news and blogs
         </h1>
         {/* <div className="text-light-grey20">view all</div> */}
@@ -40,7 +40,7 @@ const News = () => {
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className=" bg-light-white10 mx-1  px-1 pb-10 pt-3 rounded-2xl relative flex flex-col leading-6 md:w-full "
+              className=" bg-light-white10 mx-1  px-1 pb-10 pt-3 rounded-2xl relative flex flex-col leading-6 md:w-full min-w-96 "
             >
               <h1 className="font-semibold font-sans pb-6 text-2xl">
                 {latestNews.title}
@@ -54,7 +54,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="flex me-48 mb-10 absolute left-0  right-0">
+        <div className="flex me-48 mb-10 ">
           <div className="flex justify-between ">
             <button
               onClick={() => handleScroll(-200)}
