@@ -44,7 +44,7 @@ const News = () => {
           {newsData?.map((latestNews) => (
             <div
               key={latestNews.id}
-              className=" bg-light-white10 mx-1  px-1 pb-10 pt-3 rounded-2xl relative flex flex-col leading-6 md:w-full min-w-96 "
+              className=" bg-light-white10 mx-1 p-4 pb-10 rounded-2xl relative flex flex-col leading-6 md:w-full min-w-96 "
             >
               <h1 className="font-semibold font-sans pb-6 text-2xl">
                 {latestNews.title}
