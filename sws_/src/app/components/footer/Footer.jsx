@@ -7,12 +7,12 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-light-green40 text-light-white20 mx-auto py-12">
-      <div className="flex flex-col lg:gap-64 gap-32">
-        <div className="flex-row justify-between ">
-          <div className=" font-inter flex justify-between  items-center flex-col lg:flex-row">
+    <>
+      <div className="flex flex-col md:gap-64 gap-32 bg-light-green40 text-light-white20 mx-auto py-4">
+        <div className="flex-row justify-between">
+          <div className=" font-inter flex justify-between items-center flex-col md:flex-row">
             <NavLink to={"/"}>
-              <div className="flex p-3 justify-center md:justify-between items-center flex-col md:flex-row  ">
+              <div className="flex p-3 justify-center md:justify-between items-center flex-col md:flex-row">
                 <img src={logo} className="h-10 " alt="footerlogo" />
                 <p className="font-bold min-w-max  text-sm mx-3 tracking-wider">
                   The International Association of Facial <br /> Growth Guidance
@@ -20,7 +20,7 @@ const Footer = () => {
                 </p>
               </div>
             </NavLink>
-            <div className="flex p-2 font-semibold text-xl text-light-white20 ">
+            <div className="flex p-2 font-semibold text-sm text-light-white20 ">
               <ul className="flex justify-center lg:justify-between items-center flex-col md:flex-row ">
                 <li className="m-2">
                   <NavLink to={"discover"}>Discover</NavLink>
@@ -41,39 +41,37 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full font-normal text-xl text-light-white20">
-          <div className="flex md:justify-between md:items-end items-center flex-col md:flex-row justify-center ">
-            <ul className="flex justify-center md:justify-between items-center flex-col md:flex-row md:gap-0 gap-1 text-xl md:text-xl">
-              <li className="m-2">
-                <NavLink to={"discover"}>Contact us</NavLink>
-              </li>
-              <li className="m-2">
-                <NavLink to={"discover"}>Privacy notice</NavLink>
-              </li>
-              <li className="m-2">
-                <NavLink to={"discover"}>Cookies</NavLink>
-              </li>
-              <li className="m-2">
-                <NavLink to={"discover"}>Disclaimer</NavLink>
-              </li>
-            </ul>
-            <div className="flex flex-col font-normal my-6 md:my-0 ">
-              <h1 className="me-10 order-2 tracking-wider font-inter">
-                © Orthotropics 1999 – 2024
-              </h1>
-              <div className="order-1">
-                <div className="flex ">
-                  <img className="m-1 h-10" src={facebook} alt="facebook_" />
-                  <img className="m-1 h-10" src={xtweeter} alt="xtweeter_" />
-                  <img className="m-1 h-10" src={youtube} alt="youtube_" />
-                  <img className="m-1 h-10" src={linkedin} alt="linkedin_" />
-                </div>
+        <div className=" relative flex text-light-white20 md:justify-between justify-center items-center md:items-end flex-col md:flex-row">
+          <ul className="flex justify-between md:flex-row flex-col gap-2 text-xl ">
+            <li className="m-2 ">
+              <NavLink to={"discover"}>Contact us</NavLink>
+            </li>
+            <li className="m-2">
+              <NavLink to={"discover"}>Privacy notice</NavLink>
+            </li>
+            <li className="m-2">
+              <NavLink to={"discover"}>Cookies</NavLink>
+            </li>
+            <li className="m-2">
+              <NavLink to={"discover"}>Disclaimer</NavLink>
+            </li>
+          </ul>
+          <div className="flex flex-col  justify-center flex-wrap">
+            <h1 className="me-10 order-2 tracking-wide font-inter">
+              © Orthotropics 1999 – 2024
+            </h1>
+            <div className="order-1 absolute top-0 md:relative">
+              <div className="flex flex-wrap justify-center md:justify-start">
+                <img className="m-1 h-10" src={facebook} alt="facebook_" />
+                <img className="m-1 h-10" src={xtweeter} alt="xtweeter_" />
+                <img className="m-1 h-10" src={youtube} alt="youtube_" />
+                <img className="m-1 h-10" src={linkedin} alt="linkedin_" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
