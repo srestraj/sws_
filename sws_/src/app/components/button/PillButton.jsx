@@ -3,10 +3,10 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 const PillButton = ({ title, backgroundColor, textColor }) => {
   return (
     <button
-      className={`min-w-fit rounded-full ps-3 items-center py-1 text-center flex justify-center ${backgroundColor} ${textColor} font-inter`}
+      className={`min-w-fit rounded-full px-3 items-center py-3 text-2xl text-center flex justify-center ${backgroundColor} ${textColor} font-inter`}
     >
       {title ? title : ""}
-      <ChevronRightIcon className="size-5 mx-2 hover:translate-x-1 duration-200 transition-transform" />
+      <ChevronRightIcon className="size-7 mx-2 hover:translate-x-2 duration-200 transition-transform " />
     </button>
   );
 };

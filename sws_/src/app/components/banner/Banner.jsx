@@ -3,7 +3,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const Banner = ({ heading = "Discover", slug = "lorem ,,,ncjkadnknckn" }) => {
   return (
-    <div className="relative  flex flex-row h-[488px]">
+    <div className="relative  flex flex-row h-[488px] z-20">
       <div className="p-1 flex flex-col">
         <h1 className="mt-6 text-5xl font-extrabold  text-[#1F323D]  tracking-wider">
           {heading}

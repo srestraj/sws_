@@ -24,7 +24,7 @@ const News = () => {
       <FindersCard background={"#27606D"} />
 
       <div className="bg-light-green10 relative py-10 flex flex-col overflow-hidden my-10">
-        <div className="flex justify-between px-10 sm:px-10 md:px-20 max-w-screen-2xl">
+        <div className="flex justify-between px-10 sm:px-40 md:px-20 max-w-screen-2xl ">
           <h1 className=" font-sans font-bold text-light-green20 text-5xl mb-10 ">
             Latest news and blogs
           </h1>
