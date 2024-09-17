@@ -24,10 +24,14 @@ const News = () => {
       <FindersCard background={"#27606D"} />
 
       <div className="bg-light-green10 relative py-10 flex flex-col overflow-hidden ">
-        <h1 className=" font-sans font-bold text-light-green20 text-4xl mb-10  ms-20">
-          Latest news and blogs
-        </h1>
-        {/* <div className="text-light-grey20">view all</div> */}
+        <div className="flex justify-between max-w-screen-2xl mx-auto  w-full">
+          <h1 className=" font-sans font-bold text-light-green20 text-4xl mb-10 ">
+            Latest news and blogs
+          </h1>
+          <div className="text-light-grey20 font-sans font-bold   text-xl mb-10 ">
+            view all
+          </div>
+        </div>
         <div
           style={{
             width: "1780px",
@@ -54,21 +58,19 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="flex me-48 mb-10 ">
-          <div className="flex justify-between ">
-            <button
-              onClick={() => handleScroll(-200)}
-              className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
-            >
-              <ArrowLeftIcon className="size-8 p-1" />
-            </button>
-            <button
-              onClick={() => handleScroll(200)}
-              className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
-            >
-              <ArrowRightIcon className="size-8  p-1" />
-            </button>
-          </div>
+        <div className="flex justify-end ">
+          <button
+            onClick={() => handleScroll(-200)}
+            className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
+          >
+            <ArrowLeftIcon className="size-8 p-1" />
+          </button>
+          <button
+            onClick={() => handleScroll(200)}
+            className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
+          >
+            <ArrowRightIcon className="size-8  p-1" />
+          </button>
         </div>
       </div>
 

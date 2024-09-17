@@ -20,7 +20,7 @@ const Footer = () => {
                 </p>
               </div>
             </NavLink>
-            <div className="flex p-2 font-semibold text-sm text-light-white20 ">
+            <div className="flex p-2 font-semibold text-xl text-light-white20 ">
               <ul className="flex justify-center lg:justify-between items-center flex-col md:flex-row ">
                 <li className="m-2">
                   <NavLink to={"discover"}>Discover</NavLink>
@@ -41,9 +41,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full font-normal text-sm text-light-white20">
-          <div className="flex justify-between items-end flex-col md:flex-row">
-            <ul className="flex justify-between">
+        <div className="w-full font-normal text-xl text-light-white20">
+          <div className="flex md:justify-between md:items-end items-center flex-col md:flex-row justify-center ">
+            <ul className="flex justify-center md:justify-between items-center flex-col md:flex-row md:gap-0 gap-1 text-xl md:text-xl">
               <li className="m-2">
                 <NavLink to={"discover"}>Contact us</NavLink>
               </li>
@@ -57,12 +57,12 @@ const Footer = () => {
                 <NavLink to={"discover"}>Disclaimer</NavLink>
               </li>
             </ul>
-            <div className="flex flex-col font-normal">
+            <div className="flex flex-col font-normal my-6 md:my-0 ">
               <h1 className="me-10 order-2 tracking-wider font-inter">
                 © Orthotropics 1999 – 2024
               </h1>
               <div className="order-1">
-                <div className="flex">
+                <div className="flex ">
                   <img className="m-1 h-10" src={facebook} alt="facebook_" />
                   <img className="m-1 h-10" src={xtweeter} alt="xtweeter_" />
                   <img className="m-1 h-10" src={youtube} alt="youtube_" />
