@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div className="relative flex-col items-center justify-start font-sans z-20 px-10 max-w-screen-2xl mx-auto mb-10">
-      <h1 className="mt-6 text-6xl font-extrabold  text-light-green20  tracking-wider sm:-tracking-normal ">
+      <h1 className="text-6xl my-20 font-extrabold  text-light-green20  tracking-wider sm:-tracking-normal ">
         The International <br /> Association of Facial Growth <br /> Guidence
         (Orthotropics<sup>&reg;</sup>)
       </h1>
