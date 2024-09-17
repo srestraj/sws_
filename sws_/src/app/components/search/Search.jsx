@@ -31,27 +31,25 @@ const Search = () => {
 
   // console.log(result.map(dd=>dd));
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="flex w-[378px] h-[48px] mt-4 p-2">
-        <div className="relative ">
-          <input
-            name="searching"
-            value={textSearch.searching}
-            onChange={handelChnage}
-            type="text"
-            className="px-2 m-0 focus:outline-none z-20 bg-lime-200 p-1"
-          />
-          <div
-            className={`absolute top-1 right-0 flex justify-center items-center `}
-          >
-            <XMarkIcon className="size-6" />
-          </div>
+    <form className="flex " onSubmit={handleSubmit}>
+      <div className="relative order-2 ">
+        <input
+          name="searching"
+          value={textSearch.searching}
+          onChange={handelChnage}
+          type="text"
+          className="px-2 m-0 focus:outline-none z-20  p-2 hidden sm:block"
+        />
+        <div
+          className={`absolute top-2 right-0 flex justify-center items-center `}
+        >
+          <XMarkIcon className="size-6" />
         </div>
-
-        <button className=" z-20 flex items-center justify-center">
-          <MagnifyingGlassIcon className="size-8 bg-[#237688] text-[white]" />
-        </button>
       </div>
+
+      <button className=" z-20 flex items-center justify-center sm:order-4 ">
+        <MagnifyingGlassIcon className="size-10 bg-[#237688] text-[white]" />
+      </button>
     </form>
   );
 };

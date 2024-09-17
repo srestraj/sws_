@@ -5,26 +5,20 @@ import logoIAFGG from "../../../assets/iafgg.svg";
 const NavBar = () => {
   return (
     <>
-      <div className="px-10 max-w-screen-2xl mx-auto">
-        <div className="flex justify-between">
-          <div className="flex justify-between h-[112px] w-[1440px] items-center">
-            <NavLink to={"/"}>
-              <div className="flex items-center">
-                <img src={logoIAFGG} className="h-10 mx-3" />
-                <span className="text-[#1F323D] text-2xl font-bold ">
-                  IAFGG
-                </span>
-              </div>
-            </NavLink>
-            {/* h-[22px] w-[461px] */}
-            <h1 className="text-sm font-semibold tracking-tight text-start  hidden  lg:block">
-              The International Association of Facial Growth Guidence (
-              Orthotropics<sup>&reg;</sup> )
-            </h1>
-            <hr />
-          </div>
-          <Search />
+      <div className="flex justify-between px-10 py-6 max-w-screen-2xl mx-auto  items-center ">
+        <div className="flex justify-between text-light-green20 items-center">
+          <NavLink to={"/"}>
+            <div className="flex items-center justify-center">
+              <img src={logoIAFGG} className="w-10 mx-3" />
+              <span className="text-3xl font-bold ">IAFGG</span>
+            </div>
+          </NavLink>
+          <h1 className="text-sm font-semibold tracking-tight text-start hidden  md:block ms-10">
+            The International Association of Facial Growth Guidence (
+            Orthotropics<sup>&reg;</sup> )
+          </h1>
         </div>
+        <Search />
       </div>
     </>
   );

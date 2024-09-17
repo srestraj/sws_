@@ -39,7 +39,7 @@ const NavBarTabs = () => {
             {navLink?.map((linksName) => (
               <div className="flex flex-col" key={linksName.id}>
                 <li
-                  className={` mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
+                  className={`text-light-green20  mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
                   key={linksName.id}
                 >
                   <NavLink to={linksName.navPath}>
