@@ -14,8 +14,8 @@ interface NavRoute {
 
 const navRoutes: NavRoute[] = [
   { id: 1, linkTitle: "Feature", routes: "features" },
-  { id: 2, linkTitle: "User Guide", routes: "users-group" },
-  { id: 3, linkTitle: "Testimonials", routes: "testimonial" },
+  { id: 2, linkTitle: "User Guide", routes: "users-guide" },
+  { id: 3, linkTitle: "Testimonials", routes: "testimonials" },
   { id: 4, linkTitle: "Pricing", routes: "pricing" },
   { id: 5, linkTitle: "FAQs", routes: "faqs" },
   { id: 6, linkTitle: "Contact", routes: "contact" },
@@ -48,12 +48,12 @@ const NavBar = () => {
         <Link href={"home"}>
           <Images src={logoImg} width={160} alt="logo_" />
         </Link>
-        <ul className="lg:flex py-3 items-center justify-between hidden">
+        <ul className="lg:flex py-3 items-center justify-between hidden ">
           {navRoutes?.map((linksLists) => (
             <Link href={linksLists.routes}>
               <li
                 key={linksLists.id}
-                className="text-meroColor-dark-gray  me-10 px-2  hover:text-meroColor-electric-indigo"
+                className="text-meroColor-dark-gray  text-wrap px-2 last:me-4 hover:text-meroColor-electric-indigo"
               >
                 {linksLists.linkTitle}
               </li>
@@ -61,10 +61,10 @@ const NavBar = () => {
           ))}
           <ButtonPills
             btnName="Start free trial"
-            hoverColor="meroColor-electric-indigo"
+            hoverColor="hover:ring-meroColor-electric-indigo"
             ringColor=""
             textColor=""
-            hoverTextColor=""
+            hoverTextColor="hover:text-meroColor-electric-indigo"
           />
         </ul>
 

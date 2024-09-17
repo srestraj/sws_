@@ -1,6 +1,6 @@
 "use clinet";
 import Image from "next/image";
-import ButtonPills from "../../components/ButtonPills";
+import ButtonPills from "../ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/homeImage2.png";
 import homeImage3 from "../../assets/homeImage3.png";
@@ -36,7 +36,7 @@ const data = [
   },
 ];
 
-const BodyCard = () => {
+const HomeCard = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
@@ -54,10 +54,10 @@ const BodyCard = () => {
               </p>
               <ButtonPills
                 btnName="Start free trail"
-                hoverColor="meroColor-light-grey"
+                hoverColor="hover:ring-meroColor-light-grey"
                 ringColor="gray"
                 textColor="gray"
-                hoverTextColor="gray"
+                hoverTextColor=""
               />
             </div>
           </div>
@@ -77,4 +77,4 @@ const BodyCard = () => {
   );
 };
 
-export default BodyCard;
+export default HomeCard;

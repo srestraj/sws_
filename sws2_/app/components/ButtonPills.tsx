@@ -27,8 +27,8 @@ const ButtonPills: React.FC<ButtonPillsProps> = ({
       justify-center items-center rounded-full 
       hover:shadow-2xl text-meroColor-platinum-10
       bg-meroColor-electric-indigo  hover:bg-transparent  
-      hover:text-${hoverColor} hover:ring-2
-      hover:ring-${hoverColor}`}
+       hover:ring-2 ${hoverTextColor}
+      ${hoverColor}`}
     >
       {btnName}
     </button>
