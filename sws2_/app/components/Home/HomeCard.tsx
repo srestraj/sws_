@@ -17,6 +17,7 @@ const data = [
     divRotate: "rotate-0",
     imageRotate: "-rotate-180",
     buttonPresent: true,
+    hasBorder: false,
     orderImage: "order-1",
   },
   {
@@ -30,6 +31,7 @@ const data = [
     divRotate: "-rotate-90",
     imageRotate: "-rotate-90",
     buttonPresent: false,
+    hasBorder: false,
     orderImage: "order-3",
   },
   {
@@ -43,6 +45,7 @@ const data = [
     divRotate: "rotate-90",
     imageRotate: "rotate-90",
     buttonPresent: false,
+    hasBorder: true,
     orderImage: "order-1",
   },
   // {
@@ -65,13 +68,13 @@ const HomeCard = () => {
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className="flex items-center  md:flex-row md:justify-between  px-10 lg:px-40 transition-all ease-in-out"
+            className=" flex items-center  md:flex-row md:justify-between lg:px-20 transition-all ease-in-out"
           >
             <div className={`${homeGroup.orderImage}`}>
               {homeGroup.title.map((homeTitle) => (
                 <h1
                   key={homeTitle.id}
-                  className="text-7xl font-extrabold max-w-2xl mb-4 text-wrap"
+                  className="text-7xl font-extrabold max-w-xl mb-4 text-wrap"
                 >
                   {homeTitle.titleOne}
                   <span className="text-meroColor-electric-indigo">
@@ -79,7 +82,7 @@ const HomeCard = () => {
                   </span>
                 </h1>
               ))}
-              <div className="py-6  md:text-wrap">
+              <div className="px-2 md:text-wrap">
                 <p className="min-w-sm max-w-xl md:max-w-xl mb-6 ">
                   {homeGroup.slug}
                 </p>
@@ -95,14 +98,18 @@ const HomeCard = () => {
               </div>
             </div>
             <div
-              className={`bg-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`}
+              className={
+                homeGroup.hasBorder
+                  ? ` border-2 border-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
+                  : `overflow-hidden bg-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
+              }
             >
               {homeGroup.imageHome && (
-                <div className="-rotate-180 flex items-center scale-75 justify-center">
+                <div className="-rotate-180 flex items-start justify-start">
                   <Image
                     src={homeGroup.imageHome}
                     width={500}
-                    height={700}
+                    height={500}
                     className={homeGroup.imageRotate}
                     alt={"homeGroup.imageHome"}
                   />
