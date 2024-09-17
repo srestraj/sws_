@@ -8,9 +8,9 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col md:gap-64 gap-32 bg-light-green40 text-light-white20 mx-auto py-4">
+      <div className="flex flex-col md:gap-64 gap-32 bg-light-green40 text-light-white20 mx-auto p-3">
         <div className="flex-row justify-between">
-          <div className=" font-inter flex justify-between items-center flex-col md:flex-row">
+          <div className="font-inter flex justify-between items-center flex-col md:flex-row">
             <NavLink to={"/"}>
               <div className="flex p-3 justify-center md:justify-between items-center flex-col md:flex-row">
                 <img src={logo} className="h-10 " alt="footerlogo" />
@@ -20,8 +20,8 @@ const Footer = () => {
                 </p>
               </div>
             </NavLink>
-            <div className="flex p-2 font-semibold text-sm text-light-white20 ">
-              <ul className="flex justify-center lg:justify-between items-center flex-col md:flex-row ">
+            <nav>
+              <ul className="p-2 font-semibold text-xl text-light-white20  flex justify-end lg:justify-between items-center flex-col md:flex-row ">
                 <li className="m-2">
                   <NavLink to={"discover"}>Discover</NavLink>
                 </li>
@@ -38,11 +38,11 @@ const Footer = () => {
                   <NavLink to={"shop"}>Shop</NavLink>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
-        <div className=" relative flex text-light-white20 md:justify-between justify-center items-center md:items-end flex-col md:flex-row">
-          <ul className="flex justify-between md:flex-row flex-col gap-2 text-xl ">
+        <nav className=" py-16 md:py-0 relative flex text-light-white20 md:justify-between justify-center items-center md:items-end flex-col md:flex-row">
+          <ul className="flex justify-between items-center md:flex-row flex-col gap-2 text-xl ">
             <li className="m-2 ">
               <NavLink to={"discover"}>Contact us</NavLink>
             </li>
@@ -61,15 +61,15 @@ const Footer = () => {
               © Orthotropics 1999 – 2024
             </h1>
             <div className="order-1 absolute top-0 md:relative">
-              <div className="flex flex-wrap justify-center md:justify-start">
-                <img className="m-1 h-10" src={facebook} alt="facebook_" />
-                <img className="m-1 h-10" src={xtweeter} alt="xtweeter_" />
-                <img className="m-1 h-10" src={youtube} alt="youtube_" />
-                <img className="m-1 h-10" src={linkedin} alt="linkedin_" />
+              <div className="flex flex-wrap justify-center items-center md:justify-start">
+                <img className="m-1" src={facebook} alt="facebook_" />
+                <img className="m-1" src={xtweeter} alt="xtweeter_" />
+                <img className="m-1" src={youtube} alt="youtube_" />
+                <img className="m-1" src={linkedin} alt="linkedin_" />
               </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </>
   );
