@@ -32,26 +32,22 @@ const navLink = [
 ];
 const NavBarTabs = () => {
   return (
-    <>
-      <div className="max-w-screen-2xl mx-auto">
-        <div className="flex flex-col text-sm font-inter relative ">
-          <ul className="sticky flex ms-10 ">
-            {navLink?.map((linksName) => (
-              <div className="flex flex-col" key={linksName.id}>
-                <li
-                  className={`text-light-green20  mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
-                  key={linksName.id}
-                >
-                  <NavLink to={linksName.navPath}>
-                    {linksName.linkTitile}
-                  </NavLink>
-                </li>
-              </div>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </>
+    <nav>
+      <ul className="flex font-inter max-w-screen-2xl mx-auto px-10">
+        {navLink?.map((linksName) => (
+          <div className="flex flex-col" key={linksName.id}>
+            <NavLink to={linksName.navPath}>
+              <li
+                className={`text-light-green20  mx-1 border-t-4 border-transparent hover:border-[#2E9BB2] p-2 transition-all`}
+                key={linksName.id}
+              >
+                {linksName.linkTitile}
+              </li>
+            </NavLink>
+          </div>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

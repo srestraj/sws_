@@ -58,7 +58,7 @@ const News = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-end ">
+        <div className="flex justify-end  my-10 mx-10">
           <button
             onClick={() => handleScroll(-200)}
             className="border-dotted text-light-green20 font-medium rounded-full bg-light-grey10 bg-opacity-70 mx-1 p-2"
