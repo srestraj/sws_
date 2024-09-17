@@ -30,7 +30,7 @@ const FindersCard = ({ background }) => {
     return (
       <>
         <div
-          className={`max-w-screen-2xl px-10 border mx-20 py-16 relative overflow-hidden mb-10 z-10 rounded-2xl flex justify-evenly items-center bg-['${background}`}
+          className={`max-w-screen-2xl px-10 border mx-20 py-16 relative overflow-hidden mb-10 z-10 rounded-2xl flex flex-wrap justify-evenly items-center bg-['${background}`}
         >
           <h1 className="text-light-gray20 font-sans font-bold text-3xl text-start w-2/3 my-2">
             Find an Orthotropics practitioner <br /> near you
