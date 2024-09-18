@@ -1,11 +1,26 @@
-("use clinet");
-import Image from "next/image";
-import ButtonPills from "../ButtonPills";
+"use client";
 import featureOne from "../../assets/featureOne.svg";
 import UserGuideCard from "./UserGuideCard";
 
+// Define the types for the data
+interface ListAnswer {
+  id: number;
+  listSlug: string;
+}
+
+interface GuideData {
+  id: number;
+  titleNumber: string;
+  title: string;
+  descriptions: string;
+  question: string;
+  listOfAnswer: ListAnswer[];
+  images: string;
+  pillbtn: boolean;
+}
+
 const UsersGuide = () => {
-  const data = [
+  const data: GuideData[] = [
     {
       id: 1,
       titleNumber: "01",
@@ -17,12 +32,10 @@ const UsersGuide = () => {
         { id: 1, listSlug: "An active email address" },
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
-        // { id: 4, listSlug: "An active email address" },
       ],
       images: featureOne,
       pillbtn: true,
     },
-
     {
       id: 2,
       titleNumber: "02",
@@ -34,12 +47,10 @@ const UsersGuide = () => {
         { id: 1, listSlug: "An active email address" },
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
-        // { id: 4, listSlug: "An active email address" },
       ],
       images: featureOne,
       pillbtn: false,
     },
-
     {
       id: 3,
       titleNumber: "03",
@@ -51,12 +62,10 @@ const UsersGuide = () => {
         { id: 1, listSlug: "An active email address" },
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
-        // { id: 4, listSlug: "An active email address" },
       ],
       images: featureOne,
       pillbtn: false,
     },
-
     {
       id: 4,
       titleNumber: "04",
@@ -76,7 +85,6 @@ const UsersGuide = () => {
       images: featureOne,
       pillbtn: false,
     },
-
     {
       id: 5,
       titleNumber: "05",
@@ -97,7 +105,6 @@ const UsersGuide = () => {
         },
       ],
       images: featureOne,
-
       pillbtn: false,
     },
   ];
@@ -105,21 +112,21 @@ const UsersGuide = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey py-10">
-        <div className="flex  items-center justify-evenly flex-col  transition-all ease-in-out  ">
+        <div className="flex items-center justify-evenly flex-col transition-all ease-in-out">
           <div className="text-center flex flex-col justify-center items-center">
             <h1 className="text-meroColor-white-10 text-7xl font-bold">
               Start for
               <span className="text-meroColor-electric-indigo"> free</span>
             </h1>
             <p className="text-2xl py-10 items-center">
-              {
-                "No need to watch long-winded tutorials to get started with our app. Just follow these 5 steps and make your first transaction today"
-              }
+              No need to watch long-winded tutorials to get started with our
+              app. Just follow these 5 steps and make your first transaction
+              today.
             </p>
           </div>
 
           {data?.map((listing) => (
-            <UserGuideCard listing={listing} />
+            <UserGuideCard key={listing.id} listing={listing} />
           ))}
         </div>
       </div>
