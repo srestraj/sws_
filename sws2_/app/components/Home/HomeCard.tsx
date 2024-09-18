@@ -4,6 +4,10 @@ import ButtonPills from "../ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
+import userIcon from "../../assets/userIcon.webp";
+import walletIcon from "../../assets/walletIcon.webp";
+import paperIcon from "../../assets/paperIcon.webp";
+import ideaIcon from "../../assets/ideaIcon.png";
 
 const data = [
   {
@@ -48,44 +52,52 @@ const data = [
     hasBorder: true,
     orderImage: "order-1",
   },
-  // {
-  //   id: 4,
-  //   title: [
-  //     { id: 1, titleOne: "Secure your" },
-  //     { id: 2, titleTwo: " financial future" },
-  //   ],
-  //   slug: "Equip yourself with all the tools you need to empower you on the path to lasting financial security.",
-  //   imageHome: "",
-  //   rotate: "center",
-  //   buttonPresent: false,
-  // },
+  {
+    id: 4,
+    title: [
+      { id: 1, titleOne: "Secure your" },
+      { id: 2, titleTwo: " financial future" },
+    ],
+    slug: "Equip yourself with all the tools you need to empower you on the path to lasting financial security.",
+    // imageHome: "",
+    rotate: "center",
+    buttonPresent: false,
+  },
 ];
 
 const HomeCard = () => {
   return (
     <>
-      <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
+      <div className="bg-meroColor-jet-black">
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className=" flex items-center  md:flex-row md:justify-between lg:px-20 transition-all ease-in-out"
+            className="max-w-screen-2xl mx-auto  text-meroColor-light-grey  flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
           >
-            <div className={`${homeGroup.orderImage}`}>
+            <div
+              className={`${homeGroup.orderImage} lg:mx-28 p-20 flex-col   `}
+            >
               {homeGroup.title.map((homeTitle) => (
                 <h1
                   key={homeTitle.id}
-                  className="text-7xl font-extrabold max-w-xl mb-4 text-wrap"
+                  className={`text-7xl font-extrabold max-w-xl mb-4 `}
                 >
                   {homeTitle.titleOne}
-                  <span className="text-meroColor-electric-indigo">
+                  <span className="text-meroColor-electric-indigo ">
                     {homeTitle.titleTwo}
                   </span>
                 </h1>
               ))}
               <div className="px-2 md:text-wrap">
-                <p className="min-w-sm max-w-xl md:max-w-xl mb-6 ">
-                  {homeGroup.slug}
-                </p>
+                {homeGroup.imageHome ? (
+                  <p className="min-w-screen-2xl max-w-xl md:max-w-xl mb-6 ">
+                    {homeGroup.slug}
+                  </p>
+                ) : (
+                  <p className="min-w-screen-sm max-w-xl md:max-w-full mb-6 text-nowrap">
+                    {homeGroup.slug}
+                  </p>
+                )}
                 {homeGroup.buttonPresent == true && (
                   <ButtonPills
                     btnName="Start free trail"
@@ -97,25 +109,25 @@ const HomeCard = () => {
                 )}
               </div>
             </div>
-            <div
-              className={
-                homeGroup.hasBorder
-                  ? ` border-2 border-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
-                  : `overflow-hidden bg-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
-              }
-            >
-              {homeGroup.imageHome && (
-                <div className="-rotate-180 flex items-start justify-start">
+            {homeGroup.imageHome && (
+              <div
+                className={
+                  homeGroup.hasBorder
+                    ? `py-99 border-2  border-meroColor-electric-indigo rounded-b-full  ${homeGroup.divRotate} order-1`
+                    : `py-99 pb-20 lg:mx-20 bg-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
+                }
+              >
+                <div className="-rotate-180 flex items-start justify-start z-10 ">
                   <Image
                     src={homeGroup.imageHome}
                     width={500}
-                    height={500}
-                    className={homeGroup.imageRotate}
-                    alt={"homeGroup.imageHome"}
+                    height={520}
+                    className={homeGroup.imageRotate + ` z-20`}
+                    alt={"homeGroup.imageHome "}
                   />
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
