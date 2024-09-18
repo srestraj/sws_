@@ -127,9 +127,9 @@ const ToggleButton = () => {
 const CardsElements = () => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-10 p-28">
+      <div className="grid grid-cols-2 gap-10 p-28 ">
         {pricingData.map((datas) => (
-          <div className="flex text-start p-4 text-xl" key={datas.id}>
+          <div className="flex text-start p-4 text-xl w-4/5" key={datas.id}>
             <CheckCircleIcon className="size-12" />
             <div className="flex flex-col items-start px-2">
               <h1 className="text-3xl ">{datas.heading}</h1>
