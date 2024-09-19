@@ -7,12 +7,6 @@ interface ButtonPillsProps {
   textColor: string;
   hoverTextColor: string;
 }
-/* 
-btnName="Start free trail"
-hoverColor={"black"}
-ringColor={"gray"}
-textColor={"gray"}
-hoverTextColor={"gray"} */
 
 const ButtonPills: React.FC<ButtonPillsProps> = ({
   btnName,

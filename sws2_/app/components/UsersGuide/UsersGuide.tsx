@@ -3,7 +3,6 @@ import featureOne from "../../assets/featureOne.svg";
 import DefaultLayout from "../DefaultLayout";
 import UserGuideCard from "./UserGuideCard";
 
-// Define the types for the data
 interface ListAnswer {
   id: number;
   listSlug: string;
@@ -114,7 +113,6 @@ const UsersGuide = () => {
     <>
       <DefaultLayout>
         <UserHeading />
-
         {data?.map((listing) => (
           <UserGuideCard key={listing.id} listing={listing} />
         ))}

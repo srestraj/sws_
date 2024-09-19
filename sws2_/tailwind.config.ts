@@ -11,7 +11,6 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-
         meroColor: {
           "jet-black": "#2a2a29",
           "light-grey": "#a5a6a8",
@@ -21,6 +20,9 @@ const config: Config = {
           "white-10": " white",
           "black-10": "black",
         },
+      },
+      maxWidth: {
+        'screen-3xl': '1600px'
       }
     },
   },

@@ -21,26 +21,6 @@ const navRoutes: NavRoute[] = [
   { id: 6, linkTitle: "Contact", routes: "contact" },
 ];
 
-/* 
-    --jet-black: #2a2a29;
-    --light-grey: #a5a6a8;
-    --platinum: #e9e5e5;
-    --electric-indigo: #6100ff;
-    --dark-gray: #56595d;
-    --white: white;
-    --black: black;
-
-   // meroColor: {
-        //   "jet-black": "#2a2a29",
-        //   "light-grey": "#a5a6a8",
-        //   "platinum-10": "#e9e5e5",
-        //   "electric-indigo": " #6100ff",
-        //   "dark-gray": " #56595d",
-        //   "white-10": " white",
-        //   "black-10": "black",
-        // },
-*/
-
 const NavBar = () => {
   return (
     <>
@@ -50,11 +30,8 @@ const NavBar = () => {
         </Link>
         <ul className="lg:flex py-3 items-center justify-evenly hidden ">
           {navRoutes?.map((linksLists) => (
-            <Link href={linksLists.routes}>
-              <li
-                key={linksLists.id}
-                className="text-meroColor-dark-gray  text-wrap  text-sm px-1  last:me-5 hover:text-meroColor-electric-indigo"
-              >
+            <Link href={linksLists.routes} key={linksLists.id}>
+              <li className="text-meroColor-dark-gray  text-wrap  text-sm px-1  last:me-5 hover:text-meroColor-electric-indigo">
                 {linksLists.linkTitle}
               </li>
             </Link>
