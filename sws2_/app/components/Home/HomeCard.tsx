@@ -4,6 +4,7 @@ import ButtonPills from "../ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
+import { BacktoTop } from "../backtotop/BacktoTop";
 
 const data = [
   {
@@ -113,7 +114,7 @@ const HomeCard = () => {
                 >
                   <Image
                     src={homeGroup.imageHome}
-                    width={538}
+                    width={536}
                     height={750}
                     className="max-w-full inline-block"
                     alt="homeGroup.imageHome"
