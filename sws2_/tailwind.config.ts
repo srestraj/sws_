@@ -21,7 +21,7 @@ const config: Config = {
           "white-10": " white",
           "black-10": "black",
         },
-      },
+      }
     },
   },
   plugins: [],

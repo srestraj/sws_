@@ -56,34 +56,28 @@ const HomeCard = () => {
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className="max-w-screen-2xl text-meroColor-light-grey flex-col sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
+            className="max-w-screen-2xl text-meroColor-platinum-10 grid grid-cols-2 items-center mx-auto transition-all ease-in-out overflow-hidden "
           >
             <div
-              className={`${homeGroup.orderImage} lg:mx-28 lg:p-20 flex-col p-4   items-center`}
+              className={`${homeGroup.orderImage} grid grid-cols-1 gride items-center justify-end`}
             >
-              <div>
+              <div className="p-10">
                 {homeGroup.title.map((homeTitle) => (
-                  <h1
-                    key={homeTitle.id}
-                    className={`text-7xl font-extrabold mb-4  leading-tighter inline-block `}
-                  >
-                    <span> {homeTitle.titleOne}</span>
-                    <span className="text-meroColor-electric-indigo">
-                      {homeTitle.titleTwo}
-                    </span>
-                  </h1>
+                  <div key={homeTitle.id}>
+                    <h1
+                      className={`text-7xl font-extrabold mb-4 leading-tighter inline-block `}
+                    >
+                      <span> {homeTitle.titleOne}</span>
+                      <span className="text-meroColor-electric-indigo">
+                        {" "}
+                        {homeTitle.titleTwo}
+                      </span>
+                    </h1>
+                    <p className="min-w-screen-2xl max-w-xl md:max-w-xl mb-6 ">
+                      {homeGroup.slug}
+                    </p>
+                  </div>
                 ))}
-              </div>
-              <div className="px-2 md:text-wrap">
-                {homeGroup.imageHome ? (
-                  <p className="min-w-screen-2xl max-w-xl md:max-w-xl mb-6 ">
-                    {homeGroup.slug}
-                  </p>
-                ) : (
-                  <p className="min-w-screen-sm max-w-xl md:max-w-full mb-6 text-nowrap">
-                    {homeGroup.slug}
-                  </p>
-                )}
                 {homeGroup.buttonPresent == true && (
                   <ButtonPills
                     btnName="Start free trail"
@@ -95,20 +89,24 @@ const HomeCard = () => {
                 )}
               </div>
             </div>
+
             {homeGroup.imageHome && (
               <div
-                className={
-                  homeGroup.hasBorder
-                    ? `py-99 border-2  border-meroColor-electric-indigo rounded-b-full  ${homeGroup.divRotate} order-1`
-                    : `py-99 pb-20 lg:mx-20 bg-meroColor-electric-indigo rounded-b-full ${homeGroup.divRotate} order-1`
-                }
+                className={`relative rounded-b-full order-1 flex justify-end items-center  
+                                
+                  ${
+                    homeGroup.hasBorder
+                      ? `border-2  border-meroColor-electric-indigo  ${homeGroup.divRotate}`
+                      : ` bg-meroColor-electric-indigo ${homeGroup.divRotate}`
+                  }
+                `}
               >
-                <div className="-rotate-180 flex items-start justify-start z-10 ">
+                <div className="-rotate-180 flex items-end justify-center">
                   <Image
                     src={homeGroup.imageHome}
                     width={500}
                     height={520}
-                    className={homeGroup.imageRotate + ` z-20`}
+                    className={homeGroup.imageRotate + ``}
                     alt={"homeGroup.imageHome "}
                   />
                 </div>
