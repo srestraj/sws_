@@ -4,17 +4,13 @@ import ButtonPills from "../ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
-import userIcon from "../../assets/userIcon.webp";
-import walletIcon from "../../assets/walletIcon.webp";
-import paperIcon from "../../assets/paperIcon.webp";
-import ideaIcon from "../../assets/ideaIcon.png";
 
 const data = [
   {
     id: 1,
     title: [
-      { id: 1, titleOne: " Make every dollar work" },
-      { id: 2, titleTwo: "for" },
+      { id: 1, titleOne: " Make every dollar work for" },
+      { id: 2, titleTwo: "you" },
     ],
     slug: "Navigating finances can be tough, but PursePulse is here to make it easy. Together, let's save smart, spend wisely, see it all, and regain control of your money story.",
     imageHome: homeImage,
@@ -52,17 +48,6 @@ const data = [
     hasBorder: true,
     orderImage: "order-1",
   },
-  {
-    id: 4,
-    title: [
-      { id: 1, titleOne: "Secure your" },
-      { id: 2, titleTwo: " financial future" },
-    ],
-    slug: "Equip yourself with all the tools you need to empower you on the path to lasting financial security.",
-    // imageHome: "",
-    rotate: "center",
-    buttonPresent: false,
-  },
 ];
 
 const HomeCard = () => {
@@ -72,22 +57,24 @@ const HomeCard = () => {
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className="max-w-screen-2xl mx-auto  text-meroColor-light-grey  flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
+            className="max-w-screen-2xl text-meroColor-light-grey flex-col sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
           >
             <div
-              className={`${homeGroup.orderImage} lg:mx-28 p-20 flex-col   `}
+              className={`${homeGroup.orderImage} lg:mx-28 lg:p-20 flex-col p-4   items-center`}
             >
-              {homeGroup.title.map((homeTitle) => (
-                <h1
-                  key={homeTitle.id}
-                  className={`text-7xl font-extrabold max-w-xl mb-4 `}
-                >
-                  {homeTitle.titleOne}
-                  <span className="text-meroColor-electric-indigo ">
-                    {homeTitle.titleTwo}
-                  </span>
-                </h1>
-              ))}
+              <div>
+                {homeGroup.title.map((homeTitle) => (
+                  <h1
+                    key={homeTitle.id}
+                    className={`text-7xl font-extrabold mb-4  leading-tighter inline-block `}
+                  >
+                    <span> {homeTitle.titleOne}</span>
+                    <span className="text-meroColor-electric-indigo">
+                      {homeTitle.titleTwo}
+                    </span>
+                  </h1>
+                ))}
+              </div>
               <div className="px-2 md:text-wrap">
                 {homeGroup.imageHome ? (
                   <p className="min-w-screen-2xl max-w-xl md:max-w-xl mb-6 ">

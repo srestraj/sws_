@@ -5,13 +5,19 @@ import userIcon from "../../assets/userIcon.webp";
 import walletIcon from "../../assets/walletIcon.webp";
 import paperIcon from "../../assets/paperIcon.webp";
 import ideaIcon from "../../assets/ideaIcon.png";
+import homeImage3 from "../../assets/mobileright.png";
 
 const Features = () => {
+  const Data = [];
+
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
-        <div className="flex items-center flex-col md:flex-row md:justify-between  px-10 lg:px-40 transition-all ease-in-out">
-          <div className=""> Features page </div>
+        <div className="flex items-center flex-col md:flex-row md:justify-between  transition-all ease-in-out">
+          <div className="mx-10 my-10">
+            <HeadingElement />
+            <CardElement />
+          </div>
         </div>
       </div>
     </>
@@ -20,7 +26,26 @@ const Features = () => {
 
 export default Features;
 
-const BottomCard = () => {
+const HeadingElement = () => {
+  return (
+    <>
+      <div className="text-center">
+        <h1 className="text-6xl font-bold">
+          Secure your
+          <span className="text-meroColor-electric-indigo ">
+            {"  financial future"}
+          </span>
+        </h1>
+        <p className="text-xl text-meroColor-platinum-10 font-light  leading-8 my-2 py-2">
+          Equip yourself with all the tools you need to empower you on the path
+          to lasting financial security.
+        </p>
+      </div>
+    </>
+  );
+};
+
+const CardElement = () => {
   const dataBottom = [
     {
       id: 1,
@@ -53,13 +78,13 @@ const BottomCard = () => {
   ];
   return (
     <div
-      // className="flex flex-col justify-center"
-      className="max-w-screen-2xl mx-auto  text-meroColor-light-grey  flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
+      // className="max-w-screen-2xl mx-auto p-1 px-4 text-meroColor-light-grey  sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
+      className="  text-meroColor-light-grey  sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 "
     >
       {dataBottom.map((homeFooter) => (
         <>
           <div
-            className="  flex flex-col justify-center text-center items-center"
+            className="m-4 my-10 flex flex-col justify-center text-center items-center"
             key={homeFooter.id}
           >
             <Image
@@ -73,7 +98,7 @@ const BottomCard = () => {
               {homeFooter.title}
             </h1>
 
-            <p className="text-meroColor-dark-gray p-2">
+            <p className="text-meroColor-dark-gray  text-2xl m-1">
               {homeFooter.description}
             </p>
           </div>

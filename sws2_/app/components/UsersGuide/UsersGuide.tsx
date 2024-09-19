@@ -1,5 +1,6 @@
 "use client";
 import featureOne from "../../assets/featureOne.svg";
+import DefaultLayout from "../DefaultLayout";
 import UserGuideCard from "./UserGuideCard";
 
 // Define the types for the data
@@ -111,27 +112,32 @@ const UsersGuide = () => {
 
   return (
     <>
-      <div className="bg-meroColor-jet-black text-meroColor-light-grey py-10">
-        <div className="flex items-center justify-evenly flex-col transition-all ease-in-out">
-          <div className="text-center flex flex-col justify-center items-center">
-            <h1 className="text-meroColor-white-10 text-7xl font-bold">
-              Start for
-              <span className="text-meroColor-electric-indigo"> free</span>
-            </h1>
-            <p className="text-2xl py-10 items-center">
-              No need to watch long-winded tutorials to get started with our
-              app. Just follow these 5 steps and make your first transaction
-              today.
-            </p>
-          </div>
+      <DefaultLayout>
+        <UserHeading />
 
-          {data?.map((listing) => (
-            <UserGuideCard key={listing.id} listing={listing} />
-          ))}
-        </div>
-      </div>
+        {data?.map((listing) => (
+          <UserGuideCard key={listing.id} listing={listing} />
+        ))}
+      </DefaultLayout>
     </>
   );
 };
 
 export default UsersGuide;
+
+const UserHeading = () => {
+  return (
+    <>
+      <div className="text-center flex flex-col justify-center items-center">
+        <h1 className="text-meroColor-white-10 text-7xl font-bold ">
+          Start for
+          <span className="text-meroColor-electric-indigo"> free</span>
+        </h1>
+        <p className="text-2xl py-10 items-center">
+          No need to watch long-winded tutorials to get started with our app.
+          Just follow these 5 steps and make your first transaction today.
+        </p>
+      </div>
+    </>
+  );
+};

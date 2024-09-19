@@ -3,9 +3,6 @@ import Image from "next/image";
 import ButtonPills from "../ButtonPills";
 
 const UserGuideCard = ({ listing }) => {
-
-
-    
   return (
     <>
       <div
@@ -33,7 +30,7 @@ const UserGuideCard = ({ listing }) => {
 
         {/*   paragraphs area right  */}
 
-        <div className="flex flex-col p-10">
+        <div className="flex flex-col p-10 max-w-xl">
           <h1 className="text-meroColor-electric-indigo text-9xl font-extrabold py-3">
             {listing.titleNumber}
           </h1>
