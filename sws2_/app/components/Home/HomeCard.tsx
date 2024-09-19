@@ -9,8 +9,7 @@ const data = [
   {
     id: 1,
     title: [
-      { id: 1, titleOne: " Make every dollar work for" },
-      { id: 2, titleTwo: "you" },
+      { id: 1, titleOne: " Make every dollar work for", titleTwo: "you" },
     ],
     slug: "Navigating finances can be tough, but PursePulse is here to make it easy. Together, let's save smart, spend wisely, see it all, and regain control of your money story.",
     imageHome: homeImage,
@@ -22,10 +21,7 @@ const data = [
   },
   {
     id: 2,
-    title: [
-      { id: 1, titleOne: "Make smarter budgets" },
-      { id: 2, titleTwo: "with AI" },
-    ],
+    title: [{ id: 1, titleOne: "Make smarter budgets", titleTwo: "with AI" }],
     slug: "Ditch the pen and paper! Our AI-driven smart technology creates a personalized budget, adapting to your lifestyle for effortless financial planning.",
     imageHome: homeImage2,
     divRotate: "-rotate-90",
@@ -37,8 +33,11 @@ const data = [
   {
     id: 3,
     title: [
-      { id: 1, titleOne: "Tailor your savings plan to" },
-      { id: 2, titleTwo: "your lifestyle" },
+      {
+        id: 1,
+        titleOne: "Tailor your savings plan to",
+        titleTwo: "your lifestyle",
+      },
     ],
     slug: "Dream big, save bigger! PursePulse lets you set financial goals like retirement savings. Our app crafts a savings plan customized to your income and expenses, making your dreams more achievable.",
     imageHome: homeImage3,
