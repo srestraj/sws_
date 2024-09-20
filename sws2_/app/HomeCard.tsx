@@ -1,6 +1,6 @@
 "use clinet";
 import Image from "next/image";
-import ButtonPills from "../ButtonPills";
+import ButtonPills from "./components/ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";

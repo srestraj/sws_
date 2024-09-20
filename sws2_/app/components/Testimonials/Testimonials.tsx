@@ -91,7 +91,7 @@ const slidingCard = (
   <>
     {data?.map((slideInformation) => (
       <div
-        className={`flex  justify-around  items-center ${
+        className={`flex justify-around  items-center ${
           slideInformation.display == true && "hidden"
         }   `}
         key={slideInformation.id}
