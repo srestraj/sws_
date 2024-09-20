@@ -26,7 +26,7 @@ const NavBar = () => {
     <>
       <nav className="bg-meroColor-platinum-10 ">
         <div className=" items-center justify-between flex mx-auto max-w-screen-2xl px-20 lg:px-32 z-20 py-1">
-          <Link href={"home"}>
+          <Link href={"/"}>
             <Images src={logoImg} width={160} alt="logo_" />
           </Link>
           <ul className="lg:flex py-3 items-center justify-evenly hidden ">

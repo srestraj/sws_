@@ -53,7 +53,7 @@ const FAQsQuestions = () => {
   return (
     <>
       <div>
-        <h1 className="text-5xl font-bold text-meroColor-platinum-10 py-3">
+        <h1 className="text-5xl font-bold text-meroColor-platinum-10 py-3 px-3">
           Have questions?
         </h1>
         <div className="grid grid-cols-2  gap-x-96 ">

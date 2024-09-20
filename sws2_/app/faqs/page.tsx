@@ -5,7 +5,6 @@ import NavBar from "../components/NavBar";
 const FAQsPAge = () => {
   return (
     <>
-      <NavBar />
       <FAQs />
     </>
   );

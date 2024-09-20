@@ -57,7 +57,7 @@ const HomeCard = () => {
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className={`max-w-screen-3xl text-meroColor-platinum-10 grid md:grid-cols-2 items-center mx-auto transition-all ease-in-out ${
+            className={`max-w-screen-3xl text-meroColor-platinum-10 grid md:grid-cols-2 items-center mx-auto transition-all ease-in-out  ${
               homeGroup.overflowHidden ? "" : "md:py-48"
             }`}
           >

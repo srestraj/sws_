@@ -67,14 +67,16 @@ import Image from "next/image";
 const Pricing = () => {
   return (
     <>
-      <PricingTopElement />
-      <div className="   bg-meroColor-electric-indigo rounded-b-none  rounded-full  md:rounded-t-[15%]  mx-10 py-10 items-center flex flex-col justify-center">
+     <div className=" py-10">
+
+     <div className="bg-meroColor-electric-indigo rounded-b-none rounded-full  md:rounded-t-[15%]  mx-10 py-10 items-center flex flex-col justify-center">
         <div className=" flex flex-col items-center scale-90">
           <ToggleButton />
           <CardsElements pricingData={pricingData} />
         </div>
       </div>
       <FormContactHeader />
+     </div>
     </>
   );
 };
