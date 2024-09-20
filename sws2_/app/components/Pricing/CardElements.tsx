@@ -15,7 +15,7 @@ interface CardsElementsProps {
 
 export const CardsElements = ({ pricingData }: CardsElementsProps) => {
   return (
-    <div className="grid grid-cols-2 gap-10 p-28  items-center justify-center mx-auto scale-75">
+    <div className="grid grid-cols-2 gap-10 items-center justify-center mx-auto">
       {pricingData.map((priceItem) => (
         <div
           className="flex text-start justify-center  w-4/5"
