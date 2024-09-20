@@ -5,9 +5,8 @@ import logoImg from "../assets/logo.webp";
 import Images from "next/image";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
- 
- 
-const NavBar = ({router}) => {
+
+const NavBar = ({ router }) => {
   return (
     <>
       <nav className="bg-meroColor-platinum-10 ">
