@@ -12,37 +12,47 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Pricing from "./components/Pricing/Pricing";
 
 const router = [
-  { id: 1, path: "/", element: <HomeCard />, section: " " },
-  { id: 2, path: "/features", element: <Features />, section: " " },
-  { id: 3, path: "/users-guide", element: <UsersGuide />, section: " " },
-  { id: 4, path: "/testimonials", element: <Testimonials />, section: " " },
-  { id: 5, path: "/pricing", element: <Pricing />, section: " " },
-  { id: 6, path: "/faqs", element: <FAQs />, section: " " },
-  { id: 7, path: "/contact", element: <Contacts />, section: " " },
+  { id: 1, path: "/", element: <HomeCard />, section: "Home" },
+  { id: 2, path: "#-features", element: <Features />, section: "Feature" },
+  {
+    id: 3,
+    path: "#-users-guide",
+    element: <UsersGuide />,
+    section: "User Guide",
+  },
+  {
+    id: 4,
+    path: "#-testimonials",
+    element: <Testimonials />,
+    section: "Testimonials ",
+  },
+  { id: 5, path: "#-pricing", element: <Pricing />, section: "Pricing" },
+  { id: 6, path: "#-faqs", element: <FAQs />, section: " FAQs" },
+  { id: 7, path: "#-contact", element: <Contacts />, section: "Contact" },
 ];
 
 /*  
 const navRoutes = [
   { id: 1, linkTitle: "Feature", routes: "features" },
   { id: 2, linkTitle: "User Guide", routes: "user-guide" },
-  { id: 3, linkTitle: "Testimonials", routes: "testimonials" },
-  { id: 4, linkTitle: "Pricing", routes: "pricing" },
-  { id: 5, linkTitle: "FAQs", routes: "faqs" },
-  { id: 6, linkTitle: "Contact", routes: "contact" },
+  { id: 3, linkTitle: "", routes: "testimonials" },
+  { id: 4, linkTitle: "", routes: "pricing" },
+  { id: 5, linkTitle: "", routes: "faqs" },
+  { id: 6, linkTitle: "", routes: "contact" },
 ]; */
 
 const Home = () => {
   return (
     <>
-      <NavBar />
+      <NavBar router={router} />
       <div>
-        <nav>
+        {/* <nav>
           {router.map((route) => (
             <Link href={route.path} key={route.id}>
               {route.section}
             </Link>
           ))}
-        </nav>
+        </nav> */}
 
         {router.map((route) => (
           <section
