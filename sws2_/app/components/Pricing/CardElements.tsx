@@ -15,12 +15,9 @@ interface CardsElementsProps {
 
 export const CardsElements = ({ pricingData }: CardsElementsProps) => {
   return (
-    <div className="grid grid-cols-2 gap-10 items-center justify-center mx-auto">
+    <div className=" md:grid grid-cols-2 gap-10 items-center justify-center mx-auto">
       {pricingData.map((priceItem) => (
-        <div
-          className="flex text-start justify-center  w-4/5"
-          key={priceItem.id}
-        >
+        <div className="flex  justify-center flex-row w-4/5" key={priceItem.id}>
           <CheckCircleIcon className="size-8 me-1" />
           <div className="flex flex-col items-start">
             <h1 className="text-2xl">{priceItem.heading}</h1>

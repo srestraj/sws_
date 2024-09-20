@@ -1,4 +1,4 @@
-"use client";
+import { ReactNode } from "react";
 
 import Link from "next/link";
 
@@ -10,7 +10,6 @@ import UsersGuide from "./components/UsersGuide/UsersGuide";
 import Contacts from "./components/Contacts/Contacts";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Pricing from "./components/Pricing/Pricing";
-import { ReactNode } from "react";
 
 interface Route {
   id: number;
@@ -38,24 +37,3 @@ export const router: Route[] = [
   { id: 6, path: "#-faqs", element: <FAQs />, section: " FAQs" },
   { id: 7, path: "#-contact", element: <Contacts />, section: "Contact" },
 ];
-
-const Home = () => {
-  return (
-    <>
-      <NavBar router={router} />
-      <div>
-        {router.map((route) => (
-          <section
-            className="bg-meroColor-jet-black"
-            id={route.path.substring(1)}
-            key={route.id}
-          >
-            <div>{route.element}</div>
-          </section>
-        ))}
-      </div>
-    </>
-  );
-};
-
-export default Home;

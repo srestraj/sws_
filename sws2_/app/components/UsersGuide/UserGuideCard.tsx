@@ -25,7 +25,7 @@ interface UserGuideCardProps {
 const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
   return (
     <div
-      className="flex flex-row justify-evenly items-center max-w-screen-2xl mx-auto "
+      className="flex flex-row justify-between items-center max-w-screen"
       key={listing.titleNumber}
     >
       {/* Image component */}
@@ -34,7 +34,6 @@ const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
           src={listing.images}
           height={400}
           width={400}
-          className="scale-40"
           alt="featureOne_"
         />
       </div>

@@ -1,5 +1,4 @@
 ("use clinet");
-("use clinet");
 import Image from "next/image";
 import userIcon from "../../assets/userIcon.webp";
 import walletIcon from "../../assets/walletIcon.webp";
@@ -30,13 +29,13 @@ const HeadingElement = () => {
   return (
     <>
       <div className="text-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="md:text-6xl font-bold flex flex-col  min-w-max">
           Secure your
           <span className="text-meroColor-electric-indigo ">
             {"  financial future"}
           </span>
         </h1>
-        <p className="text-xl text-meroColor-platinum-10 font-light  leading-8 my-2 py-2">
+        <p className=" text-xl text-meroColor-platinum-10 font-light  leading-8 my-2 py-2 min-w-max">
           Equip yourself with all the tools you need to empower you on the path
           to lasting financial security.
         </p>
@@ -77,14 +76,11 @@ const CardElement = () => {
     },
   ];
   return (
-    <div
-      // className="max-w-screen-2xl mx-auto p-1 px-4 text-meroColor-light-grey  sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 overflow-hidden"
-      className="  text-meroColor-light-grey  sm:flex items-center md:flex-row md:justify-center transition-all ease-in-out pb-10 "
-    >
+    <div className="text-meroColor-light-grey  grid grid-cols-2  md:flex items-center md:flex-row md:justify-center transition-all ease-in-out  ">
       {dataBottom.map((homeFooter) => (
         <>
           <div
-            className="m-4 my-10 flex flex-col justify-center text-center items-center"
+            className="flex flex-col justify-center text-center items-center"
             key={homeFooter.id}
           >
             <Image

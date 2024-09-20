@@ -41,8 +41,8 @@ const Testimonials = () => {
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
         <div className="flex items-center flex-col md:flex-row md:justify-center transition-all ease-in-out overflow-hidden max-w-screen mx-auto px-28">
           <div className="flex flex-col justify-center items-center ">
-            <div className="flex ">
-              <div className="bg-transparent rounded-r-full border-l-0 border-2 border-meroColor-electric-indigo flex justify-center items-center flex-col py-20 my-20 mx-auto">
+            <div className="md:flex ">
+              <div className=" bg-transparent rounded-r-full border-l-0 border-2 border-meroColor-electric-indigo flex justify-center items-center flex-col py-20 my-20 mx-auto">
                 {slidingCard}
               </div>
               <div className="flex flex-col py-20  my-20 mx-20 ">
@@ -50,8 +50,8 @@ const Testimonials = () => {
               </div>
             </div>
 
-            <div className="text-center py-1 mt-5">
-              <h1 className="text-2xl text-meroColor-white-10 font-bold py-1">
+            <div className="  text-center py-1 mt-5">
+              <h1 className=" text-2xl text-meroColor-white-10 font-bold py-1">
                 Unlock even more with{" "}
                 <span className="text-meroColor-electric-indigo">
                   PursePulse Pro
@@ -75,7 +75,7 @@ export default Testimonials;
 
 const rightContent = (
   <>
-    <h1 className="text-4xl text-meroColor-white-10 font-bold">
+    <h1 className="text-4xl text-meroColor-white-10 font-bold  min-w-96 max-w-screen-2xl">
       Join
       <span className="text-meroColor-electric-indigo"> 5 million+ </span>
       members

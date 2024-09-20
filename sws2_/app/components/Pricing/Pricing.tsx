@@ -100,8 +100,8 @@ const PricingEndHeader = () => {
   return (
     <>
       <div className="flex items-center justify-between ">
-        <div className="flex-col flex ">
-          <h1 className="text-meroColor-electric-indigo text-6xl font-bold">
+        <div className="flex flex-col justify-between ">
+          <h1 className="text-meroColor-electric-indigo text-6xl font-bold mb-2">
             Take control{" "}
             <span className="text-meroColor-black-10">
               of your financial journey with
@@ -110,7 +110,8 @@ const PricingEndHeader = () => {
 
           <Image src={mainLogo} width="300" height="300" alt="logoimage_" />
         </div>
-        <p className="text-meroColor-dark-gray text-xl max-w-screen-xl">
+
+        <p className="text-meroColor-dark-gray text-xl max-w-screen-sm">
           Empower your money journey, make informed decisions, and achieve
           lasting financial success. Start budgeting, saving, and learning with
           us today. Let's do this!
@@ -125,8 +126,8 @@ const FormContact = () => {
     <>
       <div className="py-4 mb-1 bg-meroColor-platinum-10 ">
         <form action="">
-          <div className="grid grid-cols-2 gap-10 text-meroColor-light-grey max-w-screen-2xl mx-auto">
-            <div className="flex flex-col">
+          <div className="flex sm:grid grid-cols-2 gap-10 text-meroColor-light-grey max-w-screen-2xl mx-auto">
+            <div className="flex flex-col  ">
               <label
                 htmlFor=""
                 className="text-xl font-light text-meroColor-black-10 text-start"
@@ -186,11 +187,11 @@ const FormContact = () => {
             </div>
           </div>
           <ButtonPills
-            btnName="Start free trail"
-            hoverColor="hover:ring-meroColor-light-grey"
-            ringColor="gray"
-            textColor="gray"
-            hoverTextColor=""
+            btnName="Start free trial"
+            hoverColor="hover:ring-meroColor-electric-indigo"
+            ringColor=""
+            textColor=""
+            hoverTextColor="hover:text-meroColor-electric-indigo"
           />
         </form>
       </div>
