@@ -63,20 +63,20 @@ const pricingData = [
 ];
 import mainLogo from "../../assets/logo.webp";
 import Image from "next/image";
+import ButtonPills from "../ButtonPills";
 
 const Pricing = () => {
   return (
     <>
-     <div className=" py-10">
-
-     <div className="bg-meroColor-electric-indigo rounded-b-none rounded-full  md:rounded-t-[15%]  mx-10 py-10 items-center flex flex-col justify-center">
-        <div className=" flex flex-col items-center scale-90">
-          <ToggleButton />
-          <CardsElements pricingData={pricingData} />
+      <div className=" py-10">
+        <div className="bg-meroColor-electric-indigo rounded-b-none rounded-full  md:rounded-t-[15%]  mx-10 py-10 items-center flex flex-col justify-center">
+          <div className=" flex flex-col items-center scale-90">
+            <ToggleButton />
+            <CardsElements pricingData={pricingData} />
+          </div>
         </div>
+        <FormContactHeader />
       </div>
-      <FormContactHeader />
-     </div>
     </>
   );
 };
@@ -86,8 +86,8 @@ export default Pricing;
 const FormContactHeader = () => {
   return (
     <>
-      <div className="py-10 bg-meroColor-platinum-10 ">
-        <div className="max-w-screen-2xl flex flex-col mx-auto">
+      <div className="py-10 bg-meroColor-platinum-10 flex flex-col justify-center items-center">
+        <div className="max-w-screen-2xl flex flex-col px-10 py-20">
           <PricingEndHeader />
           <FormContact />
         </div>
@@ -100,7 +100,7 @@ const PricingEndHeader = () => {
   return (
     <>
       <div className="flex items-center justify-between ">
-        <div className="flex-col flex px-10">
+        <div className="flex-col flex ">
           <h1 className="text-meroColor-electric-indigo text-6xl font-bold">
             Take control{" "}
             <span className="text-meroColor-black-10">
@@ -126,7 +126,7 @@ const FormContact = () => {
       <div className="py-4 mb-1 bg-meroColor-platinum-10 ">
         <form action="">
           <div className="grid grid-cols-2 gap-10 text-meroColor-light-grey max-w-screen-2xl mx-auto">
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <label
                 htmlFor=""
                 className="text-xl font-light text-meroColor-black-10 text-start"
@@ -185,6 +185,13 @@ const FormContact = () => {
               <span className="border border-meroColor-light-grey w-full my-4"></span>
             </div>
           </div>
+          <ButtonPills
+            btnName="Start free trail"
+            hoverColor="hover:ring-meroColor-light-grey"
+            ringColor="gray"
+            textColor="gray"
+            hoverTextColor=""
+          />
         </form>
       </div>
     </>
