@@ -1,5 +1,11 @@
 "use client";
-import featureOne from "../../assets/featureOne.svg";
+
+import featureOne from "../../assets/featuresImgs/features1.svg";
+import featureTwo from "../../assets/featuresImgs/feature2.svg";
+import featureThree from "../../assets/featuresImgs/feature3.svg";
+import featureFour from "../../assets/featuresImgs/feature4.svg";
+import featureFive from "../../assets/featuresImgs/feature5.svg";
+
 import DefaultLayout from "../DefaultLayout";
 import UserGuideCard from "./UserGuideCard";
 
@@ -15,7 +21,7 @@ interface GuideData {
   descriptions: string;
   question: string;
   listOfAnswer: ListAnswer[];
-  images: string;
+  images: string | any;
   pillbtn: boolean;
 }
 
@@ -48,7 +54,7 @@ const UsersGuide = () => {
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
       ],
-      images: featureOne,
+      images: featureTwo,
       pillbtn: false,
     },
     {
@@ -63,7 +69,7 @@ const UsersGuide = () => {
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
       ],
-      images: featureOne,
+      images: featureThree,
       pillbtn: false,
     },
     {
@@ -82,7 +88,7 @@ const UsersGuide = () => {
             "Specific financial goals to tailor your budget effectively",
         },
       ],
-      images: featureOne,
+      images: featureFour,
       pillbtn: false,
     },
     {
@@ -104,7 +110,7 @@ const UsersGuide = () => {
             "Some time to navigate and get acquainted with the app's functionalities",
         },
       ],
-      images: featureOne,
+      images: featureFive,
       pillbtn: false,
     },
   ];

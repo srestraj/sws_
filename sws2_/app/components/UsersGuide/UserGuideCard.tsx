@@ -30,12 +30,19 @@ const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
     >
       {/* Image component */}
       <div className="p-44 m-20">
-        <Image
-          src={listing.images}
-          height={400}
-          width={400}
-          alt="featureOne_"
-        />
+        <div
+          className={`bg-[url('/img/hero-pattern.svg')]  
+          
+          ${listing.images ? listing.images : ""}
+          `}
+        >
+          <Image
+            src={listing.images}
+            height={400}
+            width={400}
+            alt="featureOne_"
+          />
+        </div>
       </div>
 
       {/* Center line item */}
