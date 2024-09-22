@@ -101,7 +101,7 @@ const PricingEndHeader = () => {
     <>
       <div className="flex items-center justify-between ">
         <div className="flex flex-col justify-between ">
-          <h1 className="text-meroColor-electric-indigo text-6xl font-bold mb-2">
+          <h1 className="text-meroColor-electric-indigo text-5xl font-bold mb-2 max-w-screen-sm">
             Take control{" "}
             <span className="text-meroColor-black-10">
               of your financial journey with
@@ -111,7 +111,7 @@ const PricingEndHeader = () => {
           <Image src={mainLogo} width="300" height="300" alt="logoimage_" />
         </div>
 
-        <p className="text-meroColor-dark-gray text-xl max-w-screen-sm">
+        <p className="text-meroColor-dark-gray  max-w-screen-sm">
           Empower your money journey, make informed decisions, and achieve
           lasting financial success. Start budgeting, saving, and learning with
           us today. Let's do this!
@@ -130,12 +130,12 @@ const FormContact = () => {
             <div className="flex flex-col  ">
               <label
                 htmlFor=""
-                className="text-xl font-light text-meroColor-black-10 text-start"
+                className=" font-light text-meroColor-black-10 text-start"
               >
                 Name
               </label>
               <input
-                className=" outline-none border-none p-3 bg-transparent items-center px-4"
+                className=" text-sm outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your full name"
               />
@@ -144,12 +144,12 @@ const FormContact = () => {
             <div className="flex flex-col">
               <label
                 htmlFor=""
-                className="text-xl font-light text-meroColor-black-10 text-start"
+                className=" font-light text-meroColor-black-10 text-start"
               >
                 Mobile (Optional)
               </label>
               <input
-                className=" outline-none border-none p-3 bg-transparent items-center px-4"
+                className=" text-sm outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your mobile number"
               />
@@ -159,12 +159,12 @@ const FormContact = () => {
             <div className="flex flex-col">
               <label
                 htmlFor=""
-                className="text-xl font-light text-meroColor-black-10 text-start"
+                className=" font-light text-meroColor-black-10 text-start"
               >
                 Email
               </label>
               <input
-                className=" outline-none border-none p-3 bg-transparent items-center px-4"
+                className=" text-sm outline-none border-none p-3 bg-transparent items-center px-4"
                 type="email"
                 placeholder="Your email address"
               />
@@ -174,12 +174,12 @@ const FormContact = () => {
             <div className="flex flex-col">
               <label
                 htmlFor=""
-                className="text-xl font-light text-meroColor-black-10 text-start "
+                className=" font-light text-meroColor-black-10 text-start "
               >
                 Message (Optional)
               </label>
               <input
-                className=" outline-none border-none p-3 bg-transparent items-center px-4"
+                className=" text-sm outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your message"
               />

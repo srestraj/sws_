@@ -4,9 +4,10 @@ const FAQs = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey flex flex-col  transition-all ease-in-out ">
-        <div className="mx-10">
+        <div className="md:mx-10">
           <FAQsQuestions />
           <BottomContact />
+          <FootSlug />
         </div>
       </div>
     </>
@@ -53,14 +54,14 @@ const FAQsQuestions = () => {
   return (
     <>
       <div>
-        <h1 className="text-5xl font-bold text-meroColor-platinum-10 py-3 px-3">
+        <h1 className="text-4xl md:text-5xl md:px-3 text-center md:text-start font-bold text-meroColor-platinum-10 ">
           Have questions?
         </h1>
-        <div className="grid grid-cols-2  gap-x-96 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-60 p-10">
           {data?.map((questions) => (
-            <div key={questions.id} className="p-3 ">
-              <div className="flex mb-3 justify-between ">
-                <h1 className="hover:text-meroColor-electric-indigo text-xl font-medium">
+            <div key={questions.id} className="p-3">
+              <div className="flex mb-3 justify-between">
+                <h1 className="hover:text-meroColor-electric-indigo font-medium">
                   {questions.question}
                 </h1>
 
@@ -68,7 +69,7 @@ const FAQsQuestions = () => {
                   +
                 </h1>
               </div>
-              <div className="border border-b-meroColor-light-grey"></div>
+              <div className="border border-b-meroColor-platinum-10"></div>
             </div>
           ))}
         </div>
@@ -116,24 +117,37 @@ const contactData = [
 const BottomContact = () => {
   return (
     <>
-      <div className="flex justify-between  text-meroColor-platinum-10 p-3">
+      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-meroColor-platinum-10 my-10">
         {contactData?.map((contactItem) => (
-          <div className=" p-3 flex-col " key={contactItem.id}>
+          <div
+            className=" p-3 flex-col flex md:items-start items-center "
+            key={contactItem.id}
+          >
             <h1 className="text-2xl font-bold py-2">{contactItem.title}</h1>
-            <div className="text-meroColor-light-grey">
-              <ul className="leading-10">
-                {contactItem.innerItems.map((innerLists) => (
-                  <li
-                    key={innerLists.id}
-                    className="hover:text-meroColor-electric-indigo"
-                  >
-                    {innerLists.slugs}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="leading-10  text-meroColor-light-grey">
+              {contactItem.innerItems.map((innerLists) => (
+                <li
+                  key={innerLists.id}
+                  className="text-sm py-3 hover:text-meroColor-electric-indigo flex flex:col justify-center items-center md:flex-row md:justify-normal"
+                >
+                  {innerLists.slugs}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
+      </div>
+    </>
+  );
+};
+
+const FootSlug = () => {
+  return (
+    <>
+      <div className="flex flex-col md:flex-row  md:justify-between items-center justify-center leading-10 ">
+        <h4> {"Created by Zoya Aqib"}</h4>
+        <h4> {"© Copyright 2024 PursePulse Limited."}</h4>
+        <h4> {"Powered by Webflow"}</h4>
       </div>
     </>
   );
