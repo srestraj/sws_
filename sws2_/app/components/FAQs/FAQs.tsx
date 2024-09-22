@@ -1,4 +1,9 @@
 ("use clinet");
+import Image from "next/image";
+
+import messageX from "../../assets/footerImage/messageX.png";
+import instagram from "../../assets/footerImage/instagram.png";
+import linkedIn from "../../assets/footerImage/linkedIn.png";
 
 const FAQs = () => {
   return (
@@ -89,6 +94,15 @@ const contactData = [
       { id: 3, slugs: "PursePulse Headquarters" },
       { id: 4, slugs: "123 FinTech Street" },
       { id: 5, slugs: "Digital City, Virtual Country" },
+      {
+        id: 6,
+        slugs: " ",
+        images: {
+          imageX: messageX,
+          imageLinkedIn: linkedIn,
+          instagram: instagram,
+        },
+      },
     ],
   },
 
@@ -131,6 +145,36 @@ const BottomContact = () => {
                   className="text-sm py-3 hover:text-meroColor-electric-indigo flex flex:col justify-center items-center md:flex-row md:justify-normal"
                 >
                   {innerLists.slugs}
+
+                  {innerLists.images && (
+                    <>
+                      <span className="m-1">
+                        <Image
+                          src={innerLists.images.imageX}
+                          height={30}
+                          width={30}
+                          alt="logo_"
+                        />
+                      </span>
+                      <span className="m-1">
+                        <Image
+                          src={innerLists.images.imageLinkedIn}
+                          height={30}
+                          width={30}
+                          alt="logo_"
+                        />
+                      </span>
+
+                      <span className="m-1">
+                        <Image
+                          src={innerLists.images.instagram}
+                          height={30}
+                          width={30}
+                          alt="logo_"
+                        />
+                      </span>
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
