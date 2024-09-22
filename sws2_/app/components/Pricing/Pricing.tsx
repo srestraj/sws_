@@ -135,11 +135,11 @@ const FormContact = () => {
                 Name
               </label>
               <input
-                className=" border-none p-3 bg-transparent items-center px-4"
+                className=" outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your full name"
               />
-              <span className="border border-meroColor-light-grey w-full my-4"></span>
+              <span className=" border border-meroColor-light-grey w-full my-4"></span>
             </div>
             <div className="flex flex-col">
               <label
@@ -149,11 +149,11 @@ const FormContact = () => {
                 Mobile (Optional)
               </label>
               <input
-                className=" border-none p-3 bg-transparent items-center px-4"
+                className=" outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your mobile number"
               />
-              <span className="border border-meroColor-light-grey w-full my-4"></span>
+              <span className=" border border-meroColor-light-grey w-full my-4"></span>
             </div>
 
             <div className="flex flex-col">
@@ -164,11 +164,11 @@ const FormContact = () => {
                 Email
               </label>
               <input
-                className=" border-none p-3 bg-transparent items-center px-4"
+                className=" outline-none border-none p-3 bg-transparent items-center px-4"
                 type="email"
                 placeholder="Your email address"
               />
-              <span className="border border-meroColor-light-grey w-full my-4"></span>
+              <span className=" border border-meroColor-light-grey w-full my-4"></span>
             </div>
 
             <div className="flex flex-col">
@@ -179,11 +179,11 @@ const FormContact = () => {
                 Message (Optional)
               </label>
               <input
-                className=" border-none p-3 bg-transparent items-center px-4"
+                className=" outline-none border-none p-3 bg-transparent items-center px-4"
                 type="text"
                 placeholder="Your message"
               />
-              <span className="border border-meroColor-light-grey w-full my-4"></span>
+              <span className=" border border-meroColor-light-grey w-full my-4"></span>
             </div>
           </div>
           <ButtonPills

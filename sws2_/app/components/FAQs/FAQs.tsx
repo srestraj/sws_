@@ -118,23 +118,21 @@ const BottomContact = () => {
     <>
       <div className="flex justify-between  text-meroColor-platinum-10 p-3">
         {contactData?.map((contactItem) => (
-          <>
-            <div className=" p-3 flex-col " key={contactItem.id}>
-              <h1 className="text-2xl font-bold py-2">{contactItem.title}</h1>
-              <div className="text-meroColor-light-grey">
-                <ul className="leading-10">
-                  {contactItem.innerItems.map((innerLists) => (
-                    <li
-                      key={innerLists.id}
-                      className="hover:text-meroColor-electric-indigo"
-                    >
-                      {innerLists.slugs}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className=" p-3 flex-col " key={contactItem.id}>
+            <h1 className="text-2xl font-bold py-2">{contactItem.title}</h1>
+            <div className="text-meroColor-light-grey">
+              <ul className="leading-10">
+                {contactItem.innerItems.map((innerLists) => (
+                  <li
+                    key={innerLists.id}
+                    className="hover:text-meroColor-electric-indigo"
+                  >
+                    {innerLists.slugs}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>

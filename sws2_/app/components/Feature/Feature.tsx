@@ -78,27 +78,20 @@ const CardElement = () => {
   return (
     <div className="text-meroColor-light-grey  grid grid-cols-2  md:flex items-center md:flex-row md:justify-center transition-all ease-in-out  ">
       {dataBottom.map((homeFooter) => (
-        <>
-          <div
-            className="flex flex-col justify-center text-center items-center"
-            key={homeFooter.id}
-          >
-            <Image
-              src={homeFooter.icons}
-              width={80}
-              height={80}
-              alt="btmm_img"
-            />
+        <div
+          className="flex flex-col justify-center text-center items-center"
+          key={homeFooter.id}
+        >
+          <Image src={homeFooter.icons} width={80} height={80} alt="btmm_img" />
 
-            <h1 className="text-3xl font-medium text-center text-meroColor-white-10 min-w-screen-sm py-2">
-              {homeFooter.title}
-            </h1>
+          <h1 className="text-3xl font-medium text-center text-meroColor-white-10 min-w-screen-sm py-2">
+            {homeFooter.title}
+          </h1>
 
-            <p className="text-meroColor-dark-gray  text-2xl m-1">
-              {homeFooter.description}
-            </p>
-          </div>
-        </>
+          <p className="text-meroColor-dark-gray  text-2xl m-1">
+            {homeFooter.description}
+          </p>
+        </div>
       ))}
     </div>
   );

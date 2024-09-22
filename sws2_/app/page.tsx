@@ -42,8 +42,8 @@ export const router: Route[] = [
 const Home = () => {
   return (
     <>
-      <NavBar router={router} />
-      <div>
+      <div className="bg-meroColor-jet-black">
+        <NavBar router={router} />
         {router.map((route) => (
           <section
             className="bg-meroColor-jet-black"

@@ -53,15 +53,18 @@ const data = [
 const HomeCard = () => {
   return (
     <>
-      <div className="bg-meroColor-jet-black">
+      <div className="bg-meroColor-jet-black flex flex-col justify-center mx-auto">
         {data?.map((homeGroup) => (
           <div
             key={homeGroup.id}
-            className={`max-w-screen-3xl text-meroColor-platinum-10 grid md:grid-cols-2 items-center mx-auto transition-all ease-in-out  ${
+            className={`max-w-screen-2xl text-meroColor-platinum-10 grid md:grid-cols-2 justify-center items-center mx-auto transition-all ease-in-out 
+              
+              
+              ${
               homeGroup.overflowHidden ? "" : "md:py-48"
             }`}
           >
-            <div className="p-10 place-self-center">
+            <div className="p-10 place-self-center px-12">
               {homeGroup.title.map((homeTitle) => (
                 <div key={homeTitle.id}>
                   <h1
