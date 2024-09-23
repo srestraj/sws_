@@ -1,6 +1,6 @@
 "use clinet";
 
-export const PricingTopElement: React.FC = () => {
+export const PricingTopElement = () => {
   return (
     <>
       <h1 className="text-6xl font-bold  py-4">

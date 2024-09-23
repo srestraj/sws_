@@ -13,7 +13,7 @@ interface IButtomData {
   description: string;
 }
 
-const Features: React.FC = () => {
+const Features = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
@@ -30,7 +30,7 @@ const Features: React.FC = () => {
 
 export default Features;
 
-const HeadingElement :React.FC= () => {
+const HeadingElement: React.FC = () => {
   return (
     <>
       <div className="text-center">
@@ -49,7 +49,7 @@ const HeadingElement :React.FC= () => {
   );
 };
 
-const CardElement: React.FC = () => {
+const CardElement = () => {
   const dataBottom: IButtomData[] = [
     {
       id: 1,

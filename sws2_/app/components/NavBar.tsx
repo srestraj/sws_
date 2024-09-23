@@ -5,8 +5,6 @@ import logoImg from "../assets/logo.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-// import { Route } from "../router.ts";
-// import { router } from "../router.ts";
 import { useState } from "react";
 
 interface NavBarProps {

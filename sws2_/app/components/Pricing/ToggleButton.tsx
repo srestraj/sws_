@@ -61,7 +61,7 @@ interface TInnerToggler {
 
 }
  */
-export const ToggleButton: React.FC = () => {
+export const ToggleButton = () => {
   return (
     <>
       <div className="flex flex-col p-3 justify-center items-center my-10 px-3 overflow-hidden">
@@ -93,12 +93,12 @@ export const ToggleButton: React.FC = () => {
 
 // ............
 
-const InnerToggler: React.FC<IInnterToggler> = ({
+const InnerToggler = ({
   bottonIcon,
   bottonName,
   textColor,
   backGroundColor,
-}) => {
+}: IInnterToggler) => {
   return (
     <>
       <div

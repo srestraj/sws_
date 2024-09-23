@@ -13,9 +13,7 @@ interface CardsElementsProps {
   pricingData: IPriceItem[];
 }
 
-export const CardsElements: React.FC<CardsElementsProps> = ({
-  pricingData,
-}) => {
+export const CardsElements = ({ pricingData }: CardsElementsProps) => {
   return (
     <div className="md:grid grid-cols-2 gap-10 items-center justify-center mx-auto">
       {pricingData.map((priceItem) => (

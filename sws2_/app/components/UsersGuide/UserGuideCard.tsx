@@ -22,7 +22,7 @@ interface UserGuideCardProps {
   key?: string | number;
 }
 
-const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
+const UserGuideCard = ({ listing }: UserGuideCardProps) => {
   return (
     <div
       className="flex flex-row justify-between items-center"
@@ -47,8 +47,10 @@ const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
 
       {/* Center line item */}
       <div className="sticky top-10 transition-all ease-in-out  h-screen rounded-b-full rounded-t-full px-0.5  bg-gradient-to-b from-indigo-600 via-pink-600 to-purple-600 flex items-center justify-center">
-        <div className=" shadow-lg p-6 bg-meroColor-jet-black absolute rounded-full items-center flex justify-center">
-          <div className="shadow-lg p-3 rounded-full bg-meroColor-electric-indigo"></div>
+        <div className="sticky top-60  ">
+          <div className=" shadow-lg p-6 bg-meroColor-jet-black absolute rounded-full items-center flex justify-center">
+            <div className="shadow-lg p-3  rounded-full bg-meroColor-electric-indigo"></div>
+          </div>
         </div>
       </div>
 

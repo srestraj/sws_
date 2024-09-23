@@ -47,7 +47,7 @@ const data: TestimonialData[] = [
   },
 ];
 
-const Testimonials:React.FC = () => {
+const Testimonials = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">

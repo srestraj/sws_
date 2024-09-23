@@ -73,7 +73,7 @@ const pricingData: PriceDatas[] = [
   },
 ];
 
-const Pricing: React.FC = () => {
+const Pricing = () => {
   return (
     <>
       <div className=" py-10">
@@ -91,7 +91,7 @@ const Pricing: React.FC = () => {
 
 export default Pricing;
 
-const FormContactHeader: React.FC = () => {
+const FormContactHeader = () => {
   return (
     <>
       <div className="py-10 bg-meroColor-platinum-10 flex flex-col justify-center items-center">
@@ -104,7 +104,7 @@ const FormContactHeader: React.FC = () => {
   );
 };
 
-const PricingEndHeader: React.FC = () => {
+const PricingEndHeader = () => {
   return (
     <>
       <div className="flex items-center justify-between ">
@@ -129,7 +129,7 @@ const PricingEndHeader: React.FC = () => {
   );
 };
 
-const FormContact: React.FC = () => {
+const FormContact = () => {
   return (
     <>
       <div className="py-4 mb-1 bg-meroColor-platinum-10 ">

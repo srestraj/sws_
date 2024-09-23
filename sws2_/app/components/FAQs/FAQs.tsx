@@ -121,7 +121,7 @@ const contactData: IContactData[] = [
   },
 ];
 
-const FAQs: React.FC = () => {
+const FAQs = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey flex flex-col  transition-all ease-in-out ">
@@ -137,7 +137,7 @@ const FAQs: React.FC = () => {
 
 export default FAQs;
 
-const FAQsQuestions: React.FC = () => {
+const FAQsQuestions = () => {
   return (
     <>
       <div>
@@ -165,7 +165,7 @@ const FAQsQuestions: React.FC = () => {
   );
 };
 
-const BottomContact: React.FC = () => {
+const BottomContact = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-meroColor-platinum-10 my-10">
@@ -222,7 +222,7 @@ const BottomContact: React.FC = () => {
   );
 };
 
-const FootSlug: React.FC = () => {
+const FootSlug = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row  md:justify-between items-center justify-center leading-10 ">
