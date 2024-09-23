@@ -10,7 +10,7 @@ import { router } from "../router.ts";
 import { useState } from "react";
 
 interface NavBarProps {
-  router: Route[];  
+  router: Route[];
 }
 
 const NavBar = ({ router }: NavBarProps) => {
@@ -45,7 +45,6 @@ const NavBar = ({ router }: NavBarProps) => {
               onClick={() => setIsClisk(!isClick)}
               className="h-6 w-t-meroColor-el6 texectric-indigo"
             />{" "}
-            {/* Corrected size class */}
           </div>
         </div>
       </nav>

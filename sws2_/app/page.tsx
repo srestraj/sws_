@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import NavBar from "./components/NavBar";
 import HomeCard from "./components/Home/HomeCard";
 import FAQs from "./components/FAQs/FAQs";
