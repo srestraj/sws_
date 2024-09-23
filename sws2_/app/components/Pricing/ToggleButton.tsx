@@ -2,18 +2,16 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 import { ReactNode } from "react";
 
 interface TToggler {
-  id:number;
-  backGroundColor:string;
-  bottonName:string;
-  bottonIcon:ReactNode;
-  textColor:string;
+  id: number;
+  backGroundColor: string;
+  bottonName: string;
+  bottonIcon: ReactNode;
+  textColor: string;
 }
 
-
-
-const Toggler : TToggler[]= [
+const Toggler: TToggler[] = [
   {
-    id: 1,    
+    id: 1,
     backGroundColor: "transparent",
     bottonName: "Basic",
     bottonIcon: <CheckIcon className="size-6" />,
@@ -29,13 +27,41 @@ const Toggler : TToggler[]= [
   },
 ];
 
+/* 
 
+
+
+src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658289366fd3d02d1635fa13_iPhone14-space-black-min.svg"
+
+<img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be830842ef9a5a953cb_PursePulse%20Mockup%201.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be830842ef9a5a953cb_PursePulse%20Mockup%201-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be830842ef9a5a953cb_PursePulse%20Mockup%201-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be830842ef9a5a953cb_PursePulse%20Mockup%201.png 1080w" class="sliding-mockup-2" style="will-change: filter, transform; filter: brightness(20%); transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+
+<img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be70d5814fb1b250b93_PursePulse%20Mockup%205.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be70d5814fb1b250b93_PursePulse%20Mockup%205-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be70d5814fb1b250b93_PursePulse%20Mockup%205-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be70d5814fb1b250b93_PursePulse%20Mockup%205.png 1080w" class="sliding-mockup-3" style="will-change: filter, transform; filter: brightness(20%); transform: translate3d(0px, -200%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+
+<img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204.png 1080w" class="sliding-mockup-4" style="will-change: filter, transform; filter: brightness(23.616%); transform: translate3d(0px, -300%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+<img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658489c5b45fdc023016876d_PursePulse%20Mockup%204.png 1080w" class="sliding-mockup-4" style="will-change: filter, transform; filter: brightness(23.616%); transform: translate3d(0px, -300%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+<img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203.png 1080w" class="sliding-mockup-5" style="will-change: filter, transform; filter: brightness(100%); transform: translate3d(0px, -395.48%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+
+
+
+
+
+
+
+
+
+
+*/
 /* 
 interface TInnerToggler {
 
 }
  */
-export const ToggleButton :<>= () => {
+export const ToggleButton = () => {
   return (
     <>
       <div className="flex flex-col p-3 justify-center items-center my-10 px-3 overflow-hidden">
