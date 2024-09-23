@@ -6,16 +6,14 @@ import paperIcon from "../../assets/paperIcon.webp";
 import ideaIcon from "../../assets/ideaIcon.png";
 import homeImage3 from "../../assets/mobileright.png";
 
-interface ButtomData {
+interface IButtomData {
   id: number;
   title: string;
   icons: StaticImageData;
   description: string;
 }
 
-const Features = () => {
-  const Data = [];
-
+const Features: React.FC = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey w-full ">
@@ -32,7 +30,7 @@ const Features = () => {
 
 export default Features;
 
-const HeadingElement = () => {
+const HeadingElement :React.FC= () => {
   return (
     <>
       <div className="text-center">
@@ -52,7 +50,7 @@ const HeadingElement = () => {
 };
 
 const CardElement: React.FC = () => {
-  const dataBottom: ButtomData[] = [
+  const dataBottom: IButtomData[] = [
     {
       id: 1,
       title: "Unlock insights from experts",

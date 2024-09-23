@@ -5,7 +5,32 @@ import messageX from "../../assets/footerImage/messageX.png";
 import instagram from "../../assets/footerImage/instagram.png";
 import linkedIn from "../../assets/footerImage/linkedIn.png";
 
-const FAQs = () => {
+interface IFAQSData {
+  id: number;
+  question: string;
+}
+
+interface IImageIN {
+  images: {
+    imageX: HTMLImageElement;
+    imageLinkedIn: HTMLImageElement;
+    instagram: HTMLImageElement;
+  };
+}
+
+interface IInnerSlug {
+  id: number;
+  slugs: string;
+  images: IImagesIN | Null;
+}
+
+interface IContact {
+  id: number;
+  title: string;
+  innerItems: IInnerSlug[];
+}
+
+const FAQs: React.FC = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black text-meroColor-light-grey flex flex-col  transition-all ease-in-out ">
@@ -21,13 +46,7 @@ const FAQs = () => {
 
 export default FAQs;
 
-const data = [
-  // Is my financial data secure?
-
-  // What makes PursePulse Pro different?
-
-  // Is there a mobile app for PursePulse?
-
+const data: IFAQSData[] = [
   {
     id: 1,
     question: "What is PursePulse?",

@@ -3,14 +3,14 @@
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import React, { Key } from "react";
 
-interface PriceItem {
+interface IPriceItem {
   id: Key | null | undefined;
   heading: string;
   discriptions: string;
 }
 
 interface CardsElementsProps {
-  pricingData: PriceItem[];
+  pricingData: IPriceItem[];
 }
 
 export const CardsElements: React.FC<CardsElementsProps> = ({

@@ -10,7 +10,7 @@ import { router } from "../router.ts";
 import { useState } from "react";
 
 interface NavBarProps {
-  router: Route[]; // Define router prop type
+  router: Route[];  
 }
 
 const NavBar = ({ router }: NavBarProps) => {

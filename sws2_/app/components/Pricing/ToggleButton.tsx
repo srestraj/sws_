@@ -1,7 +1,14 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { ReactNode } from "react";
 
-interface TToggler {
+interface IInnterToggler {
+  bottonIcon: ReactNode;
+  bottonName: string;
+  textColor: string;
+  backGroundColor: string;
+}
+
+interface IToggler {
   id: number;
   backGroundColor: string;
   bottonName: string;
@@ -9,7 +16,7 @@ interface TToggler {
   textColor: string;
 }
 
-const Toggler: TToggler[] = [
+const Toggler: IToggler[] = [
   {
     id: 1,
     backGroundColor: "transparent",
@@ -86,14 +93,7 @@ export const ToggleButton: React.FC = () => {
 
 // ............
 
-interface TInnterToggler {
-  bottonIcon: ReactNode;
-  bottonName: string;
-  textColor: string;
-  backGroundColor: string;
-}
-
-const InnerToggler: React.FC<TInnterToggler> = ({
+const InnerToggler: React.FC<IInnterToggler> = ({
   bottonIcon,
   bottonName,
   textColor,

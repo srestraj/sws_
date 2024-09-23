@@ -9,7 +9,7 @@ import featureFive from "../../assets/featuresImgs/feature5.svg";
 import DefaultLayout from "../DefaultLayout";
 import UserGuideCard from "./UserGuideCard";
 
-interface ListAnswer {
+interface IListAnswer {
   id: number;
   listSlug: string;
 }
@@ -20,7 +20,7 @@ interface GuideData {
   title: string;
   descriptions: string;
   question: string;
-  listOfAnswer: ListAnswer[];
+  listOfAnswer: IListAnswer[];
   images: string | any;
   pillbtn: boolean;
 }
