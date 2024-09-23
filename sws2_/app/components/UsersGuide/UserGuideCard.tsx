@@ -25,13 +25,13 @@ interface UserGuideCardProps {
 const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
   return (
     <div
-      className="flex flex-row justify-between items-center relative  "
+      className="flex flex-row justify-between items-center"
       key={listing.titleNumber}
     >
       {/* Image component */}
-      <div className="flex flex-col mx-40 max-w-sm min-w-60  transition-all ease-in-out">
+      <div className="flex flex-col mx-40 max-w-sm min-w-60  transition-all ease-in-out  sticky top-96 ">
         <div
-          className={`sticky top-60  bg-[url('/img/hero-pattern.svg')]  
+          className={` bg-[url('/img/hero-pattern.svg')]  
            scale-75
           ${listing.images ? listing.images : ""}
           `}
@@ -46,15 +46,15 @@ const UserGuideCard: React.FC<UserGuideCardProps> = ({ listing }) => {
       </div>
 
       {/* Center line item */}
-      <div className="sticky top-75  h-screen rounded-b-full rounded-t-full px-0.5  bg-gradient-to-b from-indigo-600 via-pink-600 to-purple-600 flex items-center justify-center">
+      <div className="sticky top-0  h-screen rounded-b-full rounded-t-full px-0.5  bg-gradient-to-b from-indigo-600 via-pink-600 to-purple-600 flex items-center justify-center">
         <div className=" shadow-lg p-6 bg-meroColor-jet-black absolute rounded-full items-center flex justify-center">
           <div className="shadow-lg p-3 rounded-full bg-meroColor-electric-indigo"></div>
         </div>
       </div>
 
       {/* Paragraphs area right */}
-      <div className="scale-50 flex flex-col mx-40 max-w-xl min-w-60 h-full ">
-        <h1 className="text-meroColor-electric-indigo text-9xl font-extrabold py-3   min-w-44">
+      <div className="scale-50 flex flex-col mx-40 max-w-xl min-w-60 ">
+        <h1 className="text-meroColor-electric-indigo text-9xl font-extrabold py-3 min-w-44">
           {listing.titleNumber}
         </h1>
         <h2 className="text-4xl text-meroColor-white-10 py-1 ">
