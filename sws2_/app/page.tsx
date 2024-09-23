@@ -40,13 +40,13 @@ export const router: IRoute[] = [
 const Home: React.FC = () => {
   return (
     <>
-      <div className="bg-meroColor-jet-black">
+      <div className=" bg-meroColor-platinum-10 ">
         <NavBar router={router} />
         {router.map((route) => (
           <section
-            className="bg-meroColor-jet-black"
             id={route.path.substring(1)}
             key={route.id}
+            className="bg-meroColor-jet-black"
           >
             <div>{route.element}</div>
           </section>
