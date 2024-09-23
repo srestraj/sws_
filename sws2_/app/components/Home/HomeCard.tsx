@@ -5,7 +5,6 @@ import ButtonPills from "../ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
-import { ReactNode } from "react";
 
 interface TitleHome {
   id: number;

@@ -47,7 +47,7 @@ const UserGuideCard = ({ listing }: UserGuideCardProps) => {
 
       {/* Center line item */}
       <div className="sticky top-10 transition-all ease-in-out  h-screen rounded-b-full rounded-t-full px-0.5  bg-gradient-to-b from-indigo-600 via-pink-600 to-purple-600 flex items-center justify-center">
-        <div className="sticky top-60  ">
+        <div className="sticky top-60 flex flex-col items-center justify-center">
           <div className=" shadow-lg p-6 bg-meroColor-jet-black absolute rounded-full items-center flex justify-center">
             <div className="shadow-lg p-3  rounded-full bg-meroColor-electric-indigo"></div>
           </div>
@@ -55,17 +55,18 @@ const UserGuideCard = ({ listing }: UserGuideCardProps) => {
       </div>
 
       {/* Paragraphs area right */}
-      <div className="sticky top-10 transition-all ease-in-out scale-50 flex flex-col mx-40 max-w-xl min-w-60 ">
+      <div className="sticky top-10 transition-all ease-in-out scale-90 flex flex-col mx-40 max-w-xl min-w-60 ">
         <h1 className="text-meroColor-electric-indigo text-9xl font-extrabold py-3 min-w-44">
           {listing.titleNumber}
         </h1>
-        <h2 className="text-4xl text-meroColor-white-10 py-1 ">
+        <span className="text-4xl text-meroColor-white-10 py-1 ">
           {listing.title}
-        </h2>
-        <p className="text-2xl max-w-xl py-2">{listing.descriptions}</p>
-        <h2 className="text-4xl text-meroColor-white-10 py-5">
+        </span>
+        <h2 className="text-2xl max-w-xl py-2">{listing.descriptions}</h2>
+        <p className="text-4xl text-meroColor-white-10 py-5">
           {listing.question}
-        </h2>
+        </p>
+
         <ul className="py-3 text-2xl">
           {listing.listOfAnswer.map((answersItems) => (
             <li className="py-1 list-none" key={answersItems.id}>

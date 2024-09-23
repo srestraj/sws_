@@ -1,10 +1,7 @@
 ("use clinet");
 
-import { CheckIcon } from "@heroicons/react/24/solid";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { CardsElements } from "./CardElements";
 import { ToggleButton } from "./ToggleButton";
-import { PricingTopElement } from "./PricingTopElement";
 
 import mainLogo from "../../assets/logo.webp";
 import Image from "next/image";
