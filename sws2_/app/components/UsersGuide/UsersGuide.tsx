@@ -1,10 +1,11 @@
 "use client";
 
-import featureOne from "../../assets/featuresImgs/features1.svg";
-import featureTwo from "../../assets/featuresImgs/feature2.svg";
-import featureThree from "../../assets/featuresImgs/feature3.svg";
-import featureFour from "../../assets/featuresImgs/feature4.svg";
-import featureFive from "../../assets/featuresImgs/feature5.svg";
+import { StaticImageData } from "next/image";
+import featureOne from "../../assets/featuresImgs/feature_1.png";
+import featureTwo from "../../assets/featuresImgs/feature_2.png";
+import featureThree from "../../assets/featuresImgs/feature_3.png";
+import featureFour from "../../assets/featuresImgs/feature_4.png";
+import featureFive from "../../assets/featuresImgs/feature_5.png";
 
 import DefaultLayout from "../DefaultLayout";
 import UserGuideCard from "./UserGuideCard";
@@ -21,7 +22,7 @@ interface GuideData {
   descriptions: string;
   question: string;
   listOfAnswer: IListAnswer[];
-  images: string | any;
+  image: StaticImageData;
   pillbtn: boolean;
 }
 
@@ -39,7 +40,7 @@ const UsersGuide = () => {
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
       ],
-      images: featureOne,
+      image: featureOne,
       pillbtn: true,
     },
     {
@@ -54,7 +55,7 @@ const UsersGuide = () => {
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
       ],
-      images: featureTwo,
+      image: featureTwo,
       pillbtn: false,
     },
     {
@@ -69,7 +70,7 @@ const UsersGuide = () => {
         { id: 2, listSlug: "A strong, unique password" },
         { id: 3, listSlug: "60 seconds to complete registration" },
       ],
-      images: featureThree,
+      image: featureThree,
       pillbtn: false,
     },
     {
@@ -88,7 +89,7 @@ const UsersGuide = () => {
             "Specific financial goals to tailor your budget effectively",
         },
       ],
-      images: featureFour,
+      image: featureFour,
       pillbtn: false,
     },
     {
@@ -110,7 +111,7 @@ const UsersGuide = () => {
             "Some time to navigate and get acquainted with the app's functionalities",
         },
       ],
-      images: featureFive,
+      image: featureFive,
       pillbtn: false,
     },
   ];
@@ -119,9 +120,7 @@ const UsersGuide = () => {
     <>
       <DefaultLayout>
         <UserHeading />
-        {data?.map((listing) => (
-          <UserGuideCard key={listing.id} listing={listing} />
-        ))}
+        <UserGuideCard listings={data} />
       </DefaultLayout>
     </>
   );
