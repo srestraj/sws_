@@ -10,14 +10,14 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Pricing from "./components/Pricing/Pricing";
 import { ReactNode } from "react";
 
-interface Route {
+interface IRoute {
   id: number;
   path: string;
   element: ReactNode;
   section: string;
 }
 
-export const router: Route[] = [
+export const router: IRoute[] = [
   { id: 1, path: "/", element: <HomeCard />, section: "Home" },
   { id: 2, path: "#-features", element: <Features />, section: "Feature" },
   {
@@ -37,7 +37,7 @@ export const router: Route[] = [
   { id: 7, path: "#-contact", element: <Contacts />, section: "Contact" },
 ];
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <div className="bg-meroColor-jet-black">
