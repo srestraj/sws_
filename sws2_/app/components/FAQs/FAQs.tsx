@@ -1,5 +1,5 @@
 ("use clinet");
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import messageX from "../../assets/footerImage/messageX.png";
 import instagram from "../../assets/footerImage/instagram.png";
@@ -9,42 +9,6 @@ interface IFAQSData {
   id: number;
   question: string;
 }
-
-interface IImageIN {
-  images: {
-    imageX: HTMLImageElement;
-    imageLinkedIn: HTMLImageElement;
-    instagram: HTMLImageElement;
-  };
-}
-
-interface IInnerSlug {
-  id: number;
-  slugs: string;
-  images: IImagesIN | Null;
-}
-
-interface IContact {
-  id: number;
-  title: string;
-  innerItems: IInnerSlug[];
-}
-
-const FAQs: React.FC = () => {
-  return (
-    <>
-      <div className="bg-meroColor-jet-black text-meroColor-light-grey flex flex-col  transition-all ease-in-out ">
-        <div className="md:mx-10">
-          <FAQsQuestions />
-          <BottomContact />
-          <FootSlug />
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default FAQs;
 
 const data: IFAQSData[] = [
   {
@@ -74,35 +38,45 @@ const data: IFAQSData[] = [
   },
 ];
 
-const FAQsQuestions = () => {
-  return (
-    <>
-      <div>
-        <h1 className="text-4xl md:text-5xl md:px-3 text-center md:text-start font-bold text-meroColor-platinum-10 ">
-          Have questions?
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-60 p-10">
-          {data?.map((questions) => (
-            <div key={questions.id} className="p-3">
-              <div className="flex mb-3 justify-between">
-                <h1 className="hover:text-meroColor-electric-indigo font-medium">
-                  {questions.question}
-                </h1>
+interface IImageIN {
+  images: {
+    imageX?: HTMLImageElement;
+    imageLinkedIn?: HTMLImageElement;
+    instagram?: HTMLImageElement;
+  };
+}
 
-                <h1 className="text-3xl font-medium text-meroColor-electric-indigo">
-                  +
-                </h1>
-              </div>
-              <div className="border border-b-meroColor-platinum-10"></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-};
+interface IInnerSlug {
+  id: number;
+  slugs: string;
+  images?: IImageIN;
+}
 
-const contactData = [
+interface IContact {
+  id: number;
+  title: string;
+  innerItems: IInnerSlug[];
+}
+
+interface IinnerItemsImage {
+  imageX: StaticImageData;
+  imageLinkedIn: StaticImageData;
+  instagram: StaticImageData;
+}
+
+interface IinnerItems {
+  id: number;
+  slugs: string;
+  images?: IinnerItemsImage;
+}
+
+interface IContactData {
+  id: number;
+  title: string;
+  innerItems: IinnerItems[];
+}
+
+const contactData: IContactData[] = [
   {
     id: 1,
     title: "Get in touch",
@@ -115,7 +89,7 @@ const contactData = [
       { id: 5, slugs: "Digital City, Virtual Country" },
       {
         id: 6,
-        slugs: " ",
+        slugs: "",
         images: {
           imageX: messageX,
           imageLinkedIn: linkedIn,
@@ -147,7 +121,51 @@ const contactData = [
   },
 ];
 
-const BottomContact = () => {
+const FAQs: React.FC = () => {
+  return (
+    <>
+      <div className="bg-meroColor-jet-black text-meroColor-light-grey flex flex-col  transition-all ease-in-out ">
+        <div className="md:mx-10">
+          <FAQsQuestions />
+          <BottomContact />
+          <FootSlug />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default FAQs;
+
+const FAQsQuestions: React.FC = () => {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl md:text-5xl md:px-3 text-center md:text-start font-bold text-meroColor-platinum-10 ">
+          Have questions?
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-60 p-10">
+          {data?.map((questions) => (
+            <div key={questions.id} className="p-3">
+              <div className="flex mb-3 justify-between">
+                <h1 className="hover:text-meroColor-electric-indigo font-medium">
+                  {questions.question}
+                </h1>
+
+                <h1 className="text-3xl font-medium text-meroColor-electric-indigo">
+                  +
+                </h1>
+              </div>
+              <div className="border border-b-meroColor-platinum-10"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+const BottomContact: React.FC = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-meroColor-platinum-10 my-10">
@@ -204,7 +222,7 @@ const BottomContact = () => {
   );
 };
 
-const FootSlug = () => {
+const FootSlug: React.FC = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row  md:justify-between items-center justify-center leading-10 ">
