@@ -1,10 +1,17 @@
 ("use clinet");
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import userIcon from "../../assets/userIcon.webp";
 import walletIcon from "../../assets/walletIcon.webp";
 import paperIcon from "../../assets/paperIcon.webp";
 import ideaIcon from "../../assets/ideaIcon.png";
 import homeImage3 from "../../assets/mobileright.png";
+
+interface ButtomData {
+  id: number;
+  title: string;
+  icons: StaticImageData;
+  description: string;
+}
 
 const Features = () => {
   const Data = [];
@@ -44,8 +51,8 @@ const HeadingElement = () => {
   );
 };
 
-const CardElement = () => {
-  const dataBottom = [
+const CardElement: React.FC = () => {
+  const dataBottom: ButtomData[] = [
     {
       id: 1,
       title: "Unlock insights from experts",

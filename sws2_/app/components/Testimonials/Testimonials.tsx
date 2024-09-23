@@ -2,7 +2,19 @@
 import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
-const data = [
+interface AuthorTestimonial {
+  name: string;
+  position: string;
+}
+
+interface TestimonialData {
+  id: number;
+  descriptions: string;
+  author: AuthorTestimonial;
+  display: boolean;
+}
+
+const data: TestimonialData[] = [
   {
     id: 1,
     descriptions:

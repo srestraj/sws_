@@ -46,14 +46,7 @@ src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/658289366fd3d02
 <img src="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203.png" alt="" sizes="(max-width: 767px) 34vw, (max-width: 991px) 27vw, 17vw" srcset="https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203-p-500.png 500w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203-p-800.png 800w, https://cdn.prod.website-files.com/657abcc11bc331a5ef8b2a0a/65828be92e88def35a50e9aa_PursePulse%20Mockup%203.png 1080w" class="sliding-mockup-5" style="will-change: filter, transform; filter: brightness(100%); transform: translate3d(0px, -395.48%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
 
 
-
-
-
-
-
-
-
-
+ 
 
 */
 /* 
@@ -61,7 +54,7 @@ interface TInnerToggler {
 
 }
  */
-export const ToggleButton = () => {
+export const ToggleButton: React.FC = () => {
   return (
     <>
       <div className="flex flex-col p-3 justify-center items-center my-10 px-3 overflow-hidden">

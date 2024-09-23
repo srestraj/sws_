@@ -1,16 +1,33 @@
-"use clinet";
-import Image from "next/image";
+"use client";
+import Image, { StaticImageData } from "next/image";
 import ButtonPills from "./components/ButtonPills";
 import homeImage from "../../assets/homeimage.png";
 import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
+import { ReactNode } from "react";
 
-const data = [
+interface TitleHome {
+  id: number;
+  titleOne: string;
+  titleTwo: string;
+}
+
+interface HomeData {
+  id: number;
+  title: TitleHome[];
+  slug: string;
+  imageHome: StaticImageData;
+  buttonPresent: boolean;
+  hasBorder: boolean;
+  orderImage: string;
+  borderRadius: string;
+  overflowHidden: boolean;
+}
+
+const data: HomeData[] = [
   {
     id: 1,
-    title: [
-      { id: 1, titleOne: " Make every dollar work for", titleTwo: "you" },
-    ],
+    title: [{ id: 1, titleOne: "Make every dollar work for", titleTwo: "you" }],
     slug: "Navigating finances can be tough, but PursePulse is here to make it easy. Together, let's save smart, spend wisely, see it all, and regain control of your money story.",
     imageHome: homeImage,
     buttonPresent: true,

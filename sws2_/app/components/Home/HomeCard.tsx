@@ -6,6 +6,9 @@ import homeImage2 from "../../assets/mobileleft.png";
 import homeImage3 from "../../assets/mobileright.png";
 import { BacktoTop } from "../backtotop/BacktoTop";
 
+
+
+
 const data = [
   {
     id: 1,

@@ -5,7 +5,18 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { CardsElements } from "./CardElements";
 import { ToggleButton } from "./ToggleButton";
 import { PricingTopElement } from "./PricingTopElement";
-const pricingData = [
+
+import mainLogo from "../../assets/logo.webp";
+import Image from "next/image";
+import ButtonPills from "../ButtonPills";
+
+interface PriceDatas {
+  id: number;
+  heading: string;
+  discriptions: string;
+}
+
+const pricingData: PriceDatas[] = [
   {
     id: 1,
     heading: "Expert Guidance",
@@ -61,11 +72,8 @@ const pricingData = [
       "Get fundamental insights into your financial habits and progress toward your goals.",
   },
 ];
-import mainLogo from "../../assets/logo.webp";
-import Image from "next/image";
-import ButtonPills from "../ButtonPills";
 
-const Pricing = () => {
+const Pricing: React.FC = () => {
   return (
     <>
       <div className=" py-10">
@@ -83,7 +91,7 @@ const Pricing = () => {
 
 export default Pricing;
 
-const FormContactHeader = () => {
+const FormContactHeader: React.FC = () => {
   return (
     <>
       <div className="py-10 bg-meroColor-platinum-10 flex flex-col justify-center items-center">
@@ -96,7 +104,7 @@ const FormContactHeader = () => {
   );
 };
 
-const PricingEndHeader = () => {
+const PricingEndHeader: React.FC = () => {
   return (
     <>
       <div className="flex items-center justify-between ">
@@ -121,7 +129,7 @@ const PricingEndHeader = () => {
   );
 };
 
-const FormContact = () => {
+const FormContact: React.FC = () => {
   return (
     <>
       <div className="py-4 mb-1 bg-meroColor-platinum-10 ">
